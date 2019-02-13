@@ -63,10 +63,11 @@ li {
   background-color:#88839e;
   vertical-align:middle;
   padding: 16px;
+  color:white;
   
 }
 
- li:hover{
+ li:hover {
   padding: 17px;
   background-color:#625e77;
   border-top: 3px solid white;
@@ -75,20 +76,13 @@ li {
 
 
 
-a {
-  margin-left: 10px;
-color:white;
-text-decoration:none;
-}
 
-.subscribe {
-  text-decoration:line-through;
+{
+  text-decoration: line-through;
   background-color:#7a7593;
-  
+  color:#a3a0b5;}
 
-}
-.subscribe a{
-color:#a3a0b5;}
+
 em {
   font-size: 16px;
 
