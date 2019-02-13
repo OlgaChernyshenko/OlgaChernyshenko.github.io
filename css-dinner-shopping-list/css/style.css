@@ -1,8 +1,95 @@
 
 body {
-    font-family:Open Sans,Arial,Helvetica,sans-serif,SimSun;
-    font-size: 18px;
-    color:  #006363;
+    font-family:sans-serif;
+    font-size: 24px;
+    
+
+    background-color:  black;
+  }
+.toogez {
+  width:1112px;
+  height: 707px;
+  border:22px solid white;
+  margin:-8px 180px;
+ 
+  background-color: #3b3f45;
+}
+.top{
+  background-color:#4a4f56;
+  height: 70px;
+  padding: 20px 0px;
+  color:#eb7e7f;
+
+}
+h1, h2 {
+  text-align:center;
+
+   }
+  
+h1{
+  margin-top: 0px;
+  font-size: 34px;
+  font-weight:bolder;
+  letter-spacing:1.1px;
+}
+h2{
+  margin-top: -20px;
+  font-size: 24px;
+  font-weight:normal;
+  letter-spacing:-0.5px;
+}
+
+.doun {
+color:#eb7e7f; 
+text-align:center;
+ 
+width: 746px;
+height: 68px;
+margin-left:184px;
+padding: 0.2px;
+background-color:#4a4f56;
+}
+
+ul {
+width: 746px;
+height:362px;
+padding: 13px;
+margin-left:170.5px;
+
+}
+
+li {
+  display: block;
+  background-color:#88839e;
+  vertical-align:middle;
+  padding: 16px;
   
 }
 
+ li:hover{
+  padding: 17px;
+  background-color:#625e77;
+  border-top: 3px solid white;
+  border-bottom:  3px solid white;
+  }
+
+
+
+a {
+  margin-left: 10px;
+color:white;
+text-decoration:none;
+}
+
+.subscribe {
+  text-decoration:line-through;
+  background-color:#7a7593;
+  
+
+}
+.subscribe a{
+color:#a3a0b5;}
+em {
+  font-size: 16px;
+
+}
