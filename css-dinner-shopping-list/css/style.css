@@ -2,16 +2,13 @@
 body {
     font-family:sans-serif;
     font-size: 24px;
-    
-
-    background-color:  black;
+    background-color:  #222222;
   }
 .toogez {
   width:1112px;
   height: 707px;
   border:22px solid white;
   margin:-8px 180px;
- 
   background-color: #3b3f45;
 }
 .top{
@@ -19,13 +16,10 @@ body {
   height: 70px;
   padding: 20px 0px;
   color:#eb7e7f;
-
 }
 h1, h2 {
   text-align:center;
-
    }
-  
 h1{
   margin-top: 0px;
   font-size: 34px;
@@ -38,52 +32,47 @@ h2{
   font-weight:normal;
   letter-spacing:-0.5px;
 }
-
 .doun {
 color:#eb7e7f; 
 text-align:center;
- 
 width: 746px;
 height: 68px;
 margin-left:184px;
 padding: 0.2px;
 background-color:#4a4f56;
 }
-
 ul {
 width: 746px;
 height:362px;
-padding: 13px;
-margin-left:170.5px;
+padding: 0px;
+margin: 35px 184px 35px;
 
 }
+ul>li {
+  list-style: none;
+  
+  background-color: #88839e;
+  vertical-align: middle;
+  padding: 16px;
+  color: white;
+}
 
-li {
-  display: block;
-  background-color:#88839e;
-  vertical-align:middle;
+ ul>li:hover  {
+  
+  background-color:#625e77;
   padding: 16px;
   color:white;
-  
-}
-
- li:hover {
-  padding: 17px;
-  background-color:#625e77;
   border-top: 3px solid white;
-  border-bottom:  3px solid white;
-  }
+  border-bottom:3px solid white;
+    }
 
-
-
-
+input:checked + li 
 {
+  display: inline-block;
   text-decoration: line-through;
-  background-color:#7a7593;
-  color:#a3a0b5;}
-
-
-em {
+  background-color:#88839e;
+  color:#a3a0b5;
+  }
+li em {
   font-size: 16px;
-
 }
