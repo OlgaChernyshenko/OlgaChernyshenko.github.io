@@ -40,8 +40,12 @@ font-size: 24px;
     text-align: center;
    border:5px solid white;
     font-size: 0;
-   }
 
+   }
+ .ba-sities:hover { 
+  transition: all .1s ease-in;
+  opacity: 0.5;
+  } 
      .heady>.ba-sities li {
     font-family: sans-serif;
     padding: 0;
@@ -51,10 +55,11 @@ font-size: 24px;
     box-sizing: border-box;
     border:5px solid white;
     font-size: 34px;
+   
   }
-   .heady>.ba-sities>li:hover 
+   .ba-sities :hover li :not (hover)
   {
-    opacity: 0.5;
+    opacity: 5;
     transition: all .1s ease-in;
   }
    
