@@ -35,10 +35,9 @@ p {
 
 .ba-sities { 
   border:2px solid white;
-  width: 100%; max-width: 1000px;
-  height:auto;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1000px; width: 100%;
+  height: auto;
+  margin: auto;
   padding: 0px;
   text-align: center;
   box-sizing: content-box;
@@ -47,6 +46,7 @@ p {
 
 .ba-sities li {
   display: inline-block;
+  min-width: 10%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ p {
   text-decoration: none;
   font-size: 2rem;
   color: white;
-  padding: 0;
+  padding: 15px;
   margin:0;
   font-family: sans-serif;
   font-size: 34px;
@@ -75,6 +75,7 @@ p {
   color: rgba(255,255,255,.7);
   opacity: 0.5;
   margin-top: 15px;
+
 }
 
 
@@ -87,49 +88,49 @@ p {
   opacity: 1;
 }
 
-.lisbon {
+.lisbon a {
   background-color: #3399cc;
   width: 500px;
 }
-.paris { 
+.paris a { 
   width: 250px;
   background-color:#33cccc;
 }
-.belgrad { 
+.belgrad a  { 
   width: 250px;
   background-color:#996699;
 }
-.moscow{
+.moscow a  {
   width: 250px;
   background-color:#c24747;
 }
-.tel{
+.tel a {
   width: 250px;
   background-color:#e2674a;
 }
-.cair{
+.cair a {
   width: 250px;
   background-color:#ffcc66;
 }
-.new-y{
+.new-y a {
 
   width: 250px;
   background-color:#99cc99;
 }
-.new-d{
+.new-d a{
   width: 250px;
   background-color:#669999;
 }
-.san{
+.san a{
   width: 500px;
   background-color:#cc6699;
 }
-.tokyo{
+.tokyo a {
   width: 250px;
   box-sizing: border-box;
   background-color:#339966;
 }
-.syd{
+.syd a {
   width: 1000px;
   background-color:#666699;
 }
