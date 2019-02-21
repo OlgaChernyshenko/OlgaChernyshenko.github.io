@@ -1,18 +1,43 @@
-body {
+
+* { box-sizing: border-box; }
+
+html,body {
 	font-family:Open Sans,Arial,Helvetica,sans-serif,SimSun;
 	font-size: 1rem;
 	color: 	#006363;
 
 }
 
-
+ul {
+	width: 25%;
+	height: auto;
+}
 
 li{
 	display:inline-block;
-
 }
 
 
-.i { width: 200px;
-	height: 200px; 
-	margin:10px;}
+.i { 
+	width: 25%;
+	height: auto; 
+	margin:10px;
+}
+
+span {
+display: inline-block;
+font-size: 1rem;
+
+}
+header {
+	display: inline-flex;
+}
+.profil {
+	display: inline-block;
+	 10%;
+	height: auto;
+
+}
+.f {
+	width:100%;
+}
