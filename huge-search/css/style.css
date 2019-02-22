@@ -1,139 +1,164 @@
-* {
-box-sizing: border-box;
+* {	box-sizing: border-box;
+	border:none;
+
+
 }
 html, body {
 	font-family:Arial, sans-serif;
 	font-size: 100%;
 	color: #c2c2c2;
-    height: auto;
-    padding: 0;
-    margin: 0;
-}
-
-h1 { border:1px solid red;
-opacity: 0;
-position: absolute;
-z-index: -1;
-transform: translate(-100%);
-
-}
-
-h2 { border:1px solid red;
-font-size: 1rem;
-font-weight: bold;
-padding: 0px;
-margin: 0;
-}
-
-
-main {    border:1px solid rgba(118,117,128,0.05); 
-	width: 100%; height:auto;
-    margin: auto;
-    padding: 0;
-    align-content: center;
+	padding: 0;
+	margin: 0;
 	background: rgba(118,117,128,0.05);
 }
 
-.all-search { border:1px solid red;
-    width: 80%; height:auto;
-    margin: auto;
-    padding: 0;
-    align-content: center;
+h1 { 
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+	transform: translate(-100%);
+
 }
 
+h2 { 
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 20px;
+	margin: 0;
+	color: #c2c2c2;
+}
+
+
+main { 
+	width: 100%; 
+	height:100%;
+	margin: auto;
+	padding: 50px;
+	align-content: center;
+	
+	
+}
+
+.all-search {
+
+	width: 80%; 
+	margin: auto;
+	padding: 0;
+	vertical-align: bottom;
+
+	
+
+}
 
 
 form {
-	border:1px solid red;
+	display: block;
 	margin: 0px;
-	padding: 10px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	color:#ec5a62;
 
 
 }
-input {				border:1px solid red;
+input {			
 	display: inline-block;
-	font-size: 6rem;
-	color: #c2c2c2;
-    padding: 0;
-    margin: 0;
-	
-    max-height: 100px;
-    max-width: 90%;
-
-    vertical-align: middle;
-}
-
-
-input [type="text"] {
+	font-size: 7rem;
+	font-weight: bold;
+	color:#ec5a62;
+	opacity: 0.4; 
 	padding: 0;
-	margin:0;
+	margin: 0;
+	max-width:89%;
+	height:10%;
+	vertical-align: middle;
+	background: rgba(118,117,128,0.05); /*??? заливается тот же, что и в body*/
 
 }
-	
+/*color: #c2c2c2;*/
 
 input[type="submit"] {
-	padding: 0;
-	margin:0;
+	width: 10%;
+	height:10%;
+	cursor: pointer;
 
-	width: 100px;
-	height:100px;
+	background-image: url(..images/AnimatedHeaderBackgrounds1.png); /*почему не работает?!!!)*/
+	
 }
- /*
-	background-image: "AnimatedHeaderBackgrounds1.png"
-*/
+
 .people {
+	display: block;
 	margin: 0;
-	padding: 0;
+	padding:0;
+	width: auto;	
+	text-align: justify;
+
 
 }
-.people-colums { border:1px solid red;
+.people-colums { 
 	display: inline-block;
 	margin: 0;
 	padding: 0;
 	width: 33%;
+
+
 }
 
+
 .people-colums-imag {
-	border:1px solid red;
 	display: block;
-	margin: 0;
+	margin: 10px;
 	padding: 0;
+	
 	
 }
 
-.people-colums-imag img{ border:1px solid red;
+.people-colums-imag img{ 
 	display: inline-block;
-	margin: 0px;
+	margin: 10px;
 	padding: 0px;
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
-	}
+	vertical-align: middle;
+	
+}
 
+.people :first-child>img
+{border-radius: 50%;}
 
-.people-colums-imag a{ border:1px solid red;
-	display: inline-block;
+.people-colums-imag a {
 	width: 100%;
-	height:70px;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-weight: bold;
 	text-decoration: none;
 	color: #c2c2c2;
-	font-weight: bold;
-	margin: 0;
-	padding: 10px;
-    border-radius: 3px; 
+	
+	border-radius: 3px;
 	background: rgba(118,117,128,0.05);
-}
-.people-colums-imag :hover {
-color:#ec5a62;
+
+span {	
+	width: auto;
+	height:100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8rem;
+	vertical-align: middle;
+	border-radius: 3px;
 }
 
-.people-colums-imag :hover { 
-	background:rgba(118,117,128,0.1);
+
+.people-colums-imag a:hover { 
+	color:#ec5a62;
+	cursor: pointer;
+    background:rgba(118,117,128,0.1);
 }
-.people-colums-imag:hover {
-	cursor: pointer;}
+
 
 .people-colums-imag:active {
-	background: #ec5a62;
+	background: #ec5a62; /*не срабатывает на ссылке*/
 
 }
