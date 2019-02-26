@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+html {
+    line-height: 1.2;
+    font-size: 100%;
+}
+
+body {
+    line-height: 1px;
+}
+
+.container {
+	position: relative;
+	max-width: 640px;
+	height: 100%;
+	max-height: 640px;
+	margin: 50px auto;
+	border: 15px solid #7e919c;
+	background: white;
+ 
+}
+
+.container .row1, .container .row2, .container .row3, .container .row4, .container .row5, .container .row6, .container .row7, .container .row8 {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+.container .row1__cell, .container .row3__cell, .container .row5__cell, .container .row7__cell{
+    float: left;
+    width: 12.5%;
+    min-height: 100%;
+    margin-right: 12.5%;
+    background-color: #7e919c;
+}
+
+.container .row2__cell, .container .row4__cell, .container .row6__cell, .container .row8__cell{
+    float: right;
+    width: 12.5%;
+    min-height: 100%;
+    margin-left: 12.5%;
+    background-color: #7e919c;
+}

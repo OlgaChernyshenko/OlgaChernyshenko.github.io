@@ -9,7 +9,7 @@ body {
     font-size: 100%;
 }
 
-   .container {
+.container {
 
     position: relative;
     max-width: 640px;
@@ -19,15 +19,20 @@ body {
     border: 20px solid #7e919c;
     background: white;
 }
-img {
-    max-width: 80px;
-    max-height: 80px;
-}
+
 
 div {
     display: block;
+
+
 }
 
+.container img {
+    max-width: 70px;
+    max-height: 70px;
+
+    
+}
 .container .board {
     position: absolute;
     width: 12.5%;
@@ -180,7 +185,7 @@ div {
 }
 
 .container > * {
-position: absolute;
+    position: absolute;
 }
 
 .container-gr-1 {
