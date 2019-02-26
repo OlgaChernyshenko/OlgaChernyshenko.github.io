@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+/*font-family: ;
+font-size: ;*/
+}
+
+body {
+color: white;
+border: 5px solid white;
+background:#3399cc;
+margin: -2px;
+}
+
+
+main {
+  width: 1140px;
+  margin: auto;
+  padding: 0;
+}
+
+
+h1 {  
+ font-size: 2rem;
+} 
+
+
+p {  
+  font-size: 1.5rem; 
+}
+
+
+.ba-sities { 
+  display: block;
+  border: 3px solid white;
+  padding: 0px;
+  margin: 0;
+  box-sizing: content-box;
+  font-size: 0;
+}
+
+
+.ba-sities > li > a {   
+  display: inline-block;
+  list-style-type: disc;
+  border:3px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin:0;
+  font-family: sans-serif;
+  font-size: 34px;
+  text-align: center;
+}
+
+
+.ba-sities li a span {
+  display: block;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  margin-top: 15px;
+
+}
+
+
+.ba-sities:hover li > a { 
+  opacity: 0.5;
+} 
+
+
+.ba-sities li> a:hover {
+  opacity: 1;
+}
+
+
+.lisbon a {
+  background-color: #3399cc;
+  width: 50%;
+}
+
+.paris a { 
+  width: 25%;
+  background-color:#33cccc;
+}
+
+.belgrad a  { 
+  width: 25%;
+  background-color:#996699;
+}
+
+.moscow a  {
+  width: 25%;
+  background-color:#c24747;
+}
+
+.tel a {
+  width: 25%;
+  background-color:#e2674a;
+}
+
+.cair a {
+  width: 25%;
+  background-color:#ffcc66;
+}
+
+.new-y a {
+
+  width: 25%;
+  background-color:#99cc99;
+}
+
+.new-d a{
+  width: 25%;
+  background-color:#669999;
+}
+
+.san a{
+  width: 50%;
+  background-color:#cc6699;
+}
+
+.tokyo a {
+  width: 25%;
+  box-sizing: border-box;
+  background-color:#339966;
+}
+
+.syd a {
+  width: 100%;
+  background-color:#666699;
+}

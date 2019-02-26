@@ -8,27 +8,29 @@
 
 html,body {
 	font-family: Arial ,sans-serif;
-	font-size: 100%;
-	color:#A60000; 
 	font: 400 14px/1.5 'Arial', serif;
-	background: #FF4040;
+	
+}
+
+body {
+	background: #FF4040;	
+	color:#A60000;
+	font-size: 100%;
 }
 
 main {
 	display: block;
-	width: 100%;
-	min-height: 1110px;
+	width: 1140px;
 	padding: 0;
 	margin: auto;
 }
 
 ul {
 	display: block;
-	width: 1170px;
-	height: auto;
+	width: 100%;
 	margin: auto;
 	padding: 10px;
-	text-align: left;
+	text-align: center;
 	background: white;
 	
 }
@@ -46,26 +48,32 @@ li {
 .i { 
 	display: block;
 	width: 90%;
-	height: auto; 
 	margin: 5%;
 	padding:0;
 }
 
- a {
+ a { 
+ 	position: relative;	
  	display: inline-block;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	vertical-align: bottom;
  	text-decoration: none;
-	color: #A60000;
 	margin: 0;
 	padding: 0;
+	color: #A60000;
+	background: #FF7373;
+	
 
  }
 
 span {
+	position: absolute;
 	display: block;
-	margin: 0;
-	padding: 0;
-	vertical-align: bottom;
-}
+	margin-top: -60px;
+	padding-left:20px;
+	}
 
 em {display: block;
 	margin-top: 5px;
