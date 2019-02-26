@@ -57,7 +57,7 @@ h1, h2 {
 .dinner-css-form {
 	max-width: 100%;
 	margin: auto; 
-	margin-bottom: 50px;
+	
 }
 
 
@@ -127,6 +127,6 @@ h1, h2 {
 		border: none;
 		cursor: pointer; 
 		padding: 20px 0;
-	
+
 	}
 
