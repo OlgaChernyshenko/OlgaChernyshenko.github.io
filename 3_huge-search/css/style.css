@@ -9,9 +9,11 @@ a:active {color:#0000FF}   selected link */
 
 }
 
-html, body {
+ body {
 	font-family: Arial, sans-serif;
 	font-size: 100%;
+	margin: 0;
+	padding: 0;
 	
 }
 
@@ -35,14 +37,19 @@ h2 {
 	margin: 0;
 	color: #c2c2c2;
 }
+main {
+	width: 1140px;
+	margin: auto;
+}
 
 form {border: none;
-	display: block;
+	display: inline-block;
 	padding: 0px;
-	margin: 20px auto;
+    margin: 0;
 	vertical-align: middle;
-	width: 1140px;
-	height: 128px;
+	width: 100%;
+
+height: 128px;
 	font-size: 0px;
 	color:#ec5a62;
 }
@@ -52,8 +59,8 @@ input[type="text"] {
 	display: inline-block;		
 	font-size: 6rem;
 	font-weight: bold;
-	opacity: 0.4; 
-	width: 1012px;
+	width: 100%;
+	max-width: calc( 100% - (128px / (1140px / 100%) ) );
 	height: 128px;
     outline: none;
     border: none;
@@ -61,6 +68,11 @@ input[type="text"] {
 	margin: 0px;
 	color:#ec5a62;
 	background-color: rgba(118,117,128,0.05);
+}
+
+::-webkit-input-placeholder {
+	color: #c2c2c2;
+
 }
 
 input[type="submit"] {	
@@ -83,25 +95,27 @@ input[type="submit"] {
 	display: block;
 	padding: 0;
 	margin: auto;
-	width: 1140px;
+	width: 100%;
 }
 
 .people-colums-h2, .people-colums-imag-list {
 	display: inline-block;
 	list-style: none;
-	width: 370px;
+	width: 100%;
 	padding: 0;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	
 }
 
 
+
 .people-colums-imag-1, .people-colums-imag-2, .people-colums-imag-3 {
 	display: inline-block;
-	width: 370px;
+	width: 33%;
 	padding: 0;
-
 }
+
+
 
 .people-colums-imag-1 .people-colums-imag-2 {
 
@@ -129,11 +143,13 @@ input[type="submit"] {
 	text-transform: capitalize;
 	background: rgba(118,117,128,0.05);
 	font-size: 0,8rem;
+	position: relative;
 }
 a span {
+  position: absolute;
+    top: 50%;
+    margin-top: -10px;
 
-	padding: 0;
-	margin:0;
 }
 
 
