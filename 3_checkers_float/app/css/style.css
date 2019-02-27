@@ -14,78 +14,48 @@ body {
     line-height: 1px;
 }
 main {
-    float: left;
+
     width: 100%;
-    height: 100%;
+    
 }
 
 
 .container1 {
-    position: relative;
+
 	max-width: 640px;
 	height: 100%;
 	max-height: 640px;
-	margin: 50px auto;
+	margin: auto;
 	border: 15px solid #7e919c;
 	background: white;
-
-    
+    clear: both;
  
-}
-.container2
-    {
-    
-    position: relative;
-    max-width: 640px;
-    height: 100%;
-    max-height: 640px;
-    margin: 0px auto;
-    border: 15px solid white;
-    background: white;
  
 }
 
-.container1 .row1, .container1 .row2, .container1 .row3, .container1 .row4, .container1 .row5, .container1 .row6, .container1 .row7, .container1 .row8 {
-    
-    width: 100%;
-    height: 80px;
-    
-}
-
-
-
-.container1 .row1__cell, .container1 .row3__cell, .container1 .row5__cell, .container1 .row7__cell {
-    float: left;
-    width: 12.5%;
-    min-height: 100%;
-    margin-right: 12.5%;
-    background-color: #7e919c;
-}
-
-.container1 .row2__cell, .container1 .row4__cell, .container1 .row6__cell, .container1 .row8__cell {
-    float: right;
-    width: 12.5%;
-    min-height: 100%;
-    margin-left: 12.5%;
-    background-color: #7e919c;
-}
-
-.container2 .row9, .container2 .row10, .container2 .row11, .container2 .row12, .container2 .row13, .container2 .row14, .container2 .row15, .container2 .row16 {
-    width: 100%;
+.container1 .row1, .container1 .row2 {
+     width: 100%;
     height: 80px;
    
+  
+   
 }
-.container2 .row10__cell, .container2 .row12__cell, .container2 .row14__cell, .container2 .row16__cell {
+
+
+.container1 .row1__cell {
     float: left;
     width: 12.5%;
     min-height: 100%;
     margin-right: 12.5%;
-    background-color: red;
+    background-color: #7e919c;
 }
-.container2 .row9__cell, .container2 .row11__cell, .container2 .row13__cell, .container2 .row15__cell {
+
+.container1 .row2__cell {
     float: right;
     width: 12.5%;
     min-height: 100%;
     margin-left: 12.5%;
-    background-color: red;
+    background-color: #7e919c;
+
 }
+
