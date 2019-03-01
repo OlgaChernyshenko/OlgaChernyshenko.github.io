@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100vh;
+
+}
+
+body {
+
+	@font-face {
+		font-family: 'Big John'; 
+
+		src: url("../fonts/BigJohn.otf") format("opentype");
+	}
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+
+	.row {
+
+		&:first-child {
+
+
+
+			&::before {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background-color: rgba(#3c4955, .7);
+
+			}
+		}
+	}
+
+	.first-screen {
+		min-height: 100vh;
+		background: #525d67 url("../img/header-img.jpg")no-repeat;
+		background-size: cover;
+		position: relative;
+		z-index: 0;
+
+		
+
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+
+	}
+
+
+
+
+	.logo {
+
+		&__item {
+			list-style: none;
+			flex-basis: 20px;
+
+			&:not(:last-child){
+				
+				&::after {
+					content: "/";
+
+				}
+
+			}
+		}
+	}
+
+	.navigation {
+		flex-basis: 50%;
+		display: flex;
+		align-items: center;
+
+		.menu {
+			display: flex;
+			justify-content: space-between;
+			flex-basis:100%;
+
+			&__item {
+				list-style: none;
+			}
+
+			&__link {
+				display: block;
+				text-decoration: none;
+				color: white;
+				text-transform: capitalize;
+				color: white;
+				font-family: Slim John;
+				font-weight: bold;
+
+
+				&:hover {
+					color:#48bf72;
+
+				}
+
+			}
+
+		}
+
+
+
+
+	} 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

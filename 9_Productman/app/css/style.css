@@ -199,9 +199,13 @@ text-align: center;
 	display: flex;
 	flex-direction: column;
 	text-align: right;
+	position: relative;
 }
 
-
+.slider__box__content img {
+	position: absolute;
+	z-index: -1;
+}
 
 
 
@@ -225,32 +229,76 @@ text-align: center;
 	align-content: stretch;
 }
 
-.my__flex__block1 img {background: green;
+.my__flex__block1 img {
+	background: #ebebec;
 	width: calc((1077px - (1077px / 3)) - 20px);
 	margin: 10px;
 	height: 388px;
 }
 
- .my__flex__block img {background: green;
+
+.my__flex__block img {
+	background: #ebebec;
 	width: calc((1077px / 3) - 20px);
 	height: 388px;
 	margin: 10px;
 }
 
-.my__flex__container a {
-	width: 100%;
+
+.my__flex__block1 img:hover {
+background: red;
 }
 
-/*tubus {width: 702px;
-height: 70px;}*/
-/*
-productman news {font-family: Raleway;
-color:  #303030;
-font-size: 48px; 
-font-weight: 900;
-line-height: 150px; 
-text-align: center;}*/
+.my__flex__block img:hover {
+background: red;
+}
 
+
+.info__email__form {
+font-family: Raleway;
+color:  #303030;
+font-size: 0; 
+
+line-height: 150px; 
+text-align: center;
+}
+
+.info__email__input {
+
+border-radius: 50px 0 0 50px;
+margin: 0;
+padding: 5px;
+height: 71px;
+width: 496px;
+font-size: 11px; 
+}
+
+.info__email__button{
+border: 0.5px solid red;
+background: red;
+border-radius: 0 50px 50px 0;
+margin-left:-2px;
+padding: 5px;
+height: 71px;
+width: 210px;
+font-size: 15px; 
+}
+
+.info__email__button:hover {
+	cursor: pointer;
+}
+
+.footer__social {
+line-height: 150px; 
+text-align: center;
+
+}
+
+.footer__list li {
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+}
 /*lorem {font-family: Raleway;
 color:  #303030;
 font-size: 18px;
