@@ -81,6 +81,11 @@ body
     position: relative;
     z-index: 2;
 }
+.first-screen img {
+    position: absolute;
+    z-index: -1;
+}
+
 .first-screen .logo__link
 {
     display: block;
@@ -141,4 +146,35 @@ body
 .first-screen .navigation .menu__link:hover
 {
     color: #48bf72;
+}
+
+.text {
+    margin-top: 100px;
+    padding: 0;
+
+}
+.text h1 {
+      width: 100%;
+    display: inline-block;
+    font-size: 36px;
+    text-align: center;
+}
+.text h2 {
+       width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+
+}
+.text button {
+    display: block;
+    margin: auto;
+    width: 136px;
+    height: 37px;
+    border-radius: 2px;
+    border: 0.5px solid green;
+    background: transparent;
+    margin-top: 50px;
+        
 }
