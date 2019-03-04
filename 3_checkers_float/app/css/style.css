@@ -1,4 +1,4 @@
-
+* {box-sizing: border-box;}
 
 html {
     line-height: 1.2;
@@ -23,76 +23,52 @@ main {
 	margin: auto;
 	border: 15px solid #7e919c;
     box-sizing: content-box;
+    clear: both;
+    
   
 }
 
-
-.rows1 .row__black, .rows2 .row__green {
-    width: 160px;
+.block .top {
+    width: 640px;
     height: 80px;
-
-}
+    clear: both;
    
-.rows1
-    { margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;}
-
-
- 
-
- .row__black {
-    display: inline-block;
-    min-width: 160px;
+}
+.block .bottom {
+   width: 640px;
     height: 80px;
-    border: none;
     clear: both;
-    background: black;
 }
 
-
-.rows1 .row__cell__1 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-.rows1 .row__cell__2 {
+.row >* {
     width: 80px;
     height: 80px;
-    float: right;
-    background: red;
-    border: none;
 }
 
-.row__green {
-    display: inline-block;
-    min-width: 160px;
-    height: 80px;
-    border: none;
-    clear: both;
-    background: green;
-}
- .row__green .row__cell__1 {
-   margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+div .one .kub1
+ {  
+    background-color: red;
 }
 
-.rows2 .row__cell__2 {
-    width: 80px;
-    height: 80px;
-    float: left;
-    background: red;
-    border: none;
+div .one .kub2 {
+  
+    background-color: green;
 }
+
+div .two .kub1 { 
+    
+    background-color:green ;
+}
+
+div .two .kub2 {
+
+    background-color:red ;
+}
+
+
+
+    
+
+
+
+
