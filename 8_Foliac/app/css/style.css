@@ -46,14 +46,78 @@ body
     display: flex;
 }
 
+.top-line .logo__link
+{
+    display: block;
+}
+
+.top-line .navigation
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.top-line .navigation .menu
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+.top-line .navigation .menu__item
+{
+    position: relative;
+
+    min-width: 60px; 
+
+    list-style: none;
+}
+.top-line .navigation .menu__item:not(:last-child)::after
+{
+    position: absolute;
+    top: 0;
+    right: -100%; 
+
+    content: '/';
+}
+.top-line .navigation .menu__link
+{
+    font-weight: bold;
+
+    display: block;
+
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease; 
+    text-decoration: none;
+    text-transform: capitalize;
+
+    color: white;
+}
+.top-line .navigation .menu__link:hover
+{
+    color: #48bf72;
+}
+
 .first-screen
 {
     position: relative;
     z-index: 0;
 
     min-height: 100vh;
+    padding-top: 35px; 
 
-    color: white; 
+    color: white;
     background: #3c4955 url('../img/header-img.jpg') no-repeat;
     background-size: cover;
 }
@@ -62,6 +126,25 @@ body
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.first-screen .row:last-child
+{
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.first-screen .row:last-child > *
+{
+    text-align: center;
+}
+.first-screen .row > *
+{
+    text-transform: uppercase;
 }
 .first-screen::before
 {
@@ -81,100 +164,39 @@ body
     position: relative;
     z-index: 2;
 }
-.first-screen img {
-    position: absolute;
-    z-index: -1;
-}
-
-.first-screen .logo__link
+.first-screen .title
 {
-    display: block;
+    font-family: 'Big John';
+    font-size: 46px;
+
+    margin: 0 0 20px;
 }
-.first-screen .navigation
+.first-screen .subtitle
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-family: 'Slim Joe';
+    font-size: 30px;
 
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    margin-bottom: 35px;
 }
-.first-screen .navigation .menu
+.first-screen .btn
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-size: 14px;
 
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-}
-.first-screen .navigation .menu__item
-{
-    position: relative;
+    max-width: 140px;
+    padding: 10px;
 
-    min-width: 60px; 
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+            transition: all .2s ease; 
 
-    list-style: none;
-}
-.first-screen .navigation .menu__item:not(:last-child)::after
-{
-    position: absolute;
-    top: 0;
-    right: -100%; 
-
-    content: '/';
-}
-.first-screen .navigation .menu__link
-{
-    font-weight: bold;
-
-    display: block;
-
-    -webkit-transition: color .3s ease;
-            transition: color .3s ease; 
-    text-decoration: none;
-    text-transform: capitalize;
-
-    color: white;
-}
-.first-screen .navigation .menu__link:hover
-{
     color: #48bf72;
+    border: 2px solid currentColor;
+    border-radius: 3px;
+    background: none;
 }
-
-.text {
-    margin-top: 100px;
-    padding: 0;
-
-}
-.text h1 {
-      width: 100%;
-    display: inline-block;
-    font-size: 36px;
-    text-align: center;
-}
-.text h2 {
-       width: 100%;
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 100;
-    text-align: center;
-
-}
-.text button {
-    display: block;
-    margin: auto;
-    width: 136px;
-    height: 37px;
-    border-radius: 2px;
-    border: 0.5px solid green;
-    background: transparent;
-    margin-top: 50px;
-        
+.first-screen .btn:hover
+{
+    color: white;
+    border-color: #48bf72; 
+    background-color: #48bf72;
 }
