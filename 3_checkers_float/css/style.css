@@ -1,0 +1,58 @@
+
+
+* {box-sizing: border-box;}
+
+html {
+    line-height: 1.2;
+    font-size: 100%;
+}
+
+body {
+    line-height: 1px;
+    font-size: 0;
+}
+main {
+
+    width: 100%;
+    
+}
+
+
+.container {
+
+    max-width: 640px;
+    height: 640px;
+    margin: auto;
+    border: 15px solid #7e919c;
+    box-sizing: content-box;
+  
+
+}
+
+.one {
+ 
+    float: left;
+
+} 
+.two {
+     float: left;
+}
+
+.row > * {
+    width: 80px;
+    height: 80px;
+}
+
+.kub1 {  
+
+    background-color: red;
+}
+
+.kub2 {
+  
+    background-color: green;
+}
+
+
+
+
