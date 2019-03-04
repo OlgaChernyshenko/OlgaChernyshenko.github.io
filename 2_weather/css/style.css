@@ -27,6 +27,7 @@ h2 {
   display: block;
   font-size: 34px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .main {
@@ -72,6 +73,7 @@ li {
 
 .ba-sities p span {
   display: block;
+  vertical-align: middle;
   font-size: 1.5rem;
   opacity: 0.5;
 
