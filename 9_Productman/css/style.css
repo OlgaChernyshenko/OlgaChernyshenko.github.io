@@ -1,0 +1,132 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+html, body {
+
+	font-family: Sans-serif;
+}
+
+body {font-size: 0;
+	
+	
+	color: white;
+	border: 3px solid white;
+	background-color:  #222222;
+}
+
+
+main {
+	width: 800px;
+	margin: auto; 
+
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: 135px;
+	padding: 15px;
+	background-color: #4A4F56;
+	margin-bottom: 50px;
+
+}
+h1, h2 {	
+	font-style: Sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	color: #eb7e7f;
+	padding: 5px;
+
+} 
+
+
+.dinner-css-header > * {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.dinner-css-header > *:last-child {
+	margin-bottom: 0; 
+}
+
+
+.dinner-css-form {
+	max-width: 100%;
+	margin: auto; 
+	
+}
+
+
+.dinner-css-list-label {
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	display: block;
+	min-height: 50px;
+	padding-left: 15px;
+	background-color: #7a7593;
+
+	line-height: 2.9;
+	cursor: pointer;
+}
+.dinner-css-list {
+	margin-bottom: 50px;
+}
+.dinner-css-list-item {
+	list-style: none; }
+
+	span {
+		font-size: 1.3rem;
+	}
+	em {   font-size: 1rem; }
+
+	.dinner-css-list-label >* {
+		vertical-align: middle; 
+	}
+
+	.dinner-css-list-label > *:not(:last-child) {
+		margin-right: .5rem; 
+	}
+
+
+	.dinner-css-list-item:nth-child(odd) label {
+		background-color: #88839e; 
+	}
+
+	.dinner-css-list-item [type="checkbox"] {
+		zoom: 200%; 
+	}
+
+
+	.dinner-css-list-item [type="checkbox"]:checked ~* 
+	{
+		color: rgba(255, 255, 255, 0.5);
+		text-decoration: line-through;
+	}
+
+	.dinner-css-list-label:hover {
+		border-color: white;
+
+	}
+
+	.dinner-css-list-label:active {
+		background-color: #eb7e7f !important; 
+	}
+
+
+	.dinner-bott {
+		min-height: 50px;
+		width: 100%;
+		color: #eb7e7f;
+		font-weight: bold;
+		font-size: 1.3rem;
+		background-color: #4A4F56;
+		border: none;
+		cursor: pointer; 
+		padding: 20px 0;
+
+	}
+
