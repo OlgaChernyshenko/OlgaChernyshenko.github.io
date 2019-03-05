@@ -1,0 +1,196 @@
+html,
+body
+{
+    min-height: 100vh;
+}
+html body,
+body body
+{
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-size: 18px;
+
+    width: 100%;
+    height: 100%;
+
+    color: #303030;
+    background-color: #eee;
+}
+html body .container,
+body body .container
+{
+    width: 70%;
+    margin: auto;
+}
+html body .container .header,
+body body .container .header
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: flex-streth;
+    -ms-flex-align: flex-streth;
+    align-items: flex-streth;
+}
+html body .container .header .header__link,
+body body .container .header .header__link
+{
+    -webkit-transition: color .3s ease-out;
+            transition: color .3s ease-out;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: black;
+    color: #303030;
+}
+html body .container .header .nav__header,
+body body .container .header .nav__header
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 50%;
+
+    list-style: none; 
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: flex-streth;
+    -ms-flex-align: flex-streth;
+    align-items: flex-streth;
+}
+html body .container .header .nav__header .nav__link,
+body body .container .header .nav__header .nav__link
+{
+    -webkit-transition: color .3s ease-out;
+            transition: color .3s ease-out;
+    text-decoration: none;
+
+    color: black;
+    color: #303030;
+}
+html body .container .header .nav__header .exit,
+body body .container .header .nav__header .exit
+{
+    list-style: none;
+}
+html body .container .header .nav__header .exit li,
+body body .container .header .nav__header .exit li
+{
+    font-weight: 900;
+    line-height: 8px;
+
+    -webkit-transition: color .3s ease-out;
+            transition: color .3s ease-out;
+
+    color: #303030;
+}
+html body .container .top__panel .gradient,
+body body .container .top__panel .gradient
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+
+    background-image: url('..img/gradien.png');
+    background-position: center;
+    background-size: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+html body .container .top__panel .gradient .slider__box--text,
+body body .container .top__panel .gradient .slider__box--text
+{
+    width: 50%;
+
+    text-align: right;
+}
+html body .container .top__panel .gradient .slider__box--text .slider_h2,
+body body .container .top__panel .gradient .slider__box--text .slider_h2
+{
+    font-weight: 900;
+}
+html body .container .top__panel .gradient .slider__list,
+body body .container .top__panel .gradient .slider__list
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html body .container .slider__list,
+body body .container .slider__list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%; 
+
+    list-style: none;
+
+    text-align: center;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+html body .container .slider__list .slider__link,
+body body .container .slider__list .slider__link
+{
+    font-weight: 900;
+
+    -webkit-transition: color .3s ease-out;
+            transition: color .3s ease-out;
+    text-decoration: none;
+
+    color: #303030;
+}
+html body .container .galery,
+body body .container .galery
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+}
+html body .container .galery .info__panel,
+body body .container .galery .info__panel
+{
+    width: 100%;
+
+    text-align: center;
+}
