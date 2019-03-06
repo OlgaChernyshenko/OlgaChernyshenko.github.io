@@ -14,7 +14,7 @@ html,body {
 
 body {
 	background: #FF4040;	
-	color:#A60000;
+	color: black;
 	font-size: 100%;
 }
 
@@ -40,14 +40,15 @@ li {
 	margin: 10px;
 	padding: 0;
 	width: 200px;
-	height: 200px;
+	height: 250px;
 	background: #FF7373;
 	text-align: center;
 	vertical-align: bottom;
 }
 .i { 
 	display: block;
-	width: 90%;
+	width: 180px;
+	height: 180px;
 	margin: 5%;
 	padding:0;
 }
@@ -69,10 +70,9 @@ li {
  }
 
 span {
-	position: absolute;
 	display: block;
-	margin-top: -60px;
-	padding-left:20px;
+	margin-top: 5px;
+	
 	}
 
 em {display: block;
