@@ -14,7 +14,7 @@ body
 
 body
 {
-    font-family: Arial, Montserrat, sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 10px;
 
     margin: 0;
@@ -68,7 +68,7 @@ body
 
     width: 800px;
     height: 600px;
-    margin-bottom: 15px;
+    margin-right: 10px;
     padding: 30px;
 
     background: url('../img/main1.png') no-repeat 50% 50%;
@@ -85,7 +85,8 @@ body
 }
 .container__rose .a
 {
-    font-weight: 700; 
+    font-size: 15px; 
+    font-weight: 700;
 
     text-decoration: none;
 
@@ -93,16 +94,21 @@ body
 }
 .container__rose .p
 {
-    font-size: 12px;
+    font-size: 14px;
 
     margin: 0;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 
+    opacity: .6; 
     color: #4b5052;
 }
 .container__rose .p__b
 {
+    font-size: 14px; 
+
     margin: 0;
+
+    opacity: .6;
 }
 .container__rose .form
 {
@@ -112,6 +118,12 @@ body
 
     border-radius: 3px; 
     background-color: #fff;
+}
+.container__rose .form .long :active,
+.container__rose .form .long :hover,
+.container__rose .form .long :focus
+{
+    border: .5px solid #ea355a;
 }
 .container__rose .form .top
 {
@@ -147,33 +159,13 @@ body
 
     color: black;
 }
-.container__rose .form .input
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        flex-direction: column;
-
-    -webkit-transition: all .2s ease-in;
-            transition: all .2s ease-in; 
-
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-}
 .container__rose .form .input__submit
 {
     font-size: 16px;
     font-weight: 600;
 
     width: 100%; 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 15px;
 
     cursor: pointer;
@@ -204,28 +196,36 @@ body
     -ms-flex-align: stretch;
     align-items: stretch;
 }
+.container__rose .form .input__short :active,
+.container__rose .form .input__short :hover,
+.container__rose .form .input__short :focus
+{
+    border: .5px solid #ea355a;
+}
 .container__rose .form .input__short *
 {
+    font-size: 16px;
+
     width: 48%; 
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
 
     color: #ea355a;
-    border: none;
+    border: .5px solid #f0f0f0;
     border-radius: 3px;
-    outline: none;
     background-color: #f0f0f0;
 }
 .container__rose .form .input__long
 {
+    font-size: 16px;
+
     width: 100%; 
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px;
 
     color: #ea355a;
-    border: none;
+    border: .5px solid #f0f0f0;
     border-radius: 3px;
-    outline: none;
     background-color: #f0f0f0;
 }
 .container__green
@@ -237,12 +237,13 @@ body
 
     width: 800px;
     height: 600px;
-    margin-bottom: 15px;
+    margin: 0;
     padding: 30px;
 
-    border: 1px solid red;
-    background: url('../img/main2.png') no-repeat 100% 50%;
-    background-color: #787878;
+    border: 1px solid #ea355a;
+    background: url('../img/main2.png') no-repeat 100% 100%;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -260,6 +261,7 @@ body
     height: 536px;
     padding: 0;
 
+    color: grey; 
     background-color: #fff;
 }
 .container__green__form__yelow
@@ -286,35 +288,29 @@ body
     -ms-flex-align: center;
     align-items: center;
 }
+.container__green__form__yelow *
+{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    line-height: 1.4;
+
+    opacity: .5;
+}
 .container__green__form__yelow .h1
 {
-    font-size: 12px;
-
-    margin: 0;
-
-    text-transform: uppercase;
+    font-size: 16px;
 }
 .container__green__form__yelow .p
 {
-    font-size: 28px;
-
-    display: box;
-
-    margin: 0;
-
-    text-transform: uppercase;
+    font-size: 34px;
 }
 .container__green__form__yelow .span
 {
-    font-size: 10px;
+    font-size: 14px;
 
     display: block;
-
-    margin: 0;
-
-    text-transform: uppercase;
 }
-.container__green .content
+.container__green__form .content
 {
     font-size: 10px;
 
@@ -336,11 +332,16 @@ body
     -ms-flex-align: stretch;
     align-items: stretch;
 }
-.container__green .content__label
+.container__green__form .content__label
 {
+    font-size: 12px; 
+    font-weight: 700;
+
     margin-bottom: 10px;
+
+    opacity: .6;
 }
-.container__green .content__box2
+.container__green__form .content__box2
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -357,26 +358,34 @@ body
     -ms-flex-align: baseline;
     align-items: baseline;
 }
-.container__green .content__text
+.container__green__form .content__text
 {
     width: 100%;
     height: 40px;
     margin-bottom: 34px;
+
+    color: grey;
 }
-.container__green .content__select1
+.container__green__form .content__select1
 {
     width: 60%;
     height: 40px;
     margin-bottom: 34px;
+
+    color: grey;
 }
-.container__green .content__select2
+.container__green__form .content__select2
 {
     width: 35%;
     height: 40px;
     margin-bottom: 34px;
+
+    color: grey;
 }
-.container__green .content__box3
+.container__green__form .content__box3
 {
+    font-size: 14px;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -396,25 +405,52 @@ body
     -ms-flex-align: end;
     align-items: flex-end;
 }
-.container__green .content__box3__text4
+.container__green__form .content__box3__text4
 {
     width: 30%;
     height: 100%;
 }
-.container__green .content__box3__text5
+.container__green__form .content__box3__text5
 {
     display: block;
 
-    width: 55%; 
+    width: 65%;
     height: 100%;
     margin: 0;
-    padding: 15px;
+    padding: 15px 0 15px 0;
+
+    text-align: left;
 }
-.container__green .content__box3__text5 .a
+.container__green__form .content__box3__text5 .a
 {
     color: grey;
 }
-.container__green .content__line
+.container__green__form .content__line
 {
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 30px; 
+
+    color: grey;
+
+    align: center;
+    size: .5;
+}
+.container__green__form .content__submit
+{
+    font-size: 20px;
+    font-weight: 900;
+
+    display: block;
+
+    width: 100%;
+    height: 45px;
+    margin: 0;
+
+    cursor: pointer; 
+
+    color: #fff;
+    border: none;
+    background-color: #26b168;
+    -webkit-box-shadow: 0 0 3px green;
+            box-shadow: 0 0 3px green;
 }
