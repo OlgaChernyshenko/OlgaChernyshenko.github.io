@@ -4,6 +4,8 @@
             box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    border: none;
 }
 
 html,
@@ -16,7 +18,7 @@ body
 
 body
 {
-    line-height: 1;
+    line-height: 1,5;
 
     min-height: 100vh;
     margin: 0;
@@ -27,7 +29,7 @@ body
 .container
 {
     position: relative;
-    z-index: 0; 
+    z-index: -1; 
 
     width: 800px;
     height: 600px;
@@ -37,7 +39,7 @@ body
 .product
 {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 100px;
     left: 55px; 
 
@@ -50,7 +52,7 @@ body
 .logo__img
 {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: 10px;
     top: 25px;
     left: 10px;
@@ -59,6 +61,15 @@ body
     width: 10%;
 }
 
+.card__galery__foto
+{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 30px;
+
+    margin-bottom: 68px;
+}
 .card__galery__foto .a
 {
     width: 345px;
@@ -68,4 +79,78 @@ body
 {
     width: 100%;
     height: 100%;
+}
+
+.card .galery__slider
+{
+    font-size: 100%;
+
+    position: absolute;
+    z-index: 2;
+    top: 360px;
+    left: 172px; 
+
+    width: 71px;
+    height: 18px;
+}
+.card .galery__slider__around
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.card .galery__slider__around__li
+{
+    margin-bottom: 0;
+}
+.card .galery__slider__around__li .input
+{
+    font-size: 100%;
+}
+
+.card .info
+{
+    position: absolute;
+    z-index: 4;
+    top: 78px;
+    left: 442px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 200px;
+    height: 300px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.card .info .h2
+{
+    font-size: 14px;
+}
+.card .info .p
+{
+    font-size: 10px;
+
+    margin-bottom: 66px;
 }
