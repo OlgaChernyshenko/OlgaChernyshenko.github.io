@@ -18,33 +18,42 @@ body
 
 body
 {
+    font-size: 100%;
     line-height: 1,5;
 
-    min-height: 100vh;
     margin: 0;
 
     color: white;
+    background-color: #c5c5c8;
 }
 
 .container
 {
-    position: relative;
-    z-index: -1; 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-    width: 800px;
-    height: 600px;
-    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: auto; 
+
+    background: url(..img/gr3.png) no-repeat 50% 50%;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .product
 {
-    position: absolute;
-    z-index: 0;
-    top: 100px;
-    left: 55px; 
+    position: relative;
+    z-index: 1; 
 
-    width: 686px;
-    height: 392px;
+    width: 100%;
+    max-width: 686px;
+    min-height: 392px;
 
     background-color: #111a28;
 }
@@ -52,7 +61,7 @@ body
 .logo__img
 {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 10px;
     top: 25px;
     left: 10px;
@@ -64,7 +73,7 @@ body
 .card__galery__foto
 {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 120px;
     left: 30px;
 
@@ -86,7 +95,7 @@ body
     font-size: 100%;
 
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 360px;
     left: 172px; 
 
@@ -122,7 +131,7 @@ body
 .card .info
 {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
     top: 78px;
     left: 442px;
 
