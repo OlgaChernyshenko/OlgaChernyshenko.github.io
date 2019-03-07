@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="container__rose">
 
-			<form class="form" action="http://ab-w.net/comments.php" method="post">
+			<form class="form" action="" method="post">
 
 				<div class="top">
 					<img class="top__img" src="img/key.png" alt="key">
@@ -23,21 +23,21 @@
 					<h1 class=top__h1>Create your free account</h1>
 				</div>
 
-				<p class="p">Come and join our cool and amazing community, fill in your details to get started. Already have an account?
-					<a class="a" href="#">Log in.</a>
+				<p class="top__p">Come and join our cool and amazing community, fill in your details to get started. Already have an account?
+					<a class="top__a" href="#">Log in.</a>
 				</p>
 				<div class="long">
-					<input class="input__long" type="text" name="text" value="" placeholder="First name" size="25">
+					<input class="input__long" type="text" name="text" value="" required placeholder="First name" pattern="" size="25">
 
 
 
-					<input class="input__long" type="text" name="text" value="" placeholder="Last name" size="25">
+					<input class="input__long" type="text" name="text" value="" required placeholder="Last name" pattern="" size="25">
 
 				</div>
 				<div class="input__short">
 
-					<input class="input__short__on" type="text" name="email" value="" placeholder="Email address" size="25" >
-					<input class="input__short__tw" type="password" name="pasw" value=""  placeholder="Password" size="25" maxlength="8">
+					<input class="input__short__on" type="text" name="email" value="" required placeholder="Email address" pattern="" size="25" >
+					<input class="input__short__tw" type="password" name="pasw" value="" pattern="" required placeholder="Password" size="25" maxlength="8">
 
 				</div>
 
@@ -46,7 +46,7 @@
 
 				<input class="input__submit" type="submit" name="submit" value="Sign up for free">
 
-				<p class="p__b">By clicking on “Sign up for free”, you agree to the 
+				<p class="midl__p">By clicking on “Sign up for free”, you agree to the 
 					<a class="a" href="#">Terms of Service</a> and the <a class="a" href="#">Privacy Policy</a>
 				</p>
 
@@ -57,39 +57,42 @@
 
 		<div class="container__green">
 
-			<form class="container__green__form" action="http://ab-w.net/comments.php" method="post">
+			<form class="container__green__form" action="" method="post">
 
 				<div class="container__green__form__yelow">
 
-					<h1 class="h1">Harold Finch 
+					<h1 class="top__h1">Harold Finch 
 
 						<span class="span">your total</span></h1>
 
-						<p class="p">$88</p>
+						<p class="top__p">$88</p>
 
 					</div>
 
 					<div class="content">
 
 						<label class="content__label" for="1">Credit card number</label>
-						<input class="content__text" type="text"  size="20" id="1" value="" placeholder="Card number"> 
+						<input class="content__text" type="text"  size="20" id="1" value="" maxlength="16" pattern="[0-9]{16}" required placeholder="Card number"> 
 
 
 						<label class="content__label" for="2">Expiration date</label>
 
+
+
+
 						<div class="content__box2">
 
-							<select class="content__select1" name="select" id="2" size="1">
+							<select class="content__box2__select__1" name="select" id="2" size="1">
 
-								<option selected="" value="first">Month</option>
+								<option selected="" placeholder="first" value="">Month</option>
 								<option value="second">1</option>
 								<option value="third">2</option>
 								<option value="fourth">3</option>
 							</select>
 
-							<select class="content__select2" name="select" id="3" size="1">
+							<select class="content__box2__select__2" name="select" id="3" size="1">
 
-								<option selected="" value="first">Year</option>
+								<option selected="" placeholder="first" value="">Year</option>
 								<option value="second">2019</option>
 								<option value="third">2018</option>
 								<option value="fourth">2017</option>
@@ -98,20 +101,24 @@
 
 						</div>
 
+
+
 						<label class="content__label" for="4">CVV</label>
 
 						<div class="content__box3">
 
-							<input class="content__box3__text4" type="text" maxlength="3" id="4" size="20" value="" placeholder=""> 
+							<input class="content__box3__text4" type="text" maxlength="4" id="4" pattern="[0-9]{4}" size="20" value="" required placeholder=""> 
 
 
-							<p class="content__box3__text5">3 or 4 digits - <a class="a" href="#">viev example</a></p>
+							<div class="content__box3__text5">3 or 4 digits - <a class="doun__a" href="#">viev example</a></div>
 						</div>
 
 						<hr class="content__line">
 
 
-						<input class="content__submit" type="submit" name="submit" value="Pay" >
+						<input class="content__submit" type="submit" name="submit" pattern="" value="Pay" >
+
+						<a class="after__a" href="#">Cancel order</a>
 					</div>
 				</form>
 			</div>
