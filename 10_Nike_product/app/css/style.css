@@ -1,0 +1,71 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    font: inherit; 
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+body
+{
+    line-height: 1;
+
+    min-height: 100vh;
+    margin: 0;
+
+    color: white;
+}
+
+.container
+{
+    position: relative;
+    z-index: 0; 
+
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+.product
+{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 55px; 
+
+    width: 686px;
+    height: 392px;
+
+    background-color: #111a28;
+}
+
+.logo__img
+{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    top: 25px;
+    left: 10px;
+    left: 15px; 
+
+    width: 10%;
+}
+
+.card__galery__foto .a
+{
+    width: 345px;
+    height: 256px;
+}
+.card__galery__foto .a .img
+{
+    width: 100%;
+    height: 100%;
+}
