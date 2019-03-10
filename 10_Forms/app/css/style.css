@@ -178,7 +178,6 @@ body {
 .container__rose .form .input__submit {
 	border: none;
 	outline: none;
-	background-color: #f0f0f0;
 	margin-bottom: 20px;
 	padding: 15px;
 	border-radius: 3px;
@@ -344,22 +343,26 @@ body {
 	font-size: 14px;
 	opacity: .6;
 	font-weight: 700;
-	padding: 10px  50px 10px 10px;
 }
 .container__green .form .box2__label--1 {
 	width: 60%;
+	height: 100%;
 }
 .container__green .form .box2__label--2 {
 	width: 38%;
-}
-.container__green .form .box2__select--1,
-.container__green .form .box2__select--2 {
-	width: 100%;
 	height: 100%;
 }
 .container__green .form .box2__select--1:hover,
 .container__green .form .box2__select--2:hover {
 	border: 1px solid red;
+}
+.container__green .form .box2__select--1 {
+	width: 100%;
+	padding: 10px 0;
+}
+.container__green .form .box2__select--2 {
+	width: 100%;
+	padding: 10px 0;
 }
 .container__green .form .box3__label {
 	max-width: 30%;

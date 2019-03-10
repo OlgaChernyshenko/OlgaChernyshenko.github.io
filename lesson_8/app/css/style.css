@@ -392,3 +392,41 @@ body {
 	padding: 50px 0;
 	background-color: #3c4955;
 }
+
+.contacts {
+	padding: 50px 0;
+}
+.contacts .container {
+	max-width: 700px;
+}
+.contacts .input-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.contacts__title {
+	font-size: 26px;
+	color: #48bf72;
+	font-family: "Big John";
+	text-align: center;
+	margin-bottom: 2.3rem;
+}
+.contacts__form > * {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.contacts__label {
+	width: 100%;
+	max-width: 330px;
+}
+.contacts__input {
+	width: 100%;
+}
+.contacts__textarea,
+.contacts [type="submit"] {
+	width: 100%;
+}

@@ -1,6 +1,5 @@
 * {	
 	box-sizing: border-box;
-
 	margin: 0;
 	padding: 0;
 }
@@ -8,10 +7,7 @@
 html,body{
 	height: 100vh;
 	line-height: 1.15;
-
 }
-
-
 
 body {
 	font-family: 'Montserrat', 'Arial', sans-serif;
@@ -19,38 +15,33 @@ body {
 	background-color:#808080;
 	margin: 0;
 	padding: 10px;
-	
 }
 
 .container {
-
 	width: 1600px;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: flex-start;
-
 	
 	&__* {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-
 	}
 
-	&__rose {
+	&__rose
+	 {
 		width: 800px;
 		height: 600px;
 		background: rgba(255,0,132,1);
-		
 		margin-right: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		
 		
 		.top__text {
 			color: #4b5052;
@@ -58,15 +49,13 @@ body {
 			margin: 0;
 			margin-bottom: 25px;
 			opacity: .6;
-			
-		}
+			}
+
 		.midl__text {color: #4b5052;
 			opacity: .6;
 			margin: 0;
 			font-size: 14px;
-
 		}
-		
 		
 		.form {
 			max-width: 461px;
@@ -75,45 +64,37 @@ body {
 			background-color: #ffffff;
 			border-radius: 3px;
 
+		.top {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+			margin-bottom: 25px;
 
-			.top {
-				width: 100%;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: baseline;
-				margin-bottom: 25px;
-
-
-
-				&__img {
-					width: 5%;
-					height: 5%;
-
+			&__img {
+				width: 5%;
+				height: 5%;
 				}	
 
-				&__h1 {
-					width: 90%;
-					text-align: center;
-					padding-right: 7%;
-					font-size: 1.4rem;
-					color: black;
-					margin: 0;
+			&__h1 {
+				width: 90%;
+				text-align: center;
+				padding-right: 7%;
+				font-size: 1.4rem;
+				color: black;
+				margin: 0;
 				}
-				&__link {
-					color: #ea355a;
-					text-decoration: none;
-					font-weight: 700;
-					font-size: 15px;
-
-
+			&__link {
+				color: #ea355a;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 15px;
 				}
 			}
-
-			
-
-			.input__long	{
-
+		
+			.input__long	
+			{
 				border: 0.5px solid #f0f0f0;
 				background-color: #f0f0f0;
 				margin-bottom: 15px;
@@ -122,8 +103,6 @@ body {
 				color: #ea355a;
 				font-size: 16px;
 				width: 100%;
-
-				
 			}
 			.long__label { :hover {
 				border: 0.5px solid #ea355a;
@@ -133,10 +112,10 @@ body {
 		}
 		
 
-		.input__short {
+		.input__short 
+		{
 			border: 0.5px solid #f0f0f0;
 			background-color: #f0f0f0;
-
 			padding: 15px;
 			border-radius: 3px;
 			color: #ea355a;
@@ -145,8 +124,8 @@ body {
 
 		}
 
-
-		.short {
+		.short 
+		{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -162,15 +141,10 @@ body {
 					transition: all .1s ease-in;
 				}
 			}
-
 		}
-
-
-
 
 		.input__submit {
 			border: none; outline: none;
-			background-color: #f0f0f0;
 			margin-bottom: 20px;
 			padding: 15px;
 			border-radius: 3px;
@@ -181,20 +155,16 @@ body {
 			font-size: 16px;
 			font-weight: 600;
 			width: 100%;
-
-
 		}
-
 		.bottom__text {
 			color: #4b5052;
 			font-size: 14px;
 			margin: 0;
 			margin-bottom: 25px;
 			opacity: .6;
-
 		}
 
-		.bottom__link {
+	.bottom__link {
 			color: #ea355a;
 			text-decoration: none;
 			font-weight: 700;
@@ -227,78 +197,83 @@ body {
 		background-color: #ffffff; 
 		color: grey;
 
-
 		.yelow {
 			margin: 0;
 			padding: 0 25px 0 25px;
 			background-color: #efe4aa;
 			width: 100%;
 			height: 72px;
-
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
 
 			* {
-				font-weight: 700;
-				line-height: 1.4; 
-				opacity: .5;
-				font-family: 'Montserrat', 'Arial', sans-serif;
+			font-weight: 700;
+			line-height: 1.4; 
+			opacity: .5;
+			font-family: 'Montserrat', 'Arial', sans-serif;
 
-				} }
+			} 
+		}
 
-				.top__h1 {
+			.top__h1 {
 
-					font-size: 16px;
-					margin:0;
+			font-size: 16px;
+			margin:0;
 
-				}
+			}
 
-				.top__text {
+			.top__text 
+			{
 
-					font-size: 34px;
-					margin:0;
+			font-size: 34px;
+			margin:0;
 				}	
-				.top__span {
-					font-size: 14px;
-					margin:0;
-					display: block;
-				}
-				.text__before {
-					margin-bottom: 10px;
-					color: grey;
-					opacity: .6;
-				}							
 
-				.content {
-					width: 100%;
-					padding: 50px 25px 20px 25px;
-
-					display: flex;
-					flex-direction: column;
-					justify-content: space-between;
-					align-items: stretch; 
+			.top__span {
+			font-size: 14px;
+			margin:0;
+			display: block;
 				}
 
-				.box1,
-				.box2,
-				.box3{						
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					align-items: flex-end;
-					width: 100%;
-					height: 38px;
-					margin-bottom: 20px; 
-				}
+			.text__before 
+			{
+			margin-bottom: 10px;
+			color: grey;
+			opacity: .6;
+				}	
 
-				.box2__label--1,
-				.box2__label--2 {
-					position: relative;
-				
-				
-					&::after{
+			.content 
+			{
+			width: 100%;
+			padding: 50px 25px 20px 25px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: stretch; 
+			}
+
+			.box1,
+			.box2,
+			.box3
+			{						
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			width: 100%;
+			height: 38px;
+			margin-bottom: 20px; 
+			}
+
+			.box2__label--1,
+			.box2__label--2 
+			{
+			position: relative;
+					
+				&::after
+				{
 						content: "";
 						position: absolute;
 						display: block;
@@ -315,54 +290,66 @@ body {
 						pointer-events: none;
 					}
 
-					& > * {
-						
-						background-color: white;
-						color: grey;
-						font-size: 14px;
-				
-						opacity: .6;
-						font-weight: 700;
-						padding: 10px  50px 10px 10px;
+					& > * 
+					{
+				background-color: white;
+				color: grey;
+				font-size: 14px;
+				opacity: .6;
+				font-weight: 700;
+			
 					}
 				}
 
-.box2__label--1 {
-	width: 60%;
+				.box2__label--1 
+				{
+					width: 60%;
+					height: 100%;
 
-}
-.box2__label--2 {
-	width: 38%;
-}
+				}
+				.box2__label--2 
+				{
+				width: 38%;
+				height: 100%;
+				}
 
-.box2__select--1,
-.box2__select--2 {
-	width: 100%;
-	height: 100%;
+				.box2__select--1,
+				.box2__select--2
+				 {
+					
+					&:hover {
+						border: 1px solid red;
+					}
+				}
 
-	&:hover {
-		border: 1px solid red;
-		}
-	}
+				.box2__select--1 {
+					width: 100%;
+					padding: 10px 0;
+				}
+				.box2__select--2 {
+					width: 100%;
+					padding: 10px 0;
 
-									
+				}
 
-				.box3__label {
+				.box3__label 
+				{
 					max-width: 30%;
 					height: 38px;
 				}
 
 				.box1__input,
-				.box3__input {
-					border: 1px solid grey;
-					color: grey;
-					width: 100%;
-					height: 100%;
-					font-size: 14px;
-					padding-left: 10px;
-					color: grey;
-					opacity: .6;
-					font-weight: 700;
+				.box3__input 
+				{
+				border: 1px solid grey;
+				color: grey;
+				width: 100%;
+				height: 100%;
+				font-size: 14px;
+				padding-left: 10px;
+				color: grey;
+				opacity: .6;
+				font-weight: 700;
 
 					&:hover {
 						border: 1px solid red;
@@ -371,55 +358,51 @@ body {
 
 				.box3__text {
 
-					width: 100%;
-					height:100%;
-					font-size: 14px;
-					color: grey;
-					opacity: .6;
-					font-weight: 700;
-					padding: 10px;
-
+				width: 100%;
+				height:100%;
+				font-size: 14px;
+				color: grey;
+				opacity: .6;
+				font-weight: 700;
+				padding: 10px;
 					
-					.doun__link {
-						color: grey;
-						text-shadow: 0 0 1px grey;
+				.doun__link {
+				color: grey;
+				text-shadow: 0 0 1px grey;
 					}
 				}
 
-
 				.content__line {
-					width: 100%;
-					color: grey;
-					margin-top: 0px;
-					margin-bottom: 28px;
+				width: 100%;
+				color: grey;
+				margin-top: 0px;
+				margin-bottom: 28px;
 				}
 
 				.content__input {
-					display: block;
-					width: 100%;
-					height: 40px;
-					margin: 0;
-					margin-bottom: 10px;
-					color: #ffffff;
-					background-color: #26b168;
-					font-size: 20px;
-					font-weight: 900;
-					border: none;
-					box-shadow: 0 0 3px grey;
-					cursor: pointer;
+				display: block;
+				width: 100%;
+				height: 40px;
+				margin: 0;
+				margin-bottom: 10px;
+				color: #ffffff;
+				background-color: #26b168;
+				font-size: 20px;
+				font-weight: 900;
+				border: none;
+				box-shadow: 0 0 3px grey;
+				cursor: pointer;
 				}
 
 				.after__link {
-					color: grey;
-					text-align: center;
-					font-size: 14px;
-					font-weight: 700;
-					letter-spacing: 1px;
-					line-height: 1.5;
-					text-shadow: 0 0 1px grey;
-					margin:0;
-
-
+				color: grey;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 700;
+				letter-spacing: 1px;
+				line-height: 1.5;
+				text-shadow: 0 0 1px grey;
+				margin:0;
 				}
 			}
 
