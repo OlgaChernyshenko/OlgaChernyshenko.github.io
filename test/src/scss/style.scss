@@ -1,0 +1,59 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+// section {
+// 	min-height:20vh;
+// 	border-bottom: 1px solid black;
+
+// }
+// @for $i from 1 through 6 {
+//     .section-#{$i} {
+//         background-color: red;
+//     }
+// }
+
+// @each $color in red, blue, green, black, grey {
+//   .#{$color} {
+//     background-color: #{$color};
+//   }
+// }
+
+// $colors:(
+// red, blue, green, black, grey
+
+// 	);
+// @each $color in $colors {
+// 	section.#{$color} {
+// 		background-color: #{$color}
+// 	}
+// }
+
+// @each $animal in puma, sea-slug, egret, salamander {
+//   .#{$animal}-icon {
+//     background-image: url('/images/#{$animal}.png');
+//   }
+// }
+
+
+// $i: 6;
+// @while $i > 0 {
+//  .item-#{$i} { width: 2em * $i; }
+//  $i: $i - 2;
+// }
+
+
+html, body {
+	
+font-size: 32px;
+}
+
+body {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+}

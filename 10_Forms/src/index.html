@@ -23,106 +23,144 @@
 					<h1 class=top__h1>Create your free account</h1>
 				</div>
 
-				<p class="top__p">Come and join our cool and amazing community, fill in your details to get started. Already have an account?
-					<a class="top__a" href="#">Log in.</a>
+				<p class="top__text">Come and join our cool and amazing community, fill in your details to get started. Already have an account?
+
+					<a class="top__link" href="#">Log in.</a>
 				</p>
+
 				<div class="long">
-					<input class="input__long" type="text" name="text" value="" required placeholder="First name" pattern="" size="25">
+
+					<label class="long__label" for="1">
+
+						<input class="input__long" type="text" name="text" value="" id="1" required placeholder="First name" pattern="" size="25">
+					</label>
 
 
+					<label class="long__label" for="2">
+						<input class="input__long" type="text" name="text" value="" required id="2"placeholder="Last name" pattern="" size="25">
+					</label>
 
-					<input class="input__long" type="text" name="text" value="" required placeholder="Last name" pattern="" size="25">
 
 				</div>
-				<div class="input__short">
 
-					<input class="input__short__on" type="text" name="email" value="" required placeholder="Email address" pattern="" size="25" >
-					<input class="input__short__tw" type="password" name="pasw" value="" pattern="" required placeholder="Password" size="25" maxlength="8">
+				<div class="short">
+
+					<label class="short__label" for="3">
+
+						<input class="input__short" type="text" value="" id="3" required placeholder="Email address" pattern="" size="25" >
+					</label>
+
+					<label class="short__label" for="4">
+						<input class="input__short" type="password" value="" id="4" pattern="" required placeholder="Password" size="25" maxlength="8">
+					</label>
 
 				</div>
-
-
 
 
 				<input class="input__submit" type="submit" name="submit" value="Sign up for free">
 
-				<p class="midl__p">By clicking on “Sign up for free”, you agree to the 
-					<a class="a" href="#">Terms of Service</a> and the <a class="a" href="#">Privacy Policy</a>
+				<p class="bottom__text">By clicking on “Sign up for free”, you agree to the 
+					<a class="bottom__link" href="#">Terms of Service</a> and the <a class="bottom__link" href="#">Privacy Policy</a>
 				</p>
 
 
 			</form>
 		</div>
 
+<div class="container__green">
 
-		<div class="container__green">
+	<form class="container__green__form" action="" method="post">
 
-			<form class="container__green__form" action="" method="post">
+	<div class="container__green__form__yelow">
 
-				<div class="container__green__form__yelow">
+		<h1 class="top__h1">Harold Finch 
 
-					<h1 class="top__h1">Harold Finch 
+		<span class="span">your total</span></h1>
 
-						<span class="span">your total</span></h1>
+		<p class="top__text">$88</p>
 
-						<p class="top__p">$88</p>
+	</div>
 
-					</div>
+<div class="content">
 
-					<div class="content">
-
-						<label class="content__label" for="1">Credit card number</label>
+	<label class="content__label" for="5">Credit card number</label>
 						
-						<input class="content__text" type="text"  size="20" id="1" value="" maxlength="16" pattern="[0-9]{16}" required placeholder="Card number"> 
+	<input class="content__input" type="text"  size="20" id="5" value="" maxlength="16" pattern="[0-9]{16}" required placeholder="Card number"> 
+
+	
+
+	<div class="content__box">
+
+	<label class="content__box__label--1" for="7">Expiration date
+
+	<select class="content__box__select1" name="select" id="7" size="1">
+
+		<option selected=""  value="first">Month</option>
+		<option value="second">1</option>
+		<option value="third">2</option>
+		<option value="fourth">3</option>
+		</select>
+			</label>
+
+	<label class="content__box__label--2" for="8">
+								
+	<select class="content__box__select2" name="select" id="8" size="1">
+
+		<option selected=""  value="first">Year</option>
+		<option value="second">2019</option>
+		<option value="third">2018</option>
+		<option value="fourth">2017</option></select>
+			</label>
+
+	</div>
+				
+	<div class="content__box3">
+
+		<label class="content__box3__label" for="9">CVV
+		<input class="content__box3__input" type="text" maxlength="4" id="9" pattern="[0-9]{4}" size="20" value="" required placeholder=""> </label>
 
 
-						<label class="content__label" for="2">Expiration date</label>
+	<div class="content__box3__text5">3 or 4 digits - <a class="doun__link" href="#">viev example</a></div>
+	</div>
+
+	<hr class="content__line">
 
 
+	<input class="content__submit" type="submit" name="submit" pattern="" value="Pay" >
 
-
-						<div class="content__box2">
-
-							<select class="content__box2__select__1" name="select" id="2" size="1">
-
-								<option selected="" placeholder="first" value="">Month</option>
-								<option value="second">1</option>
-								<option value="third">2</option>
-								<option value="fourth">3</option>
-							</select>
-
-							<select class="content__box2__select__2" name="select" id="3" size="1">
-
-								<option selected="" placeholder="first" value="">Year</option>
-								<option value="second">2019</option>
-								<option value="third">2018</option>
-								<option value="fourth">2017</option>
-							</select>
-
-
-						</div>
-
-
-
-						<label class="content__label" for="4">CVV</label>
-
-						<div class="content__box3">
-
-							<input class="content__box3__text4" type="text" maxlength="4" id="4" pattern="[0-9]{4}" size="20" value="" required placeholder=""> 
-
-
-							<div class="content__box3__text5">3 or 4 digits - <a class="doun__a" href="#">viev example</a></div>
-						</div>
-
-						<hr class="content__line">
-
-
-						<input class="content__submit" type="submit" name="submit" pattern="" value="Pay" >
-
-						<a class="after__a" href="#">Cancel order</a>
-					</div>
-				</form>
-			</div>
+	<a class="after__link" href="#">Cancel order</a>
+	</div>
+			</form>
 		</div>
-	</body>
-	</html>
+	</div>
+</body>
+</html>
+
+
+	<!-- <form action="">
+		<label for="1">
+			<select name="" id="1">
+				<option value="Size" selected>Size</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</label>
+		<label for="2">
+			<select name="" id="2">
+				<option value="Quantity" selected>Quantity</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</label>
+	</form>
+-->
+
+
+
+
