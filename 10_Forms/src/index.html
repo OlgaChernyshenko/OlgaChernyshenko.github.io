@@ -28,12 +28,12 @@
 
 					<label class="long__label" for="1">
 
-						<input class="input__long" type="text" name="text" value="" id="1" required placeholder="First name" pattern="" size="25">
+						<input class="long__input" type="text" value="" id="1" required placeholder="First name" pattern="">
 					</label>
 
 
 					<label class="long__label" for="2">
-						<input class="input__long" type="text" name="text" value="" required id="2" placeholder="Last name" pattern="" size="25">
+						<input class="long__input" type="text" value="" required id="2" placeholder="Last name" pattern="">
 					</label>
 
 
@@ -43,11 +43,11 @@
 
 					<label class="short__label" for="3">
 
-						<input class="input__short" type="text" value="" id="3" required placeholder="Email address" pattern="" size="25" >
+						<input class="short__input" type="text" value="" id="3" required placeholder="Email address" pattern="" >
 					</label>
 
 					<label class="short__label" for="4">
-						<input class="input__short" type="password" value="" id="4" pattern="" required placeholder="Password" size="25" maxlength="8">
+						<input class="short__input" type="password" value="" id="4" pattern="" required placeholder="Password" maxlength="8">
 					</label>
 
 				</div>
@@ -78,21 +78,22 @@
 					</div>
 
 					<div class="content">
-						<p class="text__before">Credit card number</p>
-						<div class="box1">
+						
+						<div class="box--1">
 
 
-							<label class="box1__label" for="5"></label>
+							<label class="box--1__label" for="5">Credit card number
 
-							<input class="box1__input" type="text"  size="20" id="5" value="" maxlength="16" pattern="[0-9]{16}" required placeholder="Card number"> 
+								<input class="box--1__input" type="text"  id="5" value="" maxlength="16" pattern="[0-9]{16}" required placeholder="Card number">
+							</label>
 
 						</div>
-						<p class="text__before">Expiration date</p>
+						
 
-						<div class="box2">
+						<div class="box--2">
 
-							<label class="box2__label--1" for="7">
-								<select class="box2__select--1" name="select" id="7">
+							<label class="box--2__label--1" for="7">Expiration date
+								<select class="select--1" name="select" id="7">
 
 									<option selected value="first">Month</option>
 									<option value="second">1</option>
@@ -102,8 +103,8 @@
 							</label>
 
 
-							<label class="box2__label--2" for="8">
-								<select class="box2__select--2" name="select" id="8" size="1">
+							<label class="box--2__label--2" for="8"> 
+								<select class="select--2" name="select" id="8" size="1">
 									<option selected value="first">Year</option>
 									<option value="second">2019</option>
 									<option value="third">2018</option>
@@ -111,24 +112,25 @@
 								</select>
 							</label>
 						</div>
-						<p class="text__before">CVV</p>		
-						<div class="box3">
-							<label class="box3__label" for="9">
-								<input class="box3__input" type="text" maxlength="4" id="9" pattern="[0-9]{4}" size="20" value="" required placeholder=""> 
+						
+						<div class="box--3">
+							<label class="box--3__label" for="9">CVV
+								<input class="box--3__input" type="text" maxlength="4" id="9" pattern="[0-9]{4}" value="" required placeholder=""> 
 							</label>
-							<div class="box3__text">3 or 4 digits - <a class="doun__link" href="#">viev example</a>
+							<div class="box--3__text">3 or 4 digits - <a class="doun__link" href="#">viev example</a>
 							</div>
 						</div>
 
 						<hr class="content__line">
-							<input class="content__input" type="submit" name="submit" value="Pay" >
-							<a class="after__link" href="#">Cancel order</a>
-						</div>
-					</form>
-				</div>
+						<input class="input__submit" type="submit" name="submit" value="Pay" >
+
+						<p class="bottom__text"><a class="bottom__link" href="#">Cancel order</a></p>
+					</div>
+				</form>
 			</div>
-		</body>
-		</html>
+		</div>
+	</body>
+	</html>
 
 
 	<!-- <form action="">
