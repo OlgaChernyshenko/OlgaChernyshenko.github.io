@@ -320,7 +320,7 @@ body
 
 	:hover 
 	{
-	border: 1px solid red;
+	border: 1px solid blue;
 		}
 	}
 
@@ -390,7 +390,7 @@ body
 	.box--2__label--2 {
 
 	& > *:hover {
-	border: 1px solid red;
+	border: 1px solid blue;
 					} 
 	position: relative;
 	display: inline-block;
@@ -401,15 +401,15 @@ body
 	content: "";
 	position: absolute;
 	display: block;
-	$size: 2.5px;
+	$size: 2px;
 	width: $size;
 	height: $size;
-	border: 7px solid grey;
+	border: 5px solid grey;
 	border-left-color: transparent;
 	border-top-color: transparent;
 	transform: rotate(45deg) translateY(-50%);
 	pointer-events: none;
-	color: grey;
+
 
 		}
 
@@ -443,7 +443,7 @@ body
 	line-height: 25px;
 
 	& > *:hover {
-border: 1px solid red;
+border: 1px solid blue;
 	} 
 }
 
@@ -466,7 +466,7 @@ border: 1px solid red;
 	font-size: 14px;
 	color: grey;
 	opacity: .6;
-	font-weight: 700;
+	
 	padding: 12px 5px;
 	text-align: right;
 					
