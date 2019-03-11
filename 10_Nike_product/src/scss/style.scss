@@ -1,166 +1,226 @@
 
 html, body {
-line-height: 1.4;
+    line-height: 1.4;
 }
 
 body {
-font-size: 100%;
-font-family: Arial, sans-serif;
-font-size: 100%;
-display: flex;
-color: white;
-padding: 50px;        
-background: url('../img/background.png') no-repeat 50% 50%;
-background-color: #c5c5c8;
-align-items: center;    
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 50px;        
+    background: url('../img/nike_dark.png') no-repeat 50% 50%;
+    background-color: #c5c5c8;
+   
 }
 
 
 .info__h2 
-{
-    font-size: 24px;
-    max-width: 60%;
+{   font-size: 24px;
+    
     margin-bottom: 20px;
 }
 
 .info__p 
 {
-font-size: 12px;
+    font-size: 12px; 
+    margin-bottom: 20px;
 
 }
 
 .container {
-max-width: 800px;
-width: 100%;
-margin:auto;
+    max-width: 800px;
+    width: 100%;
+    min-height: 600px;
+    margin:auto;
 }
 
 .carta
 {    	
-max-width: 686px;
-width: 100%;
-min-height: 392px;
-background-color: #111a28;
-box-shadow:2px 2px 5px 5px #111a28;
-margin:auto;
-position: relative;
-z-index: 1;
+    max-width: 686px;
+    width: 100%;
+    min-height: 390px;
+    background-color: #111a28;
+    padding: 25px;
+    border-radius: 10px;
+    margin: auto ;
+    position: relative;
+    z-index: 1;
+    top:75px;
 }
 
-   
+
 .img__logo {
-width: 10%;
-position: absolute;
-z-index: 2;
-top: 10px;
-left: 10px;
-top: 25px;
-left: 15px;
-}
- 
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 22px;
+}   
+
 .link__foto {
-position: absolute;
-top: 130px;
-left: 40px;
-z-index: 3;
-width: 50%;
-cursor: pointer;
+    position: absolute;
+    top: 125px;
+    left: 35px;
+    z-index: 3;
+    width: 50%;
+    cursor: pointer;
 }
 
 
 .slider 
 {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-content: stretch;
  font-size: 100%;
- width: 71px;
- height: 18px;
+ width: 80px;
+ height: 12px;
  position: absolute;
  z-index: 4;
- top: 330px;
- left: 172px; 
+ top: 360px;
+ left: 175px; 
+
+ &__around 
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+&__li 
+{
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+
 }
 
-.slider__around 
+&__li:last-child 
 {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
+    margin-right: 0;
+}
+
+&__input 
+{
+    width: 15px;
+    height: 15px;
+   display: block;
+    cursor: pointer;
+    transition: all .2s ease;
+    
+}
+
 }
 
 
 .info 
 {
-width: 250px;
-height: 300px;
-position: absolute;
-z-index: 5;
-top: 78px;
-left: 442px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    top: 80px;
+    left: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.rating:after {
+.rating 
+{
+    padding:0;
+    margin-bottom: 20px;
 
-    content: '';
-    transform: rotate(45deg);
-    pointer-events: none;
-    opacity: .7;
-    color: #aaa;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    background-color: #111a28;
+    &:after {
+
+        content: '';
+        transform: rotate(45deg);
+        pointer-events: none;
+        opacity: .7;
+        color: #aaa;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        background-color: #111a28;
+    }
+    &:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+    &:not(:checked) > label {
+        float:right;
+        width:0.8rem;
+        padding:0.09rem;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:10px;
+        line-height:1.2;
+        color:#ddd;
+        
+    }
+    &:not(:checked) > label:before {
+        content: '';
+    }
+    & > input:checked ~ label {
+        color: #f70;
+        
+    }
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+        color: gold;
+        
+    }
+
+    & > input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label {
+        color: #ea0;
+        text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+    }
+    & > label:active {
+        position: relative;
+
+    }
+}
+
+.filtr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+
+    & > * {
+    height: 35px;    
+    font-size: 1rem;
+    color: grey;
+    background-color: transparent;  
+    border: 0.5px solid grey;
+
+
+    }
+
+    &__select--size {
+    margin-right: 5px;
+
+    }
+
+    &__select--size,
+    &__select--qty {
+    margin-bottom: 20px; 
+     
+    width: 30%;
+    }
+
+    &__submit {
+    width: 70%;
+    }
 }
 
 
-.rating:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-    clip:rect(0,0,0,0);
-}
- 
-.rating:not(:checked) > label {
-    float:right;
-    width:1rem;
-    padding:0.1rem;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:200%;
-    line-height:1.2;
-    color:#ddd;
-    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
-}
- 
-.rating:not(:checked) > label:before {
-    content: '';
-}
- 
-.rating > input:checked ~ label {
-    color: #f70;
-    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
-}
- 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-    color: gold;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
- 
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-    color: #ea0;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
-.rating > label:active {
-    position: relative;
-
-}
-
-
- 

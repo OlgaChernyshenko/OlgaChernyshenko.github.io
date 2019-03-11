@@ -6,7 +6,10 @@
 	<title>Nike_Card</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
 
 	
 	<link rel="stylesheet" href="css/style.css">
@@ -19,29 +22,30 @@
 			<img class="link__foto" src="img/nike.png" alt="cross">
 				
 	<form class="slider" metod="get" name="slider">
+
 		<ul class="slider__around">
 			<li class="slider__li">
-				<label class="" for="zero">
-					<input class="slider__input" id="1" type="radio" name="radio" value="1" checked="">
-					</label>
-			</li>
-
-			<li class="slider__li">
-				<label class="" for="white">
-					<input class="slider__input" id="2" type="radio" name="radio" value="2" checked="">
+				<label class="slider__label" for="green">
+					<input class="slider__input" id="green" type="radio" name="radio" value="1" checked="">
 				</label>
 			</li>
 
 			<li class="slider__li">
-				<label class="" for="red">
-					<input class="slider__input" id="3" type="radio" name="radio" value="3" checked="">
-					</label>
+				<label class="slider__label" for="white">
+					<input class="slider__input" id="white" type="radio" name="radio" value="2" checked="checked">
+				</label>
 			</li>
 
 			<li class="slider__li">
-				<label class="" for="blue">
-					<input class="slider__input" id="4" type="radio" name="radio" value="4" checked="">
-					</label>
+				<label class="slider__label" for="red">
+					<input class="slider__input" id="red" type="radio" name="radio" value="3" checked="">
+				</label>
+			</li>
+
+			<li class="slider__li">
+				<label class="slider__label" for="blue">
+					<input class="slider__input" id="blue" type="radio" name="radio" value="4" checked="">
+				</label>
 			</li>
 		</ul>
 
@@ -53,27 +57,38 @@
 			
 
 <fieldset class="rating">
-    <legend></legend>
-    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">*</label>
-    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">*</label>
-    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">*</label>
-    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">*</label>
-    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">*</label>
+    
+
+    <input type="radio" id="star5" name="rating" value="5" /><label class="star" for="star5" title="Rocks!">
+    <i class="fas fa-star"></i></label>
+
+    <input type="radio" id="star4" name="rating" value="4" /><label class="star" for="star4" title="Pretty good">
+    <i class="fas fa-star"></i></label>
+
+    <input type="radio" id="star3" name="rating" value="3" /><label class="star" for="star3" title="Meh">
+    <i class="fas fa-star"></i></label>
+
+    <input type="radio" id="star2" name="rating" value="2" /><label class="star" for="star2" title="Kinda bad">
+    <i class="fas fa-star"></i></label>
+
+    <input type="radio" id="star1" name="rating" value="1" /><label class="star" for="star1" title="Sucks big time">
+    <i class="fas fa-star"></i></label>
+
 </fieldset>
 		
 
-<form action="/" method="post">
-   <select name="Size">
+<form class="filtr" action="/" method="post">
+   <select class="filtr__select--size" name="Size">
    		<option value="">Size</option>
         <option value="41">41</option>
         <option value="42">42</option>
       </select>
-   <select name="Qty">
+   <select class="filtr__select--qty" name="Qty">
 		<option value="">Qty</option>
         <option value="41">2</option>
         <option value="42">1</option>
       </select>
-      <input type="submit" value="Add to cart">
+      <input class="filtr__submit" type="submit" value="Add to cart">
     </form>
 
 

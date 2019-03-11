@@ -6,76 +6,80 @@ body {
 body {
 	font-size: 100%;
 	font-family: Arial, sans-serif;
-	font-size: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	color: white;
 	padding: 50px;
-	background: url("../img/background.png") no-repeat 50% 50%;
+	background: url("../img/nike_dark.png") no-repeat 50% 50%;
 	background-color: #c5c5c8;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 }
 
 .info__h2 {
 	font-size: 24px;
-	max-width: 60%;
 	margin-bottom: 20px;
 }
 
 .info__p {
 	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 .container {
 	max-width: 800px;
 	width: 100%;
+	min-height: 600px;
 	margin: auto;
 }
 
 .carta {
 	max-width: 686px;
 	width: 100%;
-	min-height: 392px;
+	min-height: 390px;
 	background-color: #111a28;
-	-webkit-box-shadow: 2px 2px 5px 5px #111a28;
-	        box-shadow: 2px 2px 5px 5px #111a28;
+	padding: 25px;
+	border-radius: 10px;
 	margin: auto;
 	position: relative;
 	z-index: 1;
+	top: 75px;
 }
 
 .img__logo {
 	width: 10%;
 	position: absolute;
 	z-index: 2;
-	top: 10px;
-	left: 10px;
 	top: 25px;
-	left: 15px;
+	left: 22px;
 }
 
 .link__foto {
 	position: absolute;
-	top: 130px;
-	left: 40px;
+	top: 125px;
+	left: 35px;
 	z-index: 3;
 	width: 50%;
 	cursor: pointer;
 }
 
 .slider {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
 	font-size: 100%;
-	width: 71px;
-	height: 18px;
+	width: 80px;
+	height: 12px;
 	position: absolute;
 	z-index: 4;
-	top: 330px;
-	left: 172px;
+	top: 360px;
+	left: 175px;
 }
-
 .slider__around {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -87,9 +91,25 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.slider__li {
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+}
+.slider__li:last-child {
+	margin-right: 0;
+}
+.slider__input {
+	width: 15px;
+	height: 15px;
+	display: block;
+	cursor: pointer;
+	-webkit-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 
 .info {
@@ -97,8 +117,8 @@ body {
 	height: 300px;
 	position: absolute;
 	z-index: 5;
-	top: 78px;
-	left: 442px;
+	top: 80px;
+	left: 445px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -114,6 +134,10 @@ body {
 	align-items: flex-start;
 }
 
+.rating {
+	padding: 0;
+	margin-bottom: 20px;
+}
 .rating:after {
 	content: "";
 	-webkit-transform: rotate(45deg);
@@ -125,41 +149,32 @@ body {
 	border-left-color: transparent;
 	background-color: #111a28;
 }
-
 .rating:not(:checked) > input {
 	position: absolute;
 	top: -9999px;
 	clip: rect(0, 0, 0, 0);
 }
-
 .rating:not(:checked) > label {
 	float: right;
-	width: 1rem;
-	padding: .1rem;
+	width: .8rem;
+	padding: .09rem;
 	overflow: hidden;
 	white-space: nowrap;
 	cursor: pointer;
-	font-size: 200%;
+	font-size: 10px;
 	line-height: 1.2;
 	color: #ddd;
-	text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0, 0, 0, .5);
 }
-
 .rating:not(:checked) > label:before {
 	content: "";
 }
-
 .rating > input:checked ~ label {
 	color: #f70;
-	text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0, 0, 0, .5);
 }
-
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
 	color: gold;
-	text-shadow: 1px 1px goldenrod, 2px 2px #b57340, .1em .1em .2em rgba(0, 0, 0, .5);
 }
-
 .rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
@@ -168,7 +183,35 @@ body {
 	color: #ea0;
 	text-shadow: 1px 1px goldenrod, 2px 2px #b57340, .1em .1em .2em rgba(0, 0, 0, .5);
 }
-
 .rating > label:active {
 	position: relative;
+}
+
+.filtr {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+}
+.filtr > * {
+	height: 35px;
+	font-size: 1rem;
+	color: grey;
+	background-color: transparent;
+	border: .5px solid grey;
+}
+.filtr__select--size {
+	margin-right: 5px;
+}
+.filtr__select--size,
+.filtr__select--qty {
+	margin-bottom: 20px;
+	width: 30%;
+}
+.filtr__submit {
+	width: 70%;
 }
