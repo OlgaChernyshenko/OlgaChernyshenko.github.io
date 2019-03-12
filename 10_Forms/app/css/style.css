@@ -54,7 +54,13 @@ body {
 	max-width: 800px;
 	width: 100%;
 	height: 600px;
-	background: #ff0084;
+	background: #ec3757;
+	/* Old browsers */
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ec3757), color-stop(39%, #f8473f), color-stop(66%, #fd4f32), color-stop(76%, #ff512f), to(#ff512f));
+	background: linear-gradient(to bottom, #ec3757 0%, #f8473f 39%, #fd4f32 66%, #ff512f 76%, #ff512f 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	margin-right: 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -231,7 +237,9 @@ body {
 	max-width: 800px;
 	width: 100%;
 	min-height: 600px;
-	background: url("../img/main2.png") no-repeat 100% 100%;
+	background: #7d7e7d;
+	background: radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 );
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 	        box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 	margin: auto;
