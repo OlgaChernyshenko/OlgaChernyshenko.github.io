@@ -1,6 +1,5 @@
 @mixin overlay($z-index: 1) {
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -21,7 +20,7 @@
 	text-transform: uppercase;
 	display: block;
 	text-decoration: none;
-	width:100%;
+	width: 100%;
 
 	&:hover {
 		color: $white;
@@ -31,13 +30,25 @@
 }
 
 @mixin row {
-	display:flex;
+	display: flex;
 	@content;
 }
+
 @mixin section-padding {
 	padding: 70px 0;
 }
-@mixin sguare($size) {
-	width:size;
-	height:size;
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+@mixin transition ($prop: all, $time: .2s, $func: ease) {
+	transition: $prop $time $func;
+}
+
+@mixin triangle($size, $color) {
+	display: block;
+	border: $size solid transparent;
+	border-top-color: $color;
 }
