@@ -193,14 +193,16 @@ body
 .container__rose .form .long__label
 {
     width: 100%;
-    height: 48px;
+    height: 100%; 
+    min-height: 48px;
 }
 .container__rose .form .long__input
 {
     font-size: 16px;
 
     width: 100%;
-    height: 48px;
+    height: 100%;
+    min-height: 48px;
     padding-left: 10px; 
 
     letter-spacing: 1px;
@@ -240,7 +242,8 @@ body
 .container__rose .form .short__label
 {
     width: 48%;
-    height: 48px;
+    height: 100%; 
+    min-height: 48px;
 }
 .container__rose .form .short__label :hover
 {
@@ -271,7 +274,8 @@ body
     font-weight: 600;
 
     width: 100%;
-    height: 50px;
+    height: 100%;
+    min-height: 50px;
     margin-bottom: 25px; 
 
     cursor: pointer;
@@ -311,6 +315,7 @@ body
 
     width: 100%;
     max-width: 800px;
+    height: 100%;
     min-height: 600px;
     margin: auto;
 
@@ -441,7 +446,8 @@ body
     font-weight: 300; 
 
     width: 100%;
-    height: 38px;
+    height: 100%;
+    min-height: 38px;
     padding-left: 10px;
 
     letter-spacing: 2px;
@@ -498,7 +504,8 @@ body
     font-weight: 300; 
 
     width: 100%;
-    height: 38px;
+    height: 100%;
+    min-height: 38px;
     padding-left: 10px;
 
     letter-spacing: 2px;
@@ -591,7 +598,8 @@ body
     display: inline-block; 
 
     width: 20%;
-    height: 38px;
+    height: 100%;
+    min-height: 38px;
 }
 .container__green .form .box--3__label > *:hover
 {
@@ -630,7 +638,8 @@ body
     display: block;
 
     width: 100%;
-    height: 40px;
+    height: 100%;
+    min-height: 40px;
     margin: 0;
     margin-bottom: 10px;
 
