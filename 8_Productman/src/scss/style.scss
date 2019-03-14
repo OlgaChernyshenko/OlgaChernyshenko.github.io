@@ -1,12 +1,8 @@
-// @import "variabls"
-// @import "mixins"
-// @import "header"
-// @import "main-top__panel"
-
-    * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 html, body 
 {
@@ -15,16 +11,17 @@ html, body
 
 
 body {
-	width: 100%;
-	height: 100%;
+
 	font-family: 'Roboto', 'Raleway', sans-serif;
 	font-size: 18px;
 	color: #303030;
 	background-color: #eee;
+}
 
 .container 
 {
-	width: 70%;
+	width: 100%;
+	max-width: 1140px;
 	margin: auto;
 }
 
@@ -33,8 +30,8 @@ body {
 	display: flex;
 	width: 100%;
 	flex-direction: row; 
-	justify-content: space-between;
-	align-items: flex-streth; 
+	justify-content:stretch;
+	align-items:  space-between; 
 }
 
 .logo__link 
@@ -52,8 +49,8 @@ body {
 	display: flex;
 	flex-direction: row; 
 	justify-content: space-between;
-	align-items: flex-streth;
-	width: 50%;
+	align-items: stretch;
+	width: 100%;
 	list-style: none;
 }
 
@@ -79,7 +76,7 @@ body {
 
 .gradient 
 {
-	// background-image: url('..img/gradien.png');
+	background-image: url('..img/gradien.png');
 	background-position: center;
 	background-size: 100%;						
 	width: 100%;
@@ -90,21 +87,21 @@ body {
 }
 
 .slider
- {
+{
 	width: 50%;
 	text-align: right;
 }
 
-.slider_h2
+.slider__h2
 {
 	font-weight: 900;
 }
 
 .slider__list 
 {
-	 width: 100%;
-	 margin: 0;
-	 padding: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -127,6 +124,7 @@ body {
 	transition: color .3s ease-out;
 	color: #303030;
 }
+
 .galery 
 {
 	width: 100%;
@@ -141,39 +139,45 @@ body {
 	text-align: center;
 
 }
-				
 
-.gallery__box{
+
+.gallery__box
+{
 	display: flex;
 	flex-flow: wrap;
+	justify-content: space-between;
 	align-content: space-between;
-	list-style: none;
+	
 	width: 100%;
-	max-width: 1130px;
-	border:1px solid red;
-}
-
-
-.gallery__list
-{ 
-	border:1px solid red;
-	display: block;
-	max-height: 30px;
 	height: 100%;
-	width: 30%;
-	margin-bottom: 10px;
+	
+	border:1px solid red;
+	}
+
+.galery__list 
+{
+width: 100%;
+
 }
 
+.galery__item 
+{
+list-style: none;
+display: inline-block;
+width: 30%;
+
+
+}
 
 .galery__link 
 {
 	text-decoration: none;
 	border:1px solid red;
 	display: block;
-								
-	width: 100%;
+	
 	margin: 0;
 	padding: 0;
+
 }
 
 
@@ -182,6 +186,12 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 100%;
+
+
+
 }
+
+
+
+
 
