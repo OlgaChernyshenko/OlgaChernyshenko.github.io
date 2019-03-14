@@ -3,7 +3,10 @@
 // @import "header"
 // @import "main-top__panel"
 
-
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
 
 html, body 
 {
@@ -174,7 +177,7 @@ body {
 }
 
 
-.galery__images 
+.galery__img
 {
 	padding: 0;
 	margin: 0;
