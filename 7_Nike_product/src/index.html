@@ -8,44 +8,51 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
 
 	
-<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 	<div class="container">
 		<div class="carta">
-			<img class="img__logo" src="img/logo.png" alt="logo">
+			<div class="img">
 
-			<img class="link__foto" src="img/nike.png" alt="cross">
+				<img class="img__logo" src="img/logo.png" alt="logo">
+
+				<img class="img__foto" src="img/nike.png" alt="cross">
 
 
-			<ul class="slider">
+				<ul class="slider">
 
-				<li class="radio__item">
-					<input type="radio" id="blue" name="ritem" value="ropt1">
-					<label for="blue"></label>
-				</li>
+					<li class="radio__item">
+						<input type="radio" id="blue" name="ritem" value="ropt1">
+						<label for="blue"></label>
+					</li>
 
-				<li class="radio__item">
-					<input type="radio" id="white" name="ritem" value="ropt2">
-					<label for="white"></label>
-				</li>
+					<li class="radio__item">
+						<input type="radio" id="white" name="ritem" value="ropt2">
+						<label for="white"></label>
+					</li>
 
-				<li class="radio__item">
-					<input type="radio" id="green" name="ritem" value="ropt3">
-					<label for="green"></label>
-				</li>
+					<li class="radio__item">
+						<input type="radio" id="green" name="ritem" value="ropt3">
+						<label for="green"></label>
+					</li>
 
-				<li class="radio__item">
-					<input type="radio" id="grey" name="ritem" value="ropt3">
-					<label for="grey"></label>
-				</li>	
-			</ul>
+					<li class="radio__item">
+						<input type="radio" id="grey" name="ritem" value="ropt3">
+						<label for="grey"></label>
+					</li>	
+				</ul>
+
+			</div>
+
+
 
 			<div class="info">
 				
@@ -58,45 +65,56 @@
 
 
 					
-					<label class="star" for="star5" title="Rocks!">
+					<li class="rating__star--color"  >
 						<i class="fas fa-star"></i>
-					</label>
+					</li>
 
 					
-					<label class="star" for="star4" title="Pretty good">
+					<li class="rating__star--color"  >
 						<i class="fas fa-star"></i>
-					</label>
+					</li>
 
 					
-					<label class="star" for="star3" title="Meh">
+					<li class="rating__star--color"  >
 						<i class="fas fa-star"></i>
-					</label>
+					</li>
 
 					
-					<label class="star" for="star2" title="Kinda bad">
+					<li class="rating__star"  >
 						<i class="fas fa-star"></i>
-					</label>
+					</li>
 
 					
-					<label class="star" for="star1" title="Sucks big time">
+					<li class="rating__star" >
 						<i class="fas fa-star"></i>
-					</label>
+					</li>
 
 				</ul>
 
-				<form class="filtr" action="/" method="post">
-					<select class="filtr__select--size" name="Size">
+		
+			<form class="form" action="/" method="post">
+
+			<div class="filtr">
+				<label class="filtr__label" for="Size">
+					<select class="filtr__select--size" name="Size" id="Size"  required>
 						<option value="">Size</option>
 						<option value="41">41</option>
 						<option value="42">42</option>
 					</select>
-					<select class="filtr__select--qty" name="Qty">
+				</label>
+
+				<label class="filtr__label" for="Qty">
+					<select class="filtr__select--qty" name="Qty" id="Qty"  required>
 						<option value="">Qty</option>
 						<option value="41">2</option>
 						<option value="42">1</option>
 					</select>
+				</label>
+			</div>
+					
 					<input class="filtr__submit" type="submit" value="Add to cart">
-				</form>
+
+			</form>
 
 
 			</div>
@@ -191,7 +209,7 @@
   top:-1px;
   left:-1px;
 }
-		 -->		
+-->		
 <!-- .rating 
 {
     padding:0;
@@ -252,4 +270,3 @@
     }
 } -->
 
-		 
