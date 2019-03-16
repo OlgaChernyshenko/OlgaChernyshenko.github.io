@@ -12,12 +12,74 @@ body
 
 body
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, Open-Sans, Raleway, sans-serif;
     font-size: 100%;
+}
 
-    padding: 50px;
+.title,
+.container__text1,
+.top__text,
+.container__text2
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    text-align: center;
+}
+
+.top__text
+{
+    margin-bottom: 40px;
+
+    text-transform: capitalize;
+
+    opacity: .7;
+    color: #666;
+
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+}
+
+.title
+{
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+
+    text-transform: capitalize; 
 
     color: #fc0;
+}
+
+.container__text1
+{
+    font-size: 20px;
+
+    color: #666;
+}
+
+.container__text2
+{
+    font-size: 20px;
+
+    color: #ccc;
+}
+
+.social__link
+{
+    font-size: 20px;
+
+    color: #ccc;
+}
+
+.header
+{
+    padding: 90px 0 0;
 }
 
 .content
@@ -27,74 +89,93 @@ body
     display: flex;
         flex-direction: row;
 
-    width: 60%;
+    width: 100%;
+    min-width: 1170px;
     margin: auto;
-    padding: 50px 0;
+    padding: 0;
+    padding: 50px; 
 
     border: 1px solid #fc0;
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
-.title
-{
-    font-size: 3rem;
-    font-weight: 800;
-
-    text-align: center; 
-    text-transform: capitalize;
-}
-
-.span
-{
-    font-size: 1.1rem;
-    font-weight: 300;
-
-    position: absolute;
-    top: 70px;
-    left: 630px; 
-
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: #898f8f;
-}
-
-.content__left
+.conteiner__left
 {
     width: 50%;
-    height: 100%; 
-
-    border: 1px solid #fc0;
-}
-
-.container__left
-{
-    width: 100%; 
-    max-width: 300px;
+    height: 100%;
+    min-height: 650px;
+    padding: 50px; 
 
     border: 1px solid #fc0;
 }
 
 .container__right
 {
-    width: 100%;
-    max-width: 300px;
-    height: 50px; 
+    width: 50%;
+    height: 100%;
+    min-height: 650px;
+    padding: 50px; 
 
     border: 1px solid #fc0;
 }
 
 .imag
 {
-    width: 100%; 
+    width: 100%;
     max-width: 300px;
+    padding: 50px; 
+
+    border: 1px solid #fc0;
+}
+
+.social__menu
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.social__item
+{
+    display: inline-block;
+
+    width: 100%;
+    max-width: 35px;
+    height: 100%;
+    min-height: 35px;
+
+    list-style: none;
+
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.social__link
+{
+    width: 100%;
+    max-width: 35px;
+    height: 100%; 
+    min-height: 35px;
+
+    border-radius: 50%;
+}
+
+.fab
+{
+    padding: 7px;
+}
+
+.fa-facebook-f
+{
+    padding-left: 12px;
 }
