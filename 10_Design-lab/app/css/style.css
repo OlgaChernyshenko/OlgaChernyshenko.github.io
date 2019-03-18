@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+
+    color: #3c3c3c;
+}
+
+.first-screen
+{
+    min-height: 100vh;
+
+    background: #a8b3c6 url('../img/hero-bg') no-repeat;
+}

@@ -61,7 +61,6 @@ body
 .img
 {
     width: 50%;
-    margin-right: 10px;
 }
 
 .img__logo
@@ -85,16 +84,16 @@ body
 
 .radio__item
 {
-    vertical-align: middle;
-}
-
-.radio__item
-{
     position: relative;
 
     display: inline-block;
 
     margin-right: 5px;
+
+    vertical-align: middle; 
+
+    border: 1.5px solid transporate;
+    border-radius: 11px;
 }
 .radio__item:last-child
 {
@@ -336,6 +335,12 @@ body
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+}
+.filtr__select--qty > *,
+.filtr__select--size > *
+{
+    border: 1px solid grey; 
+    background-color: #111a28;
 }
 .filtr__submit
 {
