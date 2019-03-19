@@ -73,7 +73,12 @@ body
     -ms-flex-order: 0;
     order: 0;
 }
-.header .top__star
+.header .top__img
+{
+    width: 20px;
+    height: 20px;
+}
+.header .top__fier
 {
     font-size: 30px;
 
@@ -87,7 +92,7 @@ body
     -ms-flex-order: 2;
     order: 2;
 }
-.header .top__star::before
+.header .top__fier::before
 {
     position: absolute;
     top: 50%;
@@ -101,7 +106,7 @@ body
 
     border-bottom: 1px solid #fc0;
 }
-.header .top__star::after
+.header .top__fier::after
 {
     position: absolute;
     top: 50%;
@@ -137,35 +142,50 @@ body
 .btn__right
 {
     position: absolute;
-    top: 230px;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 
-    -webkit-transition: .2s ease;
-            transition: .2s ease; 
     text-decoration: none;
 
-    border-bottom: 2px solid #fc0;
-    border-left: 2px solid #fc0;
+    border-bottom: 5px solid #fc0;
+    border-left: 5px solid #fc0;
 }
 
 .btn__left
 {
-    left: 130px;
+    top: 230px;
+    left: 0;
 
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 }
+.btn__left:hover
+{
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition: .2s ease;
+            transition: .2s ease;
+}
 
 .btn__right
 {
-    right: 130px;
+    top: 230px;
+    right: 0;
 
     -webkit-transform: rotate(225deg);
             transform: rotate(225deg);
+}
+.btn__right:hover
+{
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition: .2s ease;
+            transition: .2s ease;
 }
 
 .container__right,
@@ -187,6 +207,12 @@ body
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+.container__right > *,
+.container__left > *
+{
+    margin: 0;
+    padding: 0;
 }
 
 .container__left .box__l,
@@ -283,7 +309,7 @@ body
 
     position: relative; 
 
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     text-align: center;
 
@@ -325,6 +351,7 @@ body
 {
     width: 40%;
     margin: 0;
+    margin-bottom: 20px; 
     padding: 0;
 
     text-align: center;
@@ -371,22 +398,49 @@ body
     line-height: 24px;
 
     max-width: 80%;
-    margin-bottom: 50px; 
 
-    text-align: center;
+    text-align: center; 
 
     color: #333;
 }
 
-.btn__line
+.lines
 {
-    position: absolute;
-    top: 0;
-    left: 0; 
+    font-size: 30px;
+
+    position: relative;
 
     display: block;
 
+    margin-bottom: 30px; 
+
     color: #fc0;
+}
+.lines::before
+{
+    position: absolute;
+    top: 29px;
+    left: -7px;
+
+    min-width: 25px;
+
+    content: '';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); 
+
+    border-bottom: 4px solid #fc0;
+}
+.lines::after
+{
+    position: absolute;
+    top: 29px;
+    left: 69px; 
+
+    min-width: 25px;
+
+    content: '';
+
+    border-bottom: 4px solid #fc0;
 }
 
 .btn__box
