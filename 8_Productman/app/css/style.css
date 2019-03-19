@@ -203,7 +203,7 @@ body
 
     text-decoration: none;
 
-    color: red;
+    color: black;
 }
 
 .slider__text__bottom:hover
@@ -211,6 +211,8 @@ body
     cursor: pointer;
     -webkit-transition: color .2s ease-out;
             transition: color .2s ease-out;
+
+    color: red;
 }
 
 .slider__list
@@ -242,8 +244,8 @@ body
 {
     display: inline-block;
 
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     margin-right: 15px; 
 
     border-radius: 50%;
@@ -349,8 +351,6 @@ body
     margin: auto; 
     padding: 20px;
 
-    border: 1px solid red;
-
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     -webkit-box-pack: justify;
@@ -368,11 +368,29 @@ body
     display: inline-block;
 
     margin-bottom: 20px;
+
+    border-radius: 5px;
+}
+.galery__item :before,
+.galery__item--1 :before
+{
+    display: block;
+
+    content: '';
+
+    background: red;
 }
 
 .galery__item
 {
     width: 32%;
+}
+
+.galery__item:last-child,
+.galery__item:nth-last-child(2),
+.galery__item:nth-last-child(3)
+{
+    margin-bottom: 0;
 }
 
 .galery__item--1
@@ -387,19 +405,25 @@ body
 
     position: absolute;
     z-index: 2; 
-    bottom: 60px;
-    left: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-    display: inline-block;
+    padding-top: 290px;
+    padding-left: 30px;
 
-    color: white;
+    color: #fff;
+    border-radius: 5px;
+    background: red;
 }
 
 .textspan
 {
     position: absolute;
-    bottom: -50px;
-    left: 0;
+    z-index: 3;
+    bottom: 0;
+    left: 30px;
 
     display: inline-block;
 
