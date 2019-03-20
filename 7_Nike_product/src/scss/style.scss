@@ -1,101 +1,107 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html, body {
-  font-weight: 100;
+  font-weight: 100vh;
 
 }
 
 body {
-  font-size: 100%;
+ 
   color: white;
   background-color: #c5c5c8;
   font-family: 'Museo Sans 100', Arial, sans-serif;
+  
+
 }
 
-
-
-
 .container {
+  background-color: transparent;
   max-width: 800px;
   width: 100%;
-  max-height: 600px;
+  min-height: 600px;
   height: 100%;
+  padding: 50px 0 0;
   background: #c5c5c8; 
+  margin: auto;
   background: -moz-linear-gradient(-45deg, #c5c5c8 0%, #c1c1c4 0%, #c1c1c4 0%, #c5c5c8 1%, #c1c1c4 1%, #6a6e76 1%, #b3b3b7 1%, #1f2634 2%, #101826 2%, #111a28 2%, #111a28 4%, #0f1826 5%, #111a28 5%, #111a28 6%, #101826 6%, #111a28 7%, #101826 7%, #111a28 7%, #111a28 13%, #151e2c 13%, #a9abb0 13%, #c5c5c8 13%, #c5c5c8 14%, #c1c1c4 15%, #6a6e76 15%, #c1c1c4 15%, #c5c5c8 15%, #c1c1c4 15%, #6a6e76 15%, #c1c1c4 16%, #c5c5c8 16%, #c5c5c8 18%, #c1c1c4 18%, #6a6e76 18%, #bdbec1 18%, #c5c5c8 18%, #c5c5c8 19%, #c2c2c5 19%, #c5c5c8 19%, #c5c5c8 19%, #c1c1c4 19%, #6a6e76 20%, #c1c1c4 20%, #c5c5c8 20%, #c1c1c4 20%, #636870 20%, #666b74 20%, #c1c1c4 21%, #bebec1 21%, #676b73 21%, #bebec1 21%, #c1c1c4 21%, #6a6e76 21%, #bdbec1 22%, #6a6e76 22%, #494f59 22%, #111a28 22%, #111a28 25%, #0f1826 25%, #111a28 25%, #111a28 26%, #0f1826 26%, #111a28 26%, #111a28 32%, #0f1826 32%, #343b47 32%, #c1c1c4 32%, #c5c5c8 32%, #c2c2c5 33%, #c5c5c8 33%, #c1c1c4 33%, #6a6e76 33%, #bdbec1 33%, #c5c5c8 33%, #c5c5c8 34%, #c1c1c4 34%, #676b73 34%, #c1c1c4 34%, #c5c5c8 34%, #c1c1c4 35%, #c1c1c4 35%, #676b73 35%, #bebec1 35%, #c5c5c8 36%, #c1c1c4 36%, #6a6e76 36%, #bdbec1 36%, #6a6e76 36%, #bdbec1 36%, #6a6e76 37%, #c1c1c4 37%, #c5c5c8 37%, #c1c1c4 37%, #676b73 38%, #c1c1c4 38%, #c5c5c8 38%, #c5c5c8 38%, #c1c1c4 38%, #6a6e76 38%, #c1c1c4 39%, #c5c5c8 39%, #c1c1c4 39%, #6a6e76 39%, #c1c1c4 39%, #c1c1c4 39%, #bebec1 40%, #6a6e76 40%, #bababe 40%, #3d444e 40%, #252d39 40%, #252d39 42%, #1a222f 42%, #252d39 42%, #252d3a 44%, #242c39 44%, #1a222f 44%, #252d39 44%, #252d3a 45%, #282f3a 45%, #695d3a 45%, #282f3a 45%, #252d39 46%, #1d2531 46%, #aeafb3 46%, #c2c2c5 46%, #c5c5c8 46%, #c5c5c8 47%, #c2c2c5 47%, #c5c5c8 47%, #c5c5c8 48%, #c2c1c4 49%, #6a6e76 49%, #c1c1c4 49%, #c5c5c8 49%, #c5c5c8 49%, #c2c2c5 49%, #c4c4c7 50%, #c2c2c5 50%, #c5c5c8 50%, #c5c5c8 50%, #c1c1c4 50%, #6a6e76 50%, #c1c1c4 51%, #c5c5c8 51%, #c1c1c4 51%, #666b74 51%, #666b74 52%, #c1c1c4 52%, #c5c5c8 52%, #c2c2c5 52%, #c5c5c8 52%, #c5c5c8 53%, #c1c1c4 53%, #676b73 53%, #bebec1 53%, #c5c5c8 53%, #c1c1c4 53%, #676b73 54%, #c1c1c4 54%, #c5c5c8 54%, #c2c1c4 54%, #c1c1c4 54%, #c5c5c8 54%, #c5c5c8 55%, #c1c1c4 55%, #666b74 55%, #666b74 55%, #bdbec1 55%, #6a6e76 56%, #c1c1c4 56%, #c5c5c8 56%, #c5c5c8 57%, #c1c1c4 58%, #c5c5c8 58%, #c1c1c4 58%, #6a6e76 58%, #bdbec1 59%, #c5c5c8 59%, #c6c5c8 59%, #d5c5c8 59%, #c2c1c4 59%, #6a6e76 59%, #c1c1c4 60%, #c1c1c4 60%, #6a6e76 60%, #c1c1c4 60%, #c5c5c8 60%, #c5c5c8 61%, #c1c1c4 61%, #6b6e76 61%, #c1c1c4 61%, #c5c5c8 61%, #c6c5c8 61%, #d5c5c8 62%, #c6c5c8 62%, #c3c2c5 62%, #c5c5c8 62%, #c5c5c8 64%, #c1c1c4 64%, #666b74 64%, #666b74 64%, #c1c1c4 64%, #c6c5c8 64%, #c6c5c8 65%, #d1c2c5 65%, #c6c5c8 66%, #c6c5c8 66%, #d5c5c8 67%, #c2c1c4 67%, #666b74 67%, #666b74 67%, #c1c1c4 67%, #c5c5c8 67%, #c7c5c8 69%, #d6c5c8 69%, #c6c5c8 69%, #c6c5c8 70%, #d5c5c8 70%, #c6c5c8 70%, #c6c5c8 70%, #968775 71%, #141c28 71%, #111a28 71%, #141c28 71%, #101926 72%, #141c28 72%, #5c5028 72%, #171e28 72%, #101926 72%, #141c28 72%, #5c5028 73%, #151c28 73%, #171e28 73%, #5c5028 73%, #525760 73%, #c5c5c8 73%, #c5c5c8 75%, #c1c1c4 75%, #6a6e76 75%, #c1c1c4 75%, #c1c1c4 76%, #6b6e76 76%, #d1c1c4 76%, #c6c5c8 76%, #c5c5c8 76%, #c2c1c4 76%, #676b73 77%, #d1c1c4 77%, #c6c5c8 77%, #c6c5c8 78%, #c0c0c3 78%, #222936 79%, #111a28 79%, #111a28 80%, #92959b 80%, #c5c5c8 80%, #c5c5c8 80%, #c2c2c5 81%, #c6c5c8 81%, #c5c5c8 82%, #686c75 82%, #111a28 82%, #141c28 82%, #363426 82%, #171e28 83%, #111a28 83%, #111a28 83%, #171e28 83%, #5a4f28 83%, #141c28 83%, #111a28 84%, #111a28 84%, #353c48 85%, #c4c4c7 85%, #c3c2c5 85%, #d5c5c8 85%, #c6c5c8 85%, #c5c5c8 86%, #c2c2c5 86%, #c5c5c8 86%, #c5c5c8 87%, #c2c2c5 87%, #c5c5c8 87%, #c5c5c8 88%, #babbbe 88%, #343c47 88%, #252d3a 88%, #282f39 89%, #3c3a2f 89%, #282f39 89%, #252d39 89%, #1a222f 89%, #242c39 90%, #1a222f 90%, #242c39 90%, #1a222f 90%, #282f39 90%, #6d5f3a 90%, #6d5f39 91%, #3e3b2f 91%, #272e39 91%, #1a222f 91%, #242c39 91%, #1a222f 91%, #282f39 92%, #282f3a 92%, #252d39 92%, #1a222f 92%, #242c39 93%, #252d39 93%, #1a222f 93%, #252d39 93%, #252d3a 93%, #252d39 95%, #1a222f 95%, #242c39 95%, #1a222f 95%, #282e39 95%, #252d39 96%, #282e3a 96%, #252d3a 96%, #282f3a 97%, #675c39 97%, #282f3a 97%, #252d3a 97%, #282e3a 97%, #252d3a 97%, #252d39 98%, #1b222f 99%, #19222f 99%, #252d39 99%, #282f3c 99%, #a8a9ad 99%, #6a6e76 100%, #c1c1c4 100%, #c5c5c8 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #c5c5c8 0%,#c1c1c4 0%,#c1c1c4 0%,#c5c5c8 1%,#c1c1c4 1%,#6a6e76 1%,#b3b3b7 1%,#1f2634 2%,#101826 2%,#111a28 2%,#111a28 4%,#0f1826 5%,#111a28 5%,#111a28 6%,#101826 6%,#111a28 7%,#101826 7%,#111a28 7%,#111a28 13%,#151e2c 13%,#a9abb0 13%,#c5c5c8 13%,#c5c5c8 14%,#c1c1c4 15%,#6a6e76 15%,#c1c1c4 15%,#c5c5c8 15%,#c1c1c4 15%,#6a6e76 15%,#c1c1c4 16%,#c5c5c8 16%,#c5c5c8 18%,#c1c1c4 18%,#6a6e76 18%,#bdbec1 18%,#c5c5c8 18%,#c5c5c8 19%,#c2c2c5 19%,#c5c5c8 19%,#c5c5c8 19%,#c1c1c4 19%,#6a6e76 20%,#c1c1c4 20%,#c5c5c8 20%,#c1c1c4 20%,#636870 20%,#666b74 20%,#c1c1c4 21%,#bebec1 21%,#676b73 21%,#bebec1 21%,#c1c1c4 21%,#6a6e76 21%,#bdbec1 22%,#6a6e76 22%,#494f59 22%,#111a28 22%,#111a28 25%,#0f1826 25%,#111a28 25%,#111a28 26%,#0f1826 26%,#111a28 26%,#111a28 32%,#0f1826 32%,#343b47 32%,#c1c1c4 32%,#c5c5c8 32%,#c2c2c5 33%,#c5c5c8 33%,#c1c1c4 33%,#6a6e76 33%,#bdbec1 33%,#c5c5c8 33%,#c5c5c8 34%,#c1c1c4 34%,#676b73 34%,#c1c1c4 34%,#c5c5c8 34%,#c1c1c4 35%,#c1c1c4 35%,#676b73 35%,#bebec1 35%,#c5c5c8 36%,#c1c1c4 36%,#6a6e76 36%,#bdbec1 36%,#6a6e76 36%,#bdbec1 36%,#6a6e76 37%,#c1c1c4 37%,#c5c5c8 37%,#c1c1c4 37%,#676b73 38%,#c1c1c4 38%,#c5c5c8 38%,#c5c5c8 38%,#c1c1c4 38%,#6a6e76 38%,#c1c1c4 39%,#c5c5c8 39%,#c1c1c4 39%,#6a6e76 39%,#c1c1c4 39%,#c1c1c4 39%,#bebec1 40%,#6a6e76 40%,#bababe 40%,#3d444e 40%,#252d39 40%,#252d39 42%,#1a222f 42%,#252d39 42%,#252d3a 44%,#242c39 44%,#1a222f 44%,#252d39 44%,#252d3a 45%,#282f3a 45%,#695d3a 45%,#282f3a 45%,#252d39 46%,#1d2531 46%,#aeafb3 46%,#c2c2c5 46%,#c5c5c8 46%,#c5c5c8 47%,#c2c2c5 47%,#c5c5c8 47%,#c5c5c8 48%,#c2c1c4 49%,#6a6e76 49%,#c1c1c4 49%,#c5c5c8 49%,#c5c5c8 49%,#c2c2c5 49%,#c4c4c7 50%,#c2c2c5 50%,#c5c5c8 50%,#c5c5c8 50%,#c1c1c4 50%,#6a6e76 50%,#c1c1c4 51%,#c5c5c8 51%,#c1c1c4 51%,#666b74 51%,#666b74 52%,#c1c1c4 52%,#c5c5c8 52%,#c2c2c5 52%,#c5c5c8 52%,#c5c5c8 53%,#c1c1c4 53%,#676b73 53%,#bebec1 53%,#c5c5c8 53%,#c1c1c4 53%,#676b73 54%,#c1c1c4 54%,#c5c5c8 54%,#c2c1c4 54%,#c1c1c4 54%,#c5c5c8 54%,#c5c5c8 55%,#c1c1c4 55%,#666b74 55%,#666b74 55%,#bdbec1 55%,#6a6e76 56%,#c1c1c4 56%,#c5c5c8 56%,#c5c5c8 57%,#c1c1c4 58%,#c5c5c8 58%,#c1c1c4 58%,#6a6e76 58%,#bdbec1 59%,#c5c5c8 59%,#c6c5c8 59%,#d5c5c8 59%,#c2c1c4 59%,#6a6e76 59%,#c1c1c4 60%,#c1c1c4 60%,#6a6e76 60%,#c1c1c4 60%,#c5c5c8 60%,#c5c5c8 61%,#c1c1c4 61%,#6b6e76 61%,#c1c1c4 61%,#c5c5c8 61%,#c6c5c8 61%,#d5c5c8 62%,#c6c5c8 62%,#c3c2c5 62%,#c5c5c8 62%,#c5c5c8 64%,#c1c1c4 64%,#666b74 64%,#666b74 64%,#c1c1c4 64%,#c6c5c8 64%,#c6c5c8 65%,#d1c2c5 65%,#c6c5c8 66%,#c6c5c8 66%,#d5c5c8 67%,#c2c1c4 67%,#666b74 67%,#666b74 67%,#c1c1c4 67%,#c5c5c8 67%,#c7c5c8 69%,#d6c5c8 69%,#c6c5c8 69%,#c6c5c8 70%,#d5c5c8 70%,#c6c5c8 70%,#c6c5c8 70%,#968775 71%,#141c28 71%,#111a28 71%,#141c28 71%,#101926 72%,#141c28 72%,#5c5028 72%,#171e28 72%,#101926 72%,#141c28 72%,#5c5028 73%,#151c28 73%,#171e28 73%,#5c5028 73%,#525760 73%,#c5c5c8 73%,#c5c5c8 75%,#c1c1c4 75%,#6a6e76 75%,#c1c1c4 75%,#c1c1c4 76%,#6b6e76 76%,#d1c1c4 76%,#c6c5c8 76%,#c5c5c8 76%,#c2c1c4 76%,#676b73 77%,#d1c1c4 77%,#c6c5c8 77%,#c6c5c8 78%,#c0c0c3 78%,#222936 79%,#111a28 79%,#111a28 80%,#92959b 80%,#c5c5c8 80%,#c5c5c8 80%,#c2c2c5 81%,#c6c5c8 81%,#c5c5c8 82%,#686c75 82%,#111a28 82%,#141c28 82%,#363426 82%,#171e28 83%,#111a28 83%,#111a28 83%,#171e28 83%,#5a4f28 83%,#141c28 83%,#111a28 84%,#111a28 84%,#353c48 85%,#c4c4c7 85%,#c3c2c5 85%,#d5c5c8 85%,#c6c5c8 85%,#c5c5c8 86%,#c2c2c5 86%,#c5c5c8 86%,#c5c5c8 87%,#c2c2c5 87%,#c5c5c8 87%,#c5c5c8 88%,#babbbe 88%,#343c47 88%,#252d3a 88%,#282f39 89%,#3c3a2f 89%,#282f39 89%,#252d39 89%,#1a222f 89%,#242c39 90%,#1a222f 90%,#242c39 90%,#1a222f 90%,#282f39 90%,#6d5f3a 90%,#6d5f39 91%,#3e3b2f 91%,#272e39 91%,#1a222f 91%,#242c39 91%,#1a222f 91%,#282f39 92%,#282f3a 92%,#252d39 92%,#1a222f 92%,#242c39 93%,#252d39 93%,#1a222f 93%,#252d39 93%,#252d3a 93%,#252d39 95%,#1a222f 95%,#242c39 95%,#1a222f 95%,#282e39 95%,#252d39 96%,#282e3a 96%,#252d3a 96%,#282f3a 97%,#675c39 97%,#282f3a 97%,#252d3a 97%,#282e3a 97%,#252d3a 97%,#252d39 98%,#1b222f 99%,#19222f 99%,#252d39 99%,#282f3c 99%,#a8a9ad 99%,#6a6e76 100%,#c1c1c4 100%,#c5c5c8 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #c5c5c8 0%,#c1c1c4 0%,#c1c1c4 0%,#c5c5c8 1%,#c1c1c4 1%,#6a6e76 1%,#b3b3b7 1%,#1f2634 2%,#101826 2%,#111a28 2%,#111a28 4%,#0f1826 5%,#111a28 5%,#111a28 6%,#101826 6%,#111a28 7%,#101826 7%,#111a28 7%,#111a28 13%,#151e2c 13%,#a9abb0 13%,#c5c5c8 13%,#c5c5c8 14%,#c1c1c4 15%,#6a6e76 15%,#c1c1c4 15%,#c5c5c8 15%,#c1c1c4 15%,#6a6e76 15%,#c1c1c4 16%,#c5c5c8 16%,#c5c5c8 18%,#c1c1c4 18%,#6a6e76 18%,#bdbec1 18%,#c5c5c8 18%,#c5c5c8 19%,#c2c2c5 19%,#c5c5c8 19%,#c5c5c8 19%,#c1c1c4 19%,#6a6e76 20%,#c1c1c4 20%,#c5c5c8 20%,#c1c1c4 20%,#636870 20%,#666b74 20%,#c1c1c4 21%,#bebec1 21%,#676b73 21%,#bebec1 21%,#c1c1c4 21%,#6a6e76 21%,#bdbec1 22%,#6a6e76 22%,#494f59 22%,#111a28 22%,#111a28 25%,#0f1826 25%,#111a28 25%,#111a28 26%,#0f1826 26%,#111a28 26%,#111a28 32%,#0f1826 32%,#343b47 32%,#c1c1c4 32%,#c5c5c8 32%,#c2c2c5 33%,#c5c5c8 33%,#c1c1c4 33%,#6a6e76 33%,#bdbec1 33%,#c5c5c8 33%,#c5c5c8 34%,#c1c1c4 34%,#676b73 34%,#c1c1c4 34%,#c5c5c8 34%,#c1c1c4 35%,#c1c1c4 35%,#676b73 35%,#bebec1 35%,#c5c5c8 36%,#c1c1c4 36%,#6a6e76 36%,#bdbec1 36%,#6a6e76 36%,#bdbec1 36%,#6a6e76 37%,#c1c1c4 37%,#c5c5c8 37%,#c1c1c4 37%,#676b73 38%,#c1c1c4 38%,#c5c5c8 38%,#c5c5c8 38%,#c1c1c4 38%,#6a6e76 38%,#c1c1c4 39%,#c5c5c8 39%,#c1c1c4 39%,#6a6e76 39%,#c1c1c4 39%,#c1c1c4 39%,#bebec1 40%,#6a6e76 40%,#bababe 40%,#3d444e 40%,#252d39 40%,#252d39 42%,#1a222f 42%,#252d39 42%,#252d3a 44%,#242c39 44%,#1a222f 44%,#252d39 44%,#252d3a 45%,#282f3a 45%,#695d3a 45%,#282f3a 45%,#252d39 46%,#1d2531 46%,#aeafb3 46%,#c2c2c5 46%,#c5c5c8 46%,#c5c5c8 47%,#c2c2c5 47%,#c5c5c8 47%,#c5c5c8 48%,#c2c1c4 49%,#6a6e76 49%,#c1c1c4 49%,#c5c5c8 49%,#c5c5c8 49%,#c2c2c5 49%,#c4c4c7 50%,#c2c2c5 50%,#c5c5c8 50%,#c5c5c8 50%,#c1c1c4 50%,#6a6e76 50%,#c1c1c4 51%,#c5c5c8 51%,#c1c1c4 51%,#666b74 51%,#666b74 52%,#c1c1c4 52%,#c5c5c8 52%,#c2c2c5 52%,#c5c5c8 52%,#c5c5c8 53%,#c1c1c4 53%,#676b73 53%,#bebec1 53%,#c5c5c8 53%,#c1c1c4 53%,#676b73 54%,#c1c1c4 54%,#c5c5c8 54%,#c2c1c4 54%,#c1c1c4 54%,#c5c5c8 54%,#c5c5c8 55%,#c1c1c4 55%,#666b74 55%,#666b74 55%,#bdbec1 55%,#6a6e76 56%,#c1c1c4 56%,#c5c5c8 56%,#c5c5c8 57%,#c1c1c4 58%,#c5c5c8 58%,#c1c1c4 58%,#6a6e76 58%,#bdbec1 59%,#c5c5c8 59%,#c6c5c8 59%,#d5c5c8 59%,#c2c1c4 59%,#6a6e76 59%,#c1c1c4 60%,#c1c1c4 60%,#6a6e76 60%,#c1c1c4 60%,#c5c5c8 60%,#c5c5c8 61%,#c1c1c4 61%,#6b6e76 61%,#c1c1c4 61%,#c5c5c8 61%,#c6c5c8 61%,#d5c5c8 62%,#c6c5c8 62%,#c3c2c5 62%,#c5c5c8 62%,#c5c5c8 64%,#c1c1c4 64%,#666b74 64%,#666b74 64%,#c1c1c4 64%,#c6c5c8 64%,#c6c5c8 65%,#d1c2c5 65%,#c6c5c8 66%,#c6c5c8 66%,#d5c5c8 67%,#c2c1c4 67%,#666b74 67%,#666b74 67%,#c1c1c4 67%,#c5c5c8 67%,#c7c5c8 69%,#d6c5c8 69%,#c6c5c8 69%,#c6c5c8 70%,#d5c5c8 70%,#c6c5c8 70%,#c6c5c8 70%,#968775 71%,#141c28 71%,#111a28 71%,#141c28 71%,#101926 72%,#141c28 72%,#5c5028 72%,#171e28 72%,#101926 72%,#141c28 72%,#5c5028 73%,#151c28 73%,#171e28 73%,#5c5028 73%,#525760 73%,#c5c5c8 73%,#c5c5c8 75%,#c1c1c4 75%,#6a6e76 75%,#c1c1c4 75%,#c1c1c4 76%,#6b6e76 76%,#d1c1c4 76%,#c6c5c8 76%,#c5c5c8 76%,#c2c1c4 76%,#676b73 77%,#d1c1c4 77%,#c6c5c8 77%,#c6c5c8 78%,#c0c0c3 78%,#222936 79%,#111a28 79%,#111a28 80%,#92959b 80%,#c5c5c8 80%,#c5c5c8 80%,#c2c2c5 81%,#c6c5c8 81%,#c5c5c8 82%,#686c75 82%,#111a28 82%,#141c28 82%,#363426 82%,#171e28 83%,#111a28 83%,#111a28 83%,#171e28 83%,#5a4f28 83%,#141c28 83%,#111a28 84%,#111a28 84%,#353c48 85%,#c4c4c7 85%,#c3c2c5 85%,#d5c5c8 85%,#c6c5c8 85%,#c5c5c8 86%,#c2c2c5 86%,#c5c5c8 86%,#c5c5c8 87%,#c2c2c5 87%,#c5c5c8 87%,#c5c5c8 88%,#babbbe 88%,#343c47 88%,#252d3a 88%,#282f39 89%,#3c3a2f 89%,#282f39 89%,#252d39 89%,#1a222f 89%,#242c39 90%,#1a222f 90%,#242c39 90%,#1a222f 90%,#282f39 90%,#6d5f3a 90%,#6d5f39 91%,#3e3b2f 91%,#272e39 91%,#1a222f 91%,#242c39 91%,#1a222f 91%,#282f39 92%,#282f3a 92%,#252d39 92%,#1a222f 92%,#242c39 93%,#252d39 93%,#1a222f 93%,#252d39 93%,#252d3a 93%,#252d39 95%,#1a222f 95%,#242c39 95%,#1a222f 95%,#282e39 95%,#252d39 96%,#282e3a 96%,#252d3a 96%,#282f3a 97%,#675c39 97%,#282f3a 97%,#252d3a 97%,#282e3a 97%,#252d3a 97%,#252d39 98%,#1b222f 99%,#19222f 99%,#252d39 99%,#282f3c 99%,#a8a9ad 99%,#6a6e76 100%,#c1c1c4 100%,#c5c5c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  padding: 5%;
-  margin: auto;
-
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
 }
 
 .carta
-{    	
-  max-width: 686px;
-  width: 100%;
-
-  min-height: 390px;
-  height: 100%;
-
+{  	
+  width: 70%;
+  
+  height: 40%;
+  
   background-color: #111a28;
-  padding: 30px;
+  padding: 3%;
   border-radius: 10px;
   margin: auto ;
   position: relative;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: flex-start;
+  align-content: stretch;
 }
 
 .img
 {
   width: 50%;
+  margin-right: 2%;
 
 }
 
 .img__logo {
   width: 20%;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 
 }   
 
 .img__box{
 
-  max-width: 330px;
-  max-height: 200px;
+  width: 100%;
+  max-height: 150px;
   height: 100%;
-  margin: auto;
   position: relative;
   padding: 0px;
+  margin-bottom: 25%;
+ 
 }
 
 .img__foto {
-
+ 
  position: absolute;
  left: 0;
  top: 0;
  bottom: 0;
  right: 0;
+ width: 100%;
+ height: 100%;
  z-index: 2;
 }
 
 .slider 
 {
-  max-width: 100px;
+ 
   width: 100%;
-
-  margin:auto;
+  max-width: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
 }
 
 .radio__item {
   display: inline-block;
-  border: 1.5px solid transporate;
-  border-radius: 11px;
-  position: relative;
-  margin-right: 5px;
-  vertical-align: middle;
+  border: 1px solid transporate;
+
+
+
 
   &:last-child {
     margin-right: 0px; 
@@ -108,11 +114,12 @@ body {
 }
 
 .radio__item label {
-  width: 12px;
-  height: 12px; 
+  width: 11px;
+  height: 11px; 
   display: block;
   border-radius: 50%;
-  background-color: red; 
+  
+  border: 1px solid transparent;
   
 }
 .radio__item label[for="blue"] {background-color: #1f273f;} 
@@ -122,14 +129,11 @@ body {
 
 .radio__item label:before {
   content: " ";
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  left: -1px;
-  width: 12px;
-  height: 12px;
+  
+  width: 11px;
+  height: 11px;
   border-radius: 11px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-color: transparent;
 }
 
@@ -137,30 +141,30 @@ body {
 
 .radio__item input[type=radio]:checked + label {
 
-  border: 1.5px solid white;
-  
+  border: 1px solid white;
+
 }
 
 .info 
 {
   width: 40%;
-  min-height: 400px;
+  max-height: 300px;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  box-sizing: border-box;
+  
 
 }
 .info__h2
-{ font-size: 1.7rem;
-  line-height: 1.1;
+{ font-size: 1.6rem;
+  line-height: 1.6;
   font-weight: 100;
   margin:0 0 5px;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .info__p
@@ -168,12 +172,13 @@ body {
   font-size: 1rem;
   line-height: 1.1;
   font-weight: 100;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 
 .rating 
 {
-  margin-bottom: 30px;
+  margin-bottom: 10%;
+
 
   
   &__star,
@@ -183,7 +188,7 @@ body {
     margin-right: 1px;
     .fas {
 
-      font-size: 12px;
+      font-size: 10px;
 
     }
 
@@ -209,7 +214,7 @@ body {
 .form 
 {
   width: 100%;
-  min-width: 220px;
+  max-width: 200px;
 
   min-height: 35px;
   height: 100%; 
@@ -235,7 +240,7 @@ body {
     margin-right: 10px; 
     border: 1px solid grey; 
 
-       &:last-child
+    &:last-child
     {
       margin-right: 0px;
 
@@ -243,7 +248,7 @@ body {
 
     & > * 
     {
-      min-height: 45px; 
+      min-height: 40px; 
       height: 100%; 
 
       width: 100%;  
@@ -273,7 +278,7 @@ body {
     width: 8px;
     height: 8px;
     top: 15px;
-    left: 70px;
+    left: 55px;
     color: #e1e1e1;
     border: 1px solid #e1e1e1;
     border-top-color: transparent;
@@ -288,40 +293,40 @@ body {
    background-color: #111a28;
    opacity: 0.6;
 
-  } 
+ } 
 
-  &__select--qty,
-  &__select--size{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 1px solid transparent; 
-     & > * {
-      background-color: #111a28;
-      border: 1px solid grey; 
-    }
+ &__select--qty,
+ &__select--size{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid transparent; 
+  & > * {
+    background-color: #111a28;
+    border: 1px solid grey; 
   }
-  
-  &__submit 
-  {
-   min-height: 55px; 
-   height: 100%; 
+}
 
-   width: 100%;
-   min-width: 220px;  
-   
-   font-size: 1rem;
-   padding: 0;
-   color: grey;
-   background-color: transparent; 
-   border: 1px solid grey;
- }
+&__submit 
+{
+ min-height: 50px; 
+ height: 100%; 
 
- &__submit:hover 
-  {
-   background-color: #111a28;
-   opacity: 0.6;
-  } 
+ width: 100%;
+ min-width: 200px;  
+
+ font-size: 1rem;
+ padding: 0;
+ color: grey;
+ background-color: transparent; 
+ border: 1px solid grey;
+}
+
+&__submit:hover 
+{
+ background-color: #111a28;
+ opacity: 0.6;
+} 
 
 } 
 
