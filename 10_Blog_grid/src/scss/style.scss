@@ -15,18 +15,23 @@ body {
 	background-color:#e2e2e2;
 	color: white;
 }
-
+.top__text {
+	position: absolute;
+	top:-10px;
+	right: -10px;
+	
+}
 
 .container {
-	width: 80%;
+	width: 100%;
+	max-width: 1120px;
 	margin: auto;
-	
 
 }
 
-.content {
+.content {	
+	padding-top: 50px;
 	width: 100%;
-	min-width: 1120px;
 }
 
 
@@ -36,6 +41,7 @@ body {
 	align-items: stretch; 
 	width: 100%;
 	height: 100%;
+	max-height: 540px;
 	margin-bottom: 2%;
 
 }
@@ -46,47 +52,67 @@ body {
 }
 
 //BIG BLOCK
-.box__width__2__3 { 	background-color: red;
+.box__width__2__3 { 
 	display: inline-block;
 	width: calc((32% *2) + 2%);
 	min-height: 540px;
 	height: 100%;
 	position: relative;
-	
 }
 
-.box__link__2__3 { 
+.box__link__2__3 {
+	background-color: white;	
+	display: block; 
+	text-decoration: none;
 	width: 100%;
 	height: 100%;
-	min-height: 540px;
-	display: block;
-	position: relative;
-	text-decoration: none;
-	background-color: red;
-	:hover{
-
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom:0;
+	left: 0;
+	z-index: 1;
+	:hover {
+	background: url();
 	}
-
-
 }
 
-.info__1 {
+.img__1 {
 	height: 100%;
 	width: 100%;	
 }
 
-
-.img__1 {
-
+.info__1 {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
+	top:0;
+	right: 0;
+	bottom:0;
+	left: 0;
+	z-index: 2;
+	color: white;
+	
+	.name__1 {
+		position: absolute;
+		top:0;
+		right: 0;
+		bottom:0;
+		left: 0;
+
+		padding-top: 60%;
+		font-size: 2rem;
+	}
+	.box__width__2__3__span {
+		display: block;
+		padding-top: 50%;
+		padding: 2%;
+		
+
+	}
+
 }
 
-
 //SMALL BLOCK
-.box__width__1__3 { border:1px solid red;
+.box__width__1__3 {
 	display: inline-block;
 	width: 32%;
 	min-height: 540px;
@@ -95,31 +121,60 @@ body {
 	
 }	
 
-.box__link__1__3 { 
+.box__link__1__3 { background-color: white;
+	display: block; 
+	text-decoration: none;
 	width: 100%;
 	height: 100%;
-	min-height: 540px;
-	display: block;
-	position: relative;
-	text-decoration: none;
-	background-color: red;
-	:hover{
-
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom:0;
+	left: 0;
+	z-index: 1;
+	
+	:hover {
+	background: url();
 	}
 
 }
-
-.info {
-
-	height: 50%;
-	width: 100%;	
-}
-
 
 .img__2,
 .img__3,
 .img__4,
 .img__5 {
-	width: 100%;
 	height: 50%;
+	width: 100%;
+}
+
+.info {
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom:0;
+	left: 0;
+	z-index: 2;
+	color: black;
+	
+	.name {
+		position: absolute;
+		top:0;
+		right: 0;
+		bottom:0;
+		left: 0;
+		padding-top: 90%;
+		font-size: 2rem;
+	}
+	.box__width__1__3__span {
+		display: block;
+		padding-top: 80%;
+		padding-left: 2%;
+		
+	}
+
+	.layer {
+		position: absolute;
+		bottom: 2%;
+		left:2%;	
+	}	
 }
