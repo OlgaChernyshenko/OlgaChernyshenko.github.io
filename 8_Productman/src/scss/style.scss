@@ -312,9 +312,16 @@ left:25%;
 	border-radius: 3px;
 	text-decoration: none;
 	position: relative;
+	
 
 }
-
+.galery__item {
+	&:hover {
+		cursor: pointer;
+		transition: .2s ease-out;
+		background-color: red;
+	}
+}
 .galery__link1 { 
 	display: block;
 	padding-top: 53.47%;

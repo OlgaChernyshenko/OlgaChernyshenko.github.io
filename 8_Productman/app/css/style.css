@@ -439,6 +439,15 @@ body
     border-radius: 3px;
 }
 
+.galery__item:hover
+{
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+            transition: .2s ease-out;
+
+    background-color: red;
+}
+
 .galery__link1
 {
     position: relative; 
