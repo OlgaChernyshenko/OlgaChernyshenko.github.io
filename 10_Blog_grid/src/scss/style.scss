@@ -5,7 +5,7 @@
 } 
 
 html, body {
-	line-height: 1vh;
+	line-height: 1.5;
 	font-size: 100%;
 }
 
@@ -13,28 +13,27 @@ body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	background-color:#e2e2e2;
-	color: white;
+	text-transform:uppercase;
+
 }
-.top__text {
-	position: absolute;
-	top:-10px;
-	right: -10px;
-	
-}
+
 
 .container {
 	width: 100%;
 	max-width: 1120px;
 	margin: auto;
+	padding-top: 40px;
+	position: relative;
+
 
 }
 
-.content {	
-	padding-top: 50px;
-	width: 100%;
+.top__text {
+	position: absolute;
+	top:-60px;
+	right: 0px;
+	
 }
-
-
 .row {	
 	display: flex;
 	justify-content: space-between;
@@ -46,18 +45,16 @@ body {
 
 }
 
-.box__width* 
-{
-	width: 100%;
-}
 
 //BIG BLOCK
 .box__width__2__3 { 
 	display: inline-block;
-	width: calc((32% *2) + 2%);
-	min-height: 540px;
 	height: 100%;
-	position: relative;
+min-height: 540px;	
+width: calc((32% *2) + 2%);
+:hover {
+	opacity:0.7;
+}
 }
 
 .box__link__2__3 {
@@ -66,58 +63,53 @@ body {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	top:0;
-	right: 0;
-	bottom:0;
-	left: 0;
-	z-index: 1;
-	:hover {
-	background: url();
-	}
+	min-height: 540px;	
+	position: relative;
+	padding-top: 0%;
+	padding-left: 0%;
+
+
 }
 
 .img__1 {
-	height: 100%;
-	width: 100%;	
-}
-
-.info__1 {
 	position: absolute;
-	top:0;
-	right: 0;
-	bottom:0;
-	left: 0;
-	z-index: 2;
+	height: 100%;
+	width: 100%;
+
+	object-fit: cover;	
+}
+
+
+.text1 {
+
+	position: absolute;
+
+	width: 80%;
+	font-size: 2rem;
 	color: white;
-	
-	.name__1 {
-		position: absolute;
-		top:0;
-		right: 0;
-		bottom:0;
-		left: 0;
+	bottom: 5%;
+	left:2%;
+}
 
-		padding-top: 60%;
-		font-size: 2rem;
-	}
-	.box__width__2__3__span {
-		display: block;
-		padding-top: 50%;
-		padding: 2%;
-		
-
-	}
+.span1 {
+	color: grey;
+	display: block;
+	position: absolute;
+	bottom: 25%;
+	left:2%;
 
 }
+
 
 //SMALL BLOCK
 .box__width__1__3 {
 	display: inline-block;
-	width: 32%;
-	min-height: 540px;
+min-height: 540px;	
 	height: 100%;
-	position: relative;
+	width: 32%;
+	:hover {
+	opacity:0.7;
+}
 	
 }	
 
@@ -126,16 +118,10 @@ body {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	top:0;
-	right: 0;
-	bottom:0;
-	left: 0;
-	z-index: 1;
-	
-	:hover {
-	background: url();
-	}
+	min-height: 540px;	
+	position: relative;
+	padding-bottom: 50%;
+	padding-left: 0%;
 
 }
 
@@ -143,38 +129,47 @@ body {
 .img__3,
 .img__4,
 .img__5 {
+	position: absolute;
 	height: 50%;
 	width: 100%;
+	object-fit: cover;
+}
+.text {
+
+	position: absolute;
+
+	font-size: 1.5rem;
+	color: black;
+	bottom: 15%;
+	left:2%;
 }
 
-.info {
+.span {
+	color: grey;
+	display: block;
 	position: absolute;
-	top:0;
-	right: 0;
-	bottom:0;
-	left: 0;
-	z-index: 2;
-	color: black;
-	
-	.name {
-		position: absolute;
-		top:0;
-		right: 0;
-		bottom:0;
-		left: 0;
-		padding-top: 90%;
-		font-size: 2rem;
-	}
-	.box__width__1__3__span {
-		display: block;
-		padding-top: 80%;
-		padding-left: 2%;
-		
-	}
+	bottom: 42%;
+	left:2%;
 
-	.layer {
-		position: absolute;
-		bottom: 2%;
-		left:2%;	
-	}	
+}
+
+.layer {
+	position: absolute;
+	bottom: 2%;
+	left:2%;	
+}	
+.load
+ {
+	width: 250px;
+	margin:auto;
+	padding-top: 2%;
+	display: flex;
+	justify-content: center;
+
+
+}
+.text__6 {
+	color: grey;
+	display: inline-block;
+	width: 200px;
 }
