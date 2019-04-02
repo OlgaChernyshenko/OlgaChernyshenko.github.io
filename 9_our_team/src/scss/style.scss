@@ -1,27 +1,3 @@
-$white: #ffffff;
-$black: #000000;
-$grey: #eaeaea;
-$green-color: #48bf72;
-$first-screen-bg: #3c4955;
-$placeholder-grey: #a6a5a5;
-
-$twitter: #55abed;
-$linkedin: #0975b3;
-$dribbble: #e94b89;
-$behance: #1769ff;
-
-
-$light-grey: lighten($black, 50%);
-$dark-text: $first-screen-bg;
-$form-blue: $first-screen-bg;
-
-//FONTS
-$fat-font: 'Big John';
-$slim-font: 'Slim Joe';
-
-
-// SIZES
-$container-width: 1140px;
 * {
 	box-sizing: border-box;
 }
@@ -34,12 +10,9 @@ html, body {
 body {
 	font-family: Roboto, Open-Sans, Raleway, sans-serif;
 	font-size: 100%;
+	margin-bottom: 0;
 }
 
-.section {
-	width: 85%;
-	margin: auto;
-}
 
 .header {
 	display: flex;
@@ -84,7 +57,7 @@ body {
 		order: 2;
 		font-size: 30px;
 		display: block;
-		
+		margin-bottom: 20px;
 		position: relative;
 		
 		&::before {
@@ -111,33 +84,27 @@ body {
 
 }
 .content {
-
+	width: 100%;
+	max-width: 1114px;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	position: relative;
 	margin-bottom: 20px;
+
 }	
 
 
 
 .container__right {
-	&::before {
-		content:'';
-		
-		width: 100%;
-		height: 420px;
-		border-left: 1px solid #fc0;
-		position: absolute;
-		top: 8%;
-		left: 0;
-	}
+	border-left: 1px solid #fc0;
 }
 
 .container__right,
 .container__left {
-	width: 40%;
+	width: 50%;
 	min-height: 500px;
 	height: 100%;
 	display: flex;
@@ -151,9 +118,10 @@ body {
 	}
 }
 
- 
 
-.image__box { 
+
+.image__box
+ { 
 	min-height: 300px;
 	max-width: 300px;
 	width: 100%;
@@ -167,8 +135,8 @@ body {
 		width:40%;
 		height: 40%;
 		position: absolute;
-		top:-10%;
-		left:-10%;	
+		top:-5%;
+		left:-5%;	
 		border-top: 1px solid #fc0;
 		border-left: 1px solid #fc0;
 		
@@ -180,15 +148,15 @@ body {
 		width:40%;
 		height: 40%;
 		position: absolute;
-		border-top: 1px solid $grey;
-		border-right: 1px solid $grey;
-		top:-10%;
-		left:70%;	
+		border-top: 1px solid #fc0;
+		border-right: 1px solid #fc0;
+		top:-5%;
+		left:65%;	
 		
 	}
 
 
-	.image__img {
+	.img {
 		border: 1px solid #fc0;
 		width: 100%;
 		height: 100%;
@@ -200,16 +168,22 @@ body {
 		object-position: 50% 0;
 		position: relative;
 
+
+	}
+}
+
+.image__box2 {
+
 		&::before {
 			content:'';
 			display: block;
 			width:40%;
 			height: 40%;
 			position: absolute;
-			top:90%;
-			left:10%;	
-			border-bottom: 1px solid $grey;
-			border-left: 1px solid $grey;	
+			bottom:-4%;
+			left:-5%;	
+			border-bottom: 1px solid #fc0;
+			border-left: 1px solid #fc0;	
 
 		}
 
@@ -219,16 +193,13 @@ body {
 			width:40%;
 			height: 40%;
 			position: absolute;
-			border: 1px solid #fc0;
-			border-bottom: 1px solid $grey;
-			border-left: 1px solid $grey;
-			top:-90%;
-			left:70%;	
+			border-bottom: 1px solid #fc0;
+			border-right: 1px solid #fc0;
+			bottom:-4%;
+			right:-5%;	
 
 		}
-
 	}
-}
 
 .container__right {
 
@@ -300,11 +271,11 @@ body {
 		border-radius: 50%;
 		
 		&:hover {
-		cursor: pointer;
-		transition: .2s ease;
-		background-color: #fc0;
-		color: white;
-	}
+			cursor: pointer;
+			transition: .2s ease;
+			background-color: #fc0;
+			color: white;
+		}
 
 
 	}
@@ -370,7 +341,12 @@ body {
 	text-transform:uppercase;
 	padding: 5px ; 
 	border:2px solid #fc0;
+&:hover {
+	border:2px solid #fc0;
+	color: #fff;
+	background-color: #fc0;
 
+}
 
 }
 //SLIDER
@@ -400,9 +376,9 @@ body {
 	.slider__link {
 
 		display: block;
-		$size:11px;
-		width:$size;
-		height: $size;
+	
+		width: 11px;
+		height: 11px;
 		border-radius: 50%;
 		background-color: #fc0;
 		&:hover {
@@ -424,45 +400,44 @@ body {
 .content__list__right
 {
 	display: block;
-	width: 3%;
+	width: 40px;
 	height: 100%;
 	min-height: 500px;
 	position: relative;
+	border: 1px solid #fff;
 
 	&:hover {
 		cursor: pointer;
 		background-color:#fc0;	
-		border:3px solid #fc0;
+		border:1px solid #fc0;
 		
 	}
 }
 
 .content__list__left::before {  
 	content:'';
-	$size:20px;
-	width:$size;
-	height: $size;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	$size-bord:3px;
-	border-bottom: $size-bord solid #fc0;
-	border-left: $size-bord solid #fc0; 
+	border-bottom: 3px solid #fc0;
+	border-left: 3px solid #fc0; 
 	transform: rotate(45deg);
+
 	top: 50%;
-	left:3%;
+	left:50%;
 
 }
 
 .content__list__right::after {
 	content:'';
-	$size:20px;
-	width:$size;
-	height: $size;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	$size-bord:3px;
-	border-top: $size-bord solid #fc0;
-	border-right: $size-bord solid #fc0; 
+	border-top: 3px solid #fc0;
+	border-right:  3px solid #fc0; 
 	transform: rotate(45deg);
+
 	top: 50%;
-	right:0px;
+	right:50%;
 
 }
