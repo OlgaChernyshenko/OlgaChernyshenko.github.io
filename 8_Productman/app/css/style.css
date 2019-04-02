@@ -409,15 +409,13 @@ body
     bottom: 60px;
     left: 30px; 
 
+    width: 10%;
+
     color: #fff;
 }
 
 .textspan
 {
-    position: absolute;
-    top: 40px;
-    left: 0;
-
     display: inline-block;
 
     margin-bottom: 15px;
@@ -438,8 +436,7 @@ body
 
     border-radius: 3px;
 }
-
-.galery__item:hover
+.galery__link:hover
 {
     cursor: pointer;
     -webkit-transition: .2s ease-out;
@@ -455,7 +452,6 @@ body
     display: block;
 
     padding-top: 53.47%;
-    padding-left: 100%;
 
     text-decoration: none;
 
@@ -473,7 +469,6 @@ body
 
     width: 100%;
     height: 100%;
-    max-height: 388px;
 
     -o-object-fit: cover;
        object-fit: cover;

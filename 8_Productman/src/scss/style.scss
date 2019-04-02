@@ -288,6 +288,7 @@ left:25%;
 
 	position: absolute;
 	font-size: 2rem;
+	width: 10%;
 	color: #fff;
 	bottom:60px;
 	left:30px;
@@ -297,9 +298,6 @@ left:25%;
 .textspan {
 
 	display: inline-block;
-	position: absolute;
-	top:40px;
-	left:0px;
 	margin-bottom: 15px;
 	border-bottom: 2px solid white;
 }
@@ -312,20 +310,19 @@ left:25%;
 	border-radius: 3px;
 	text-decoration: none;
 	position: relative;
-	
-
-}
-.galery__item {
 	&:hover {
 		cursor: pointer;
 		transition: .2s ease-out;
 		background-color: red;
 	}
+
+}
+.galery__item {
+	
 }
 .galery__link1 { 
 	display: block;
 	padding-top: 53.47%;
-	padding-left: 100%;
 	border-radius: 3px;
 	text-decoration: none;
 	position: relative;
@@ -336,7 +333,6 @@ left:25%;
 .galery__img--1 {
 	width: 100%;
 	height: 100%;
-	max-height: 388px;
 	object-fit: cover;
 	position: absolute;
 	left: 0;
