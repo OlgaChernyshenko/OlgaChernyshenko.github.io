@@ -228,8 +228,8 @@ body
 
     content: '';
 
-    border-top: 1px solid #fc0;
-    border-right: 1px solid #fc0;
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
 }
 .image__box .image__img
 {
@@ -264,8 +264,8 @@ body
 
     content: '';
 
-    border-bottom: 1px solid #fc0;
-    border-left: 1px solid #fc0;
+    border-bottom: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
 }
 .image__box .image__img::after
 {
@@ -281,8 +281,8 @@ body
     content: '';
 
     border: 1px solid #fc0;
-    border-bottom: 1px solid #fc0;
-    border-left: 1px solid #fc0;
+    border-bottom: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
 }
 
 .container__right

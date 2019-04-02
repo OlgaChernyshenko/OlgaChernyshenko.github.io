@@ -1,6 +1,31 @@
+$white: #ffffff;
+$black: #000000;
+$grey: #eaeaea;
+$green-color: #48bf72;
+$first-screen-bg: #3c4955;
+$placeholder-grey: #a6a5a5;
+
+$twitter: #55abed;
+$linkedin: #0975b3;
+$dribbble: #e94b89;
+$behance: #1769ff;
+
+
+$light-grey: lighten($black, 50%);
+$dark-text: $first-screen-bg;
+$form-blue: $first-screen-bg;
+
+//FONTS
+$fat-font: 'Big John';
+$slim-font: 'Slim Joe';
+
+
+// SIZES
+$container-width: 1140px;
 * {
 	box-sizing: border-box;
 }
+
 
 html, body {
 	min-height: 100vh;
@@ -155,8 +180,8 @@ body {
 		width:40%;
 		height: 40%;
 		position: absolute;
-		border-top: 1px solid #fc0;
-		border-right: 1px solid #fc0;
+		border-top: 1px solid $grey;
+		border-right: 1px solid $grey;
 		top:-10%;
 		left:70%;	
 		
@@ -183,8 +208,8 @@ body {
 			position: absolute;
 			top:90%;
 			left:10%;	
-			border-bottom: 1px solid #fc0;
-			border-left: 1px solid #fc0;	
+			border-bottom: 1px solid $grey;
+			border-left: 1px solid $grey;	
 
 		}
 
@@ -195,8 +220,8 @@ body {
 			height: 40%;
 			position: absolute;
 			border: 1px solid #fc0;
-			border-bottom: 1px solid #fc0;
-			border-left: 1px solid #fc0;
+			border-bottom: 1px solid $grey;
+			border-left: 1px solid $grey;
 			top:-90%;
 			left:70%;	
 

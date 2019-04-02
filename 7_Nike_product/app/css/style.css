@@ -46,7 +46,10 @@ body
     display: flex;
         flex-direction: row;
 
-    width: 70%;
+    width: 100%;
+    max-width: 688px;
+    height: 100%;
+    max-height: 394px;
     margin: auto;
     padding: 3%;
 
@@ -66,7 +69,6 @@ body
 .img
 {
     width: 50%;
-    margin-right: 2%;
 }
 
 .img__logo
@@ -81,7 +83,6 @@ body
 
     margin-bottom: 20%;
     padding-top: 50%;
-    padding-left: 50%;
 }
 
 .img__foto
@@ -96,8 +97,8 @@ body
     width: 100%;
     height: 100%;
 
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: content;
+       object-fit: content;
 }
 
 .slider
