@@ -6,15 +6,12 @@
 
 html, body 
 {
-	min-height: 100vh;
+	font-size: 100%;
 	line-height: 1.25;
 }
-
-
 body {
 
 	font-family: 'Lato', 'Roboto', 'Raleway', sans-serif;
-	font-size: 100%;
 	color: #303030;
 	background-color: #eee;
 }
@@ -33,7 +30,6 @@ body {
 	justify-content: space-between;
 	align-items: center; 
 	margin-bottom: 50px;
-
 }
 
 .logo__link {
@@ -59,14 +55,7 @@ body {
 	list-style: none;
 	width: 35%;
 
-	:hover {
-		color: red;
-		cursor: pointer;
-		transition: color .2s ease-out;
-
-	}
 }
-
 
 .nav__link {
 	text-decoration: none;
@@ -87,14 +76,12 @@ body {
 
 }
 
-
 .fas .fa-bars {
 	line-height: 8px;
 	font-weight: 900;	
 	color: black;
 
 }
-
 
 .gradient {
 	background: url('../img/gradien.png') 30% 30% no-repeat;
@@ -114,7 +101,6 @@ body {
 .slider {
 	width: 50%;
 	text-align: right;
-
 }
 
 .slider__h2 {	
@@ -154,9 +140,9 @@ body {
 
 
 .slider__img {
-position: absolute;
-top:5%;
-left:25%;
+	position: absolute;
+	top:5%;
+	left:25%;
 
 }
 
@@ -189,7 +175,7 @@ left:25%;
 	height: $size;
 	border-radius: 50%;
 	background-color: black;
-&:hover {
+	&:hover {
 		cursor: pointer;
 		transition: .2s ease-out;
 		background-color: red;
@@ -262,12 +248,13 @@ left:25%;
 .galery__item--1 {
 	min-height:388px;
 	height: 100%;
-	border-radius: 5px;
+	border-radius: 3px;
 	display: inline-block;
 	margin-bottom: 20px;
 	position: relative;
 
-	&	{	
+
+	&{	
 		width: 32%;
 	}
 	&:last-child,
@@ -281,8 +268,6 @@ left:25%;
 	}	
 }
 
-
-
 .galery__text,
 .galery__text--1 {	
 
@@ -292,7 +277,6 @@ left:25%;
 	color: #fff;
 	bottom:60px;
 	left:30px;
-
 }
 
 .textspan {
@@ -304,33 +288,28 @@ left:25%;
 
 //PADING HUCK
 .galery__link {
-	display: block;
 	padding-top: 110.25%;
-	padding-left: 100%;
-	border-radius: 3px;
-	text-decoration: none;
-	position: relative;
-	&:hover {
-		cursor: pointer;
-		transition: .2s ease-out;
-		
-	}
+}	
 
+.galery__link1 {
+	padding-top: 53.47%;
 }
-.galery__item {
-	
-}
+
+.galery__link,
 .galery__link1 { 
 	display: block;
-	padding-top: 53.47%;
 	border-radius: 3px;
 	text-decoration: none;
 	position: relative;
-
+	background-color: red;
+	&:hover {.galery__img--1 , .galery__img {
+		z-index: -1;
+	}
+}
 }
 
 .galery__img,
-.galery__img--1 {
+.galery__img--1{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -339,5 +318,8 @@ left:25%;
 	top: 0;
 	bottom: 0;
 	right: 0;
-
+	z-index: 3;
+	cursor: pointer;	
+	transition: .1s ease-out;
 }
+
