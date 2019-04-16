@@ -292,7 +292,16 @@ body {
 	display: block;
 	border-radius: 3px;
 	text-decoration: none;
+	&:hover>* {
+		
+			opacity: 1;
+			cursor: pointer;
+			transition: .2s ease-out;
+
+		
+	}
 }
+
 
 .fon {
 	position: absolute;
@@ -303,9 +312,7 @@ body {
 	z-index: 3;
 	background: red;
 	opacity: 0;
-	&:hover {
-		opacity: 1;
-	}
+	
 }
 
 .galery__img,

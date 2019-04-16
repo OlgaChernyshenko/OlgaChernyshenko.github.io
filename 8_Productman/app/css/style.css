@@ -438,6 +438,15 @@ body
 
     border-radius: 3px;
 }
+.galery__link:hover > *,
+.galery__link1:hover > *
+{
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+            transition: .2s ease-out; 
+
+    opacity: 1;
+}
 
 .fon
 {
@@ -450,10 +459,6 @@ body
 
     opacity: 0; 
     background: red;
-}
-.fon:hover
-{
-    opacity: 1;
 }
 
 .galery__img,
