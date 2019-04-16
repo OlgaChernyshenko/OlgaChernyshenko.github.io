@@ -39,14 +39,12 @@ body {
 	margin-bottom: 2%;
 
 }
-
-
 .box__width__2__3 { 
 	display: inline-block;
 	width: calc((32% *2) + 2%);
-:hover {
-	opacity:0.7;
-}
+	:hover {
+		opacity:0.7;
+	}
 }
 
 .box__link__2__3 {
