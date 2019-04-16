@@ -426,21 +426,28 @@ body
 .galery__link,
 .galery__link1
 {
-    position: relative;
-
     display: block;
 
-    text-decoration: none;
+    text-decoration: none; 
 
     border-radius: 3px;
-    background-color: red;
 }
-.galery__link:hover .galery__img--1,
-.galery__link:hover .galery__img,
-.galery__link1:hover .galery__img--1,
-.galery__link1:hover .galery__img
+
+.fon
 {
-    z-index: -1;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0; 
+    background: red;
+}
+.fon:hover
+{
+    opacity: 1;
 }
 
 .galery__img,

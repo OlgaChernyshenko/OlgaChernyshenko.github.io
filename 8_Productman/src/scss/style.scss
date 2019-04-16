@@ -300,12 +300,20 @@ body {
 	display: block;
 	border-radius: 3px;
 	text-decoration: none;
-	position: relative;
-	background-color: red;
-	&:hover {.galery__img--1 , .galery__img {
-		z-index: -1;
-	}
 }
+
+.fon {
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index: 3;
+	background: red;
+	opacity: 0;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .galery__img,
