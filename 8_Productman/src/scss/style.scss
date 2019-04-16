@@ -135,14 +135,15 @@ body {
 .slider__box {
 	width: 50%;
 	position: relative;
+	display: flex;
+	justify-content: center;
 	
 }
 
 
 .slider__img {
 	position: absolute;
-	top:5%;
-	left:25%;
+
 
 }
 

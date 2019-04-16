@@ -207,16 +207,22 @@ body
 
 .slider__box
 {
-    position: relative; 
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
     width: 50%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .slider__img
 {
     position: absolute;
-    top: 5%;
-    left: 25%;
 }
 
 .slider__list
