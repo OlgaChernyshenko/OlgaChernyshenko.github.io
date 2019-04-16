@@ -5,7 +5,7 @@
 } 
 
 html, body {
-	line-height: 1.5;
+	line-height: 1.1;
 	font-size: 100%;
 }
 
@@ -23,8 +23,6 @@ body {
 	max-width: 1120px;
 	margin: auto;
 	padding-top: 40px;
-	position: relative;
-
 
 }
 
@@ -39,8 +37,6 @@ body {
 	justify-content: space-between;
 	align-items: stretch; 
 	width: 100%;
-	height: 100%;
-	max-height: 540px;
 	margin-bottom: 2%;
 
 }
@@ -49,9 +45,7 @@ body {
 //BIG BLOCK
 .box__width__2__3 { 
 	display: inline-block;
-	height: 100%;
-min-height: 540px;	
-width: calc((32% *2) + 2%);
+	width: calc((32% *2) + 2%);
 :hover {
 	opacity:0.7;
 }
@@ -61,51 +55,72 @@ width: calc((32% *2) + 2%);
 	background-color: white;	
 	display: block; 
 	text-decoration: none;
-	width: 100%;
-	height: 100%;
-	min-height: 540px;	
-	position: relative;
-	padding-top: 0%;
-	padding-left: 0%;
-
 
 }
 
 .img__1 {
 	position: absolute;
-	height: 100%;
 	width: 100%;
-
+	height: 100%;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
 	object-fit: cover;	
 }
 
+.img__2,
+.img__3,
+.img__4,
+.img__5 {	
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	object-fit: cover;	
+}
+
+.wrapping1 {
+	position: relative;
+	width: 100%;
+	padding-top: 50%;
+
+}
+.wrapping2 {
+	position: relative;
+	padding-top: 60%;
+	width: 100%;
+
+}
 
 .text1 {
 
-	position: absolute;
-
-	width: 80%;
-	font-size: 2rem;
 	color: white;
-	bottom: 5%;
-	left:2%;
+	font-size: 26px;
+
+}
+.text {
+
+	font-size: 18px;
+	color: black;
 }
 
 .span1 {
-	color: grey;
-	display: block;
-	position: absolute;
-	bottom: 25%;
-	left:2%;
+	color: #818181;
 
 }
+.span2 {
+ 	color: #818181;
+
+} 
 
 
 //SMALL BLOCK
 .box__width__1__3 {
 	display: inline-block;
-min-height: 540px;	
-	height: 100%;
 	width: 32%;
 	:hover {
 	opacity:0.7;
@@ -113,56 +128,18 @@ min-height: 540px;
 	
 }	
 
-.box__link__1__3 { background-color: white;
+.box__link__1__3 { 
+	background-color: white;
 	display: block; 
 	text-decoration: none;
-	width: 100%;
 	height: 100%;
-	min-height: 540px;	
-	position: relative;
-	padding-bottom: 50%;
-	padding-left: 0%;
-
 }
 
-.img__2,
-.img__3,
-.img__4,
-.img__5 {
-	position: absolute;
-	height: 50%;
-	width: 100%;
-	object-fit: cover;
-}
-.text {
 
-	position: absolute;
-
-	font-size: 1.5rem;
-	color: black;
-	bottom: 15%;
-	left:2%;
-}
-
-.span {
-	color: grey;
-	display: block;
-	position: absolute;
-	bottom: 42%;
-	left:2%;
-
-}
-
-.layer {
-	position: absolute;
-	bottom: 2%;
-	left:2%;	
-}	
+//LOAD
 .load
  {
-	width: 250px;
 	margin:auto;
-	padding-top: 2%;
 	display: flex;
 	justify-content: center;
 
@@ -170,5 +147,8 @@ min-height: 540px;
 .text__6 {
 	color: grey;
 	display: inline-block;
-	width: 200px;
+
+}
+.img__6 {
+	margin-right: 10px;
 }
