@@ -16,16 +16,7 @@ html, body {
 
 body {
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
-	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
-	@font-face {
-		font-family: "Aleo";
-		src: url("../fonts/aleo/aleo-regular-webfont.eot"),
-		url("../fonts/aleo/aleo-regular-webfont.woff"),
-		url("../fonts/aleo/aleo-regular-webfont.woff2"),
-		url("../fonts/aleo/aleo-regular-webfont.ttf"),
-		url("../fonts/aleo/aleo-regular-webfont.svg");
-	}
+	font-family: "Josefin Sans", sans-serif;
 }
 .container,
 .container__header 
@@ -151,8 +142,8 @@ input[type="button"] {
 }
 
 .title {
-	display: block;
 	font-size: 40px;
+    font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing:2px;
 }
