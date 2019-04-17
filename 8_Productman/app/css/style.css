@@ -402,10 +402,8 @@ body
     font-size: 2rem;
 
     position: absolute;
-    bottom: 60px;
+    bottom: 30px;
     left: 30px; 
-
-    width: 10%;
 
     color: #fff;
 }
