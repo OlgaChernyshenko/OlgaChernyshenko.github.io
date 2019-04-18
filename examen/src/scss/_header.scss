@@ -1,0 +1,97 @@
+.header {
+	background-image: url("../img/header-bg.png");
+
+
+
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+}
+//TEXT
+.section-title {
+	width: 100%;
+	max-width: 315px;
+	margin: auto;
+	text-align: center;
+	letter-spacing:4px;
+	margin-bottom: 38px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: $font-size-title;
+	font-weight: $font-weight-title;
+}
+
+.text-1    
+{
+	text-transform: capitalize;
+	font-size: 22px;	
+	color: $light-color;
+	font-family: $secondary-font;
+}
+
+//SEARCH
+
+form {
+	display: block;
+	max-width: 650px;
+	position: relative;
+	margin-bottom: 100px;
+	margin: auto;
+	width: 100%;
+	min-height: 50px;
+	font-size: 0;
+	padding: 0;
+
+	input[type="text"] {	
+
+		width: calc(100% - 25%);
+		border: 2px solid transparent;
+		padding: 15px 0;
+		text-align: center;
+	}
+	input[type="text"]:hover {
+		border: 2px solid $white;
+		opacity: 0.5;
+
+	}
+
+	::-webkit-input-placeholder {
+		background-color: rgba(118,117,128,0.05);
+		font-family: $secondary-font;
+		font-size: $font-size;
+		font-weight: $font-weight-h2;
+		background-color: $white;
+	}
+
+	input[type="submit"] {	
+
+		display: inline-block;
+		border: 2px solid $white;
+		width: 25%;
+		height: 100%;
+		min-height: 50px;
+		vertical-align: top;
+		background: $light-blue-color url(../img/search-icon.svg) no-repeat 90% 50%;
+		background-size: 10%;
+		text-transform: uppercase;
+	}
+
+
+	input[type="submit"]:hover {
+		cursor: pointer;
+		border: 2px solid $white;
+		opacity: 0.5;
+		background-size: 15%;
+
+	}
+
+}
+
+
+

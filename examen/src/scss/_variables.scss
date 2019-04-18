@@ -8,32 +8,44 @@
         url("../fonts/aleo/aleo-regular-webfont.svg");
 }
 
-$white-color: #fff;
+$white: #fff;
+$black: #000;
 $light-color: #e8e8e8;
 $light-blue-color: #5474fd;
 $dark-blue-color: #496bfe;
 $light-grey-color: #333333;
 $dark-grey-color: #232323;
 $pink-color: #714141;
-$red-color: red;
+$placeholder-color: #999;
+$select-icon: #ff6363;
+$finger-icon: #00a2ff;
 
-$main-color: $white-color;
+$house-bg: #ad99b3;
+$rock-bg: #882738;
+
+$header-bg: #013381;
+
+$main-color: $white;
 $secondary-color: $light-color;
 
 $main-font: 'Aleo', sans-serif;
 $secondary-font: 'Josefin Sans', sans-serif;
 
+
+$font-size-title: 44px;
+$font-weight-title: 700;
+$font-size-h2: 34px;
+$font-weight-h2: 400;
 $font-size: 16px;
+$font-weight-text:200;
+$body-border: 15px;
 
 $img-path: '../img/';
 
-$color: black;
-
-
 $sections: (
 	first-screen: 'header-bg.png',
-	choose: 'choose-bg.png',
-	travel-first: 'house.png',
-	travel-last: 'rocks.png',
+	about: 'choose-bg.png',
+	travel-top: 'house.png',
+	travel-bottom: 'rocks.png',
 	testimonials: 'testimonials-bg.png' 
 );

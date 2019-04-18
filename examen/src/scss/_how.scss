@@ -1,0 +1,67 @@
+.how 
+{
+	background: $dark-grey-color;	
+	z-index: 5;
+}
+.row 
+{
+	justify-content: center;
+	padding: 70px 0;
+}
+
+.how__list 
+{ 	
+	width: 80%;
+	margin: auto;
+
+}
+.how__item 
+{	
+	text-align: center;
+	display: inline-block;
+	width: 250px;
+	background-color: $dark-grey-color;
+}
+
+.wrapper__svg {
+	position: relative;
+	z-index: 1;
+	padding-top: 37%;
+
+	& > * {
+		@include overlay;
+		object-fit: content;
+
+	}
+}
+
+
+
+.text-svg {
+	display: block;
+	width: 100%;
+	padding-top: 100px;
+	font-size: $font-size-h2;
+	font-family: $main-font;
+	text-transform: capitalize;
+	color: $light-color;
+	font-weight: $font-weight-h2;
+}
+
+.finger-icon, 
+.searh-icon,
+.select-icon
+{
+	width: 100%;
+}
+.finger-icon, 
+.searh-icon {
+
+	fill: #496bfe;
+}
+
+.select-icon
+{    
+	fill: #ff6363;
+}
+
