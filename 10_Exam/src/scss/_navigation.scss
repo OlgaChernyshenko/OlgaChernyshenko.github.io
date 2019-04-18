@@ -1,0 +1,36 @@
+.navigation {
+	background-color: $light-blue-color;
+	padding: 28px 0;
+
+	.row {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		@include logo;
+		font-size: px_to_rem(24px);
+	}
+
+	&__list {
+		display: flex;
+		flex-basis: 50%;
+		justify-content: space-between;
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+		display: block;
+		color: $main-color;
+		text-transform: uppercase;
+		@include transition(color);
+
+		&:hover {
+			color: darken($main-color, 50%);
+		}
+	}
+}
+//© 2019 GitHub, Inc.

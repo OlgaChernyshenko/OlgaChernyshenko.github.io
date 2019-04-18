@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+@font-face {
+ font-family: "Aleo";
+ src: url("../fonts/aleo/aleo-regular-webfont.eot"),
+        url("../fonts/aleo/aleo-regular-webfont.woff"),
+        url("../fonts/aleo/aleo-regular-webfont.woff2"),
+        url("../fonts/aleo/aleo-regular-webfont.ttf"),
+        url("../fonts/aleo/aleo-regular-webfont.svg");
+}
+
+$white: #fff;
+$black: #000;
+$light-color: #e8e8e8;
+$light-blue-color: #5474fd;
+$dark-blue-color: #496bfe;
+$light-grey-color: #333333;
+$dark-grey-color: #232323;
+$pink-color: #714141;
+$placeholder-color: #999;
+$select-icon: #ff6363;
+$finger-icon: #00a2ff;
+
+$house-bg: #ad99b3;
+$rock-bg: #882738;
+
+$header-bg: #013381;
+
+$main-color: $white;
+$secondary-color: $light-color;
+
+$main-font: 'Aleo', sans-serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+
+$font-size: 16px;
+$body-border: 15px;
+
+$img-path: '../img/';
+
+$sections: (
+	first-screen: 'header-bg.png',
+	about: 'choose-bg.png',
+	travel-top: 'house.png',
+	travel-bottom: 'rocks.png',
+	testimonials: 'testimonials-bg.png' 
+);
