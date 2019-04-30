@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 @font-face
 {
-    font-family: 'Miso Bold', 'Misobold', sans-serif;
+    font-family: 'Miso Bold';
 
-    src: url('../fonts/miso-bold.otf') format('otf'), url('../fonts/miso-light.otf') format('otf');
+    src: url('../fonts/miso-bold.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Miso Regular';
+
+    src: url('../fonts/miso-regular.woff') format('woff');
 }
 
 *
@@ -24,7 +31,7 @@ body
 
 body
 {
-    font-family: 'Miso Bold' ,'lato',  sans-serif;
+    font-family: 'lato',  sans-serif;
 }
 
 .section
