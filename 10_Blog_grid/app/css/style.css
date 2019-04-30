@@ -185,26 +185,21 @@ body
     color: #818181;
 }
 
-.box__width__1__3
-{
-    display: inline-block;
-
-    width: 32%;
-}
-.box__width__1__3 :hover
-{
-    opacity: .7;
-}
-
 .box__link__1__3
 {
     display: block;
+    display: inline-block;
 
-    height: 100%; 
+    width: 32%; 
+    height: 100%;
 
     text-decoration: none;
 
     background-color: white;
+}
+.box__link__1__3 :hover
+{
+    opacity: .7;
 }
 
 .load

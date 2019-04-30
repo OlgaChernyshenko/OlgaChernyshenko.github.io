@@ -1,27 +1,34 @@
 // Miso Bold, Miso, Lato, Arial, sans-serif
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+
 @font-face {
-    font-family: 'Miso Bold', 'Misobold', sans-serif;
-    src: url('../fonts/miso-bold.otf') format('otf'),
-         url('../fonts/miso-light.otf') format('otf');
-  }
+    font-family: "Miso Bold";
+    src: url("../fonts/miso-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Miso Regular";
+    src: url("../fonts/miso-regular.woff") format("woff");
+}
+
 * {
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
 }
 html, body {
-font-size: 100%;	
+font-size: 100%;
 background-color: #fdde7e;
 }
 
 body {
-	font-family:'Miso Bold' ,'lato',  sans-serif;
+	font-family:'lato',  sans-serif;
 
 }
 
 .section {
-	display: block;	
+	display: block;
 	min-height: 100vh;
 	max-width: 1140px;
 	width: 100%;
@@ -51,8 +58,7 @@ body {
 .bronze {flex-grow: 2;
 	flex-basis: 360px;
 	min-height: 443px;
- 
-	
+
 }
 .gold {flex-grow: 1;
 	flex-basis: 360px;
@@ -61,7 +67,6 @@ body {
 }
 .silver {flex-grow: 2;
 	flex-basis: 360px;
-	
 	min-height: 443px;
 
 }
@@ -78,7 +83,7 @@ left:43%;
 .price2 {
 position: absolute;
 top:47%;
-left:43%;	
+left:43%;
 }
 
 .price_title{
