@@ -4,7 +4,7 @@
 	padding: 0;
 }
 
-html, body 
+html, body
 {
 	font-size: 100%;
 	line-height: 1.25;
@@ -26,9 +26,9 @@ body {
 .header {
 	display: flex;
 	width: 100%;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content: space-between;
-	align-items: center; 
+	align-items: center;
 	margin-bottom: 50px;
 }
 
@@ -47,11 +47,11 @@ body {
 
 }
 
-.nav__header {   
+.nav__header {
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content:space-between;
-	align-items: center; 
+	align-items: center;
 	list-style: none;
 	width: 35%;
 
@@ -78,7 +78,7 @@ body {
 
 .fas .fa-bars {
 	line-height: 8px;
-	font-weight: 900;	
+	font-weight: 900;
 	color: black;
 
 }
@@ -86,16 +86,14 @@ body {
 .gradient {
 	background: url('../img/gradien.png') 30% 30% no-repeat;
 	background-position: center;
-	background-size: 50%;						
+	background-size: 50%;
 	width: 100%;
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: stretch;
-
-}
-.top__panel {
 	margin-bottom: 50px;
+
 }
 
 .slider {
@@ -103,7 +101,7 @@ body {
 	text-align: right;
 }
 
-.slider__h2 {	
+.slider__h2 {
 	font-family: 'Raleway',sans-serif;
 	font-size: 9.375rem;
 	font-weight: 900;
@@ -147,7 +145,7 @@ body {
 	list-style: none;
 	text-align: center;
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -165,7 +163,6 @@ body {
 }
 
 .slider__link {
-	
 	display: block;
 	$size:13px;
 	width:$size;
@@ -203,7 +200,6 @@ body {
 	letter-spacing: .02rem;
 	text-transform: capitalize;
 	color: black;
-	
 }
 .star__span {
 	background: url(../img/star.png) 50% no-repeat;
@@ -220,7 +216,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5rem;
 	display: inline-block;
-	width: 70%;   
+	width: 70%;
 	text-align: center;
 	letter-spacing: .02rem;
 	word-wrap: break-word;
@@ -246,22 +242,22 @@ body {
 	position: relative;
 
 
-	&{	
+	&{
 		width: 32%;
 	}
 	&:last-child,
 	&:nth-last-child(2),
-	&:nth-last-child(3) 
+	&:nth-last-child(3)
 	{
 		margin-bottom: 0;
 	}
 	&--1 {
 		width: 66%;
-	}	
+	}
 }
 
 .galery__text,
-.galery__text--1 {	
+.galery__text--1 {
 
 	position: absolute;
 	font-size: 2rem;
@@ -280,24 +276,24 @@ body {
 //PADING HUCK
 .galery__link {
 	padding-top: 110.25%;
-}	
+}
 
 .galery__link1 {
 	padding-top: 53.47%;
 }
 
 .galery__link,
-.galery__link1 { 
+.galery__link1 {
 	display: block;
 	border-radius: 3px;
 	text-decoration: none;
 	&:hover>* {
-		
+
 			opacity: 1;
 			cursor: pointer;
 			transition: .2s ease-out;
 
-		
+
 	}
 }
 
@@ -311,7 +307,7 @@ body {
 	z-index: 3;
 	background: red;
 	opacity: 0;
-	
+
 }
 
 .galery__img,
@@ -325,7 +321,7 @@ body {
 	bottom: 0;
 	right: 0;
 	z-index: 3;
-	cursor: pointer;	
+	cursor: pointer;
 	transition: .1s ease-out;
 }
 
