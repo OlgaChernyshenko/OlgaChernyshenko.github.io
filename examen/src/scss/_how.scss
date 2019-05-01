@@ -1,32 +1,47 @@
-.how 
+.how
 {
-	background: $dark-grey-color;	
+	background: $dark-grey-color;
 	z-index: 5;
 }
-.row 
+.row
 {
 	justify-content: center;
-	padding: 70px 0;
+	padding: 70px 0 100px;
 }
 
-.how__list 
-{ 	
-	width: 80%;
+.how__list
+{
+	display: flex;
+    justify-content: space-around;
+    width: 100%;
 	margin: auto;
 
 }
-.how__item 
-{	
+
+.how__list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 60px;
+    background: url(../img/wave.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.how__item
+{
 	text-align: center;
 	display: inline-block;
 	width: 250px;
-	background-color: $dark-grey-color;
 }
 
-.wrapper__svg {
+.wrapper-icon {
 	position: relative;
 	z-index: 1;
 	padding-top: 37%;
+	display: block;
 
 	& > * {
 		@include overlay;
@@ -34,34 +49,34 @@
 
 	}
 }
+//?
+.link {
 
+&__searh {
+		background-image: url("../img/searh.png");
+		background-repeat:no-repeat;
+	 	background-position:center;
+	 	.text-icon {
+	 		padding-top: 37%;
+	 	}
+	}
 
+&__checke {
+		background-image: url("../img/checke.png");
+		background-repeat:no-repeat;
+	 	background-position:center;
+	 	.text-icon {
+	 		padding-top: 37%;
+	 	}
+	}
 
-.text-svg {
-	display: block;
-	width: 100%;
-	padding-top: 100px;
-	font-size: $font-size-h2;
-	font-family: $main-font;
-	text-transform: capitalize;
-	color: $light-color;
-	font-weight: $font-weight-h2;
+&__finger	{
+		background-image: url("../img/finger.png");
+		background-repeat:no-repeat;
+	 	background-position:center;
+	 	.text-icon {
+	 		padding-top: 37%;
+	 	}
+	}
 }
-
-.finger-icon, 
-.searh-icon,
-.select-icon
-{
-	width: 100%;
-}
-.finger-icon, 
-.searh-icon {
-
-	fill: #496bfe;
-}
-
-.select-icon
-{    
-	fill: #ff6363;
-}
-
+//?

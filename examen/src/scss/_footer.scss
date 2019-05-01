@@ -1,0 +1,30 @@
+.footer
+{
+	background: $dark-grey-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0 50px;
+}
+.footer-content {
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-logo {
+text-align: center;
+}
+.social-menu {
+	list-style: none;
+	text-align: center;
+	letter-spacing: 8px;
+}
+.social-menu__item {
+	display: inline-block;
+	:hover {
+		color: $light-blue-color;
+		cursor:pointer;
+	}
+}
