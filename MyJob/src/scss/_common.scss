@@ -1,0 +1,21 @@
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	color: $dark-text;
+}
+
+a {
+	color: $dark-text;
+	text-decoration: none;
+	@include transition(color);
+
+	&:hover {
+		text-decoration: none;
+		color: $corp-green;
+	}
+}
+
