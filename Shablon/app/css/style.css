@@ -28,17 +28,13 @@ a:hover
     color: #30d596;
 }
 
-#first
+.first-screen
 {
     min-height: 100vh;
 
-    background-image: url('../img/1.jpg');
+    background-image: url(../img/1-min.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    background-size: 100%;
 }
 
 .footer
