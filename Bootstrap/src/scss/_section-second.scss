@@ -1,0 +1,27 @@
+.second {
+	min-height: 60vh;
+	background-color: $light-grey;
+}
+#second-container{
+	justify-align:center;
+	vertical-align: middle;
+	width: 50%;
+
+}
+
+.vcenter {
+	width: 100%;
+	height: 10vh;
+	display: inline-block;
+	vertical-align: middle;
+}
+#carouselExampleFade {
+	max-height: 300px;
+	max-width: 480px;
+	-webkit-box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
+}
+.second-img {
+	object-fit: content;
+}

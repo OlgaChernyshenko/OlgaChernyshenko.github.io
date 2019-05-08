@@ -7,7 +7,12 @@ body {
 	font-size: $base-size;
 	color: $dark-text;
 }
-
+section {
+	min-height: 100vh;
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+}
 a {
 	color: $dark-text;
 	text-decoration: none;
