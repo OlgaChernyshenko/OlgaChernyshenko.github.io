@@ -22,3 +22,11 @@ $main-title: px_to_rem(36px);
 $main-title-home: 2.7rem;
 
 $img-path: "../img";
+
+$bar-length: 28px;
+$bar-thickness: 4px;
+$nav-item-delay: 0.05s;
+$nav-width: 3.75rem;
+
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$cubic-transition: 0.55s $ease-in-out-cubic;

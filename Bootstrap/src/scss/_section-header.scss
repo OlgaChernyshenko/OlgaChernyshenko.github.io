@@ -1,36 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans');
-$main-font: 'Open Sans', sans-serif;
-$secondary-font: 'Montserrat', sans-serif;
-
-$dark-text: #413b3f;
-$footer-text: #b38f48;
-
-$corp-green: #a08350;
-$middle:#8f724d;
-$light-grey: #30d596;
-
-$white: #ffffff;
-$black:#3a3635;
-
-// Colors
-$primary: #9ac6ac;
-$primary-ultralight: mix(white, $primary, 80%);
-$primary-light: mix(white, $primary, 25%);
-$primary-dark: mix(black, $primary, 25%);
-$primary-ultradark: mix(black, $primary, 80%);
-$black: #222222;
-$white: #eeeeee;
-
-
-
-$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
-$cubic-transition: 0.55s $ease-in-out-cubic;
-
-$bar-length: 28px;
-$bar-thickness: 4px;
-$nav-item-delay: 0.05s;
-$nav-width: 3.75rem;
-
 *,
 *:before,
 *:after {
@@ -38,14 +5,14 @@ $nav-width: 3.75rem;
 }
 
 html {
-    font-family: $raleway;
-    background-color: $primary-ultralight;
+    font-family: $main-font;
+    background-color: $middle;
     min-height: 100%;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: $raleway;
+    font-family: $main-font;
     margin: 0;
 }
 
@@ -67,7 +34,7 @@ a {
 
     h1,
     h4 {
-        color: $primary-ultradark;
+        color: $footer-text;
     }
 
     h1 {
@@ -79,7 +46,7 @@ a {
     }
 
     a {
-        color: $primary-ultradark;
+        color: $light-grey;
     }
 }
 
@@ -89,7 +56,7 @@ a {
     right: 0;
     bottom: 0;
     width: $nav-width;
-    background-color: $primary-ultradark;
+    background-color: $middle;
     transition: 1s $ease-in-out-cubic;
     will-change: width;
     z-index: 99;
@@ -111,7 +78,7 @@ a {
     // transform-origin: 100% 50%;
     z-index: 10;
 
-    .bars {
+    .bar, .bars {
         position: relative;
 
         &,
@@ -119,7 +86,7 @@ a {
         &:after {
             width: $bar-length;
             height: $bar-thickness;
-            background-color: $primary;
+            background-color: $light-grey;
             border-radius: $bar-thickness;
             transition: 0.2s ease-in-out;
         }
@@ -137,21 +104,26 @@ a {
         &:before {
             transform: translateY(-($bar-thickness*2));
 
-        &:after {
-            transform: translateY(($bar-thickness*2));
-        }
-    }
-
-    &.is-active {
-        transform: rotate(-45deg);
-
-        .bars {
-            &:before,
             &:after {
-                transform: translateX(0)
-                           rotate(-90deg);
+                transform: translateY(($bar-thickness*2));
             }
         }
+
+        &.is-active {
+            transform: rotate(-45deg);
+
+            .bars {
+                &:before,
+                &:after {
+                    transform: translateX(0)
+                    rotate(-90deg);
+                }
+            }
+        }
+    }
+    .bars {
+        top: 4px;
+        left: 0;
     }
 }
 
@@ -212,11 +184,11 @@ a {
     a {
         display: inline-block;
         padding: 1rem;
-        color: $primary;
+        color: $light-grey;
         text-decoration: none;
-        font-size: 3rem;
-        font-size: 10vw;
-        font-size: 14vmin;
+        font-size: 2.5rem;
+        font-size: 8vw;
+        font-size: 11vmin;
         font-weight: 300;
         opacity: 0;
         transform: translateY(100%);
@@ -227,14 +199,4 @@ a {
             color: white;
         }
     }
-}
-
-.nav__divider {
-    margin: 1.75rem 0 1.5rem;
-    width: 100%;
-    height: 2px;
-    background-color: $primary;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: 0.3s $ease-in-out-cubic;
 }
