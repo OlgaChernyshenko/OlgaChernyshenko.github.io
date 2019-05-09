@@ -260,6 +260,15 @@ a {
 	color: #ffe304;
 }
 
+a {
+	display: inline-block;
+	color: #30d596;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffe304;
+}
+
 #first {
 	background-image: url("../img/1.jpg");
 	background-position: center;
@@ -308,38 +317,254 @@ a {
 }
 
 .second {
-	min-height: 60vh;
-	background-color: #30d596;
+	background: #dad8ed;
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#dad8ed), color-stop(0%, #d5d4e6), color-stop(1%, #c9d1e4), color-stop(1%, #c7d4e7), color-stop(2%, #d5d7e4), color-stop(2%, #e6e1e7), color-stop(2%, #e9e2e9), color-stop(3%, #e3dee5), color-stop(3%, #dbd9e6), color-stop(3%, #d9dbea), color-stop(4%, #d4d9ed), color-stop(4%, #d1d7ed), color-stop(4%, #c3d2e9), color-stop(4%, #c1d1ea), color-stop(4%, #bfd3ec), color-stop(5%, #c9d4e8), color-stop(5%, #cfd7ec), color-stop(5%, #d0d6ec), color-stop(6%, #c3d5e9), color-stop(6%, #c0d2ea), color-stop(7%, #c5d5ef), color-stop(8%, #c4d4ed), color-stop(8%, #c7d8ec), color-stop(11%, #c6d7e9), color-stop(12%, #c8d8ef), color-stop(13%, #c8d7ea), color-stop(13%, #ccd9ec), color-stop(14%, #cdd8ea), color-stop(16%, #d2daed), color-stop(16%, #d5ddf0), color-stop(17%, #d3dbee), color-stop(18%, #d4dcef), color-stop(18%, #d1d9ec), color-stop(18%, #d1d9ec), color-stop(19%, #d3dbee), color-stop(19%, #d7e3f1), color-stop(20%, #d9e3ef), color-stop(20%, #dde5f2), color-stop(21%, #e2e5f4), color-stop(21%, #dee4f2), color-stop(21%, #dbe3f0), color-stop(22%, #e1e7f3), color-stop(22%, #dfe5f1), color-stop(23%, #e4e8f3), color-stop(24%, #e1e5f1), color-stop(24%, #dde3f1), color-stop(25%, #e0e6f4), color-stop(26%, #e0e6f4), color-stop(27%, #dfe6f0), color-stop(29%, #dfe5f3), color-stop(29%, #dde3f1), color-stop(29%, #dee4f2), color-stop(29%, #dce2ee), color-stop(30%, #dce3ed), color-stop(30%, #dae1eb), color-stop(30%, #dde3f1), color-stop(32%, #e1e4e9), color-stop(32%, #e3e3eb), color-stop(32%, #e3e4e9), color-stop(33%, #e8e7ec), color-stop(33%, #e6e7ec), color-stop(34%, #e0e3ea), color-stop(34%, #dbe3ee), color-stop(35%, #e3e4e9), color-stop(35%, #e5e6eb), color-stop(36%, #d4ddee), color-stop(36%, #c8d4ea), color-stop(37%, #bdd1e9), color-stop(37%, #b8d2e9), color-stop(38%, #b5cfe6), color-stop(40%, #b4d0e5), color-stop(41%, #b6d2e7), color-stop(41%, #b4cce4), color-stop(43%, #b3cce2), color-stop(43%, #b6cddd), color-stop(44%, #b7cede), color-stop(45%, #b5ccda), color-stop(45%, #b8cdde), color-stop(48%, #b6cad3), color-stop(49%, #bccbd2), color-stop(50%, #bec7cc), color-stop(50%, #c1c9cc), color-stop(50%, #cfcdce), color-stop(51%, #d4c7bf), color-stop(51%, #d8c6bc), color-stop(51%, #d9c8c0), color-stop(51%, #d0c8c5), color-stop(51%, #cbc7c6), color-stop(51%, #c6c7cc), color-stop(51%, #c3c9bf), color-stop(52%, #d0e274), color-stop(52%, #d8e86c), color-stop(52%, #d4e269), color-stop(52%, #d8e369), color-stop(53%, #cada56), color-stop(53%, #cede59), color-stop(53%, #cbdd57), color-stop(53%, #d1de5a), color-stop(53%, #d7e762), color-stop(53%, #b9d54c), color-stop(53%, #bbda50), color-stop(54%, #b5d148), color-stop(54%, #bcd24b), color-stop(54%, #c9df58), color-stop(54%, #d0e860), color-stop(54%, #c2de55), color-stop(54%, #adcf44), color-stop(54%, #a8cd41), color-stop(54%, #b0d247), color-stop(55%, #b3d648), color-stop(55%, #aed441), color-stop(55%, #add340), color-stop(55%, #a6c939), color-stop(55%, #abcb44), color-stop(55%, #c0dc65), color-stop(55%, #d2ea8a), color-stop(55%, #ddf2ad), color-stop(55%, #e0f4b5), color-stop(56%, #dbf3a9), color-stop(56%, #def5a3), color-stop(56%, #d8ef97), color-stop(56%, #d3e784), color-stop(56%, #d6e774), color-stop(56%, #d6dc56), color-stop(56%, #d9df57), color-stop(57%, #d5e05d), color-stop(57%, #cbdb57), color-stop(57%, #c6db52), color-stop(57%, #b7d245), color-stop(57%, #9fc230), color-stop(57%, #96c42e), color-stop(57%, #89c531), color-stop(57%, #6fb725), color-stop(57%, #4c9d10), color-stop(58%, #389006), color-stop(58%, #2d8904), color-stop(58%, #308b08), color-stop(58%, #2d8300), color-stop(58%, #398b03), color-stop(58%, #51980e), color-stop(58%, #70a517), color-stop(59%, #85b223), color-stop(59%, #89b929), color-stop(59%, #8dbf2c), color-stop(59%, #89bd2a), color-stop(59%, #7db31f), color-stop(59%, #76ac18), color-stop(59%, #7eb21f), color-stop(59%, #96c737), color-stop(60%, #86b124), color-stop(60%, #9ac339), color-stop(60%, #acd048), color-stop(60%, #b1d24d), color-stop(60%, #aecf4c), color-stop(60%, #9dc040), color-stop(60%, #a6c94b), color-stop(61%, #99b93a), color-stop(61%, #9ebd3c), color-stop(61%, #bfdd5b), color-stop(61%, #cdeb67), color-stop(61%, #c2db5b), color-stop(61%, #afc848), color-stop(61%, #b9d451), color-stop(62%, #c6e15e), color-stop(62%, #bad852), color-stop(62%, #bbda51), color-stop(62%, #b5d64b), color-stop(62%, #96b72c), color-stop(62%, #86a81e), color-stop(62%, #7fa31b), color-stop(62%, #88b029), color-stop(63%, #aad64f), color-stop(63%, #c4f069), color-stop(63%, #a2cc46), color-stop(63%, #99c53e), color-stop(63%, #a1cf48), color-stop(63%, #8bbe35), color-stop(63%, #7db327), color-stop(63%, #8fc438), color-stop(64%, #93c236), color-stop(64%, #8eb42b), color-stop(64%, #a8c43c), color-stop(64%, #bad14b), color-stop(64%, #aec841), color-stop(64%, #c3de59), color-stop(64%, #a5bf40), color-stop(64%, #b0c951), color-stop(65%, #cfe775), color-stop(65%, #d4ec7c), color-stop(65%, #cce774), color-stop(65%, #c1dc67), color-stop(65%, #acca4e), color-stop(65%, #92b331), color-stop(65%, #a7cf4a), color-stop(65%, #b5e35c), color-stop(65%, #8fc33b), color-stop(66%, #5f9911), color-stop(66%, #4e8d0a), color-stop(66%, #62a41e), color-stop(66%, #6eaf1f), color-stop(66%, #76b21f), color-stop(66%, #94c43c), color-stop(66%, #9ec944), color-stop(66%, #9fcd47), color-stop(67%, #91c43b), color-stop(67%, #8abf2f), color-stop(67%, #8bc12f), color-stop(67%, #99ca3b), color-stop(67%, #8bba2e), color-stop(67%, #83b32c), color-stop(67%, #689a15), color-stop(67%, #90c340), color-stop(67%, #8ebc38), color-stop(68%, #6e920c), color-stop(68%, #93b731), color-stop(68%, #93c13d), color-stop(68%, #9cd04a), color-stop(68%, #68a317), color-stop(68%, #4c8d00), color-stop(68%, #62aa1a), color-stop(68%, #5ea614), color-stop(69%, #6cae18), color-stop(69%, #99d138), color-stop(69%, #8cb91e), color-stop(69%, #a1c934), color-stop(69%, #b6e058), color-stop(69%, #699519), color-stop(69%, #87b845), color-stop(69%, #b1e171), color-stop(69%, #c0e971), color-stop(70%, #a9d05d), color-stop(70%, #b4dd7f), color-stop(70%, #ccf29f), color-stop(70%, #ddfaaa), color-stop(70%, #c2e07e), color-stop(70%, #b8e25a), color-stop(70%, #92c029), color-stop(70%, #93bf2e), color-stop(71%, #9cc739), color-stop(71%, #9aca3a), color-stop(71%, #92c739), color-stop(71%, #3f7d00), color-stop(71%, #86c540), color-stop(71%, #96cf4a), color-stop(71%, #6fa825), color-stop(71%, #4d8c09), color-stop(71%, #51950e), color-stop(72%, #5aa113), color-stop(72%, #4f9302), color-stop(72%, #6eab1f), color-stop(72%, #6daa1f), color-stop(72%, #4f9207), color-stop(72%, #468f02), color-stop(72%, #68af25), color-stop(73%, #7bb431), color-stop(73%, #79ac2b), color-stop(73%, #74a829), color-stop(73%, #82bb3a), color-stop(73%, #97db54), color-stop(73%, #5fa51e), color-stop(73%, #50940d), color-stop(73%, #7dbb34), color-stop(73%, #7cb228), color-stop(74%, #7db128), color-stop(74%, #6ea81e), color-stop(74%, #87c540), color-stop(74%, #8cce52), color-stop(74%, #6baf36), color-stop(74%, #5da126), color-stop(74%, #488a0c), color-stop(74%, #4c8e0a), color-stop(75%, #619f1a), color-stop(75%, #468200), color-stop(75%, #77b127), color-stop(75%, #62a00f), color-stop(75%, #82c02f), color-stop(75%, #63a213), color-stop(75%, #5a980f), color-stop(75%, #3f7d00), color-stop(76%, #4d840c), color-stop(76%, #8dbb3e), color-stop(76%, #a8d556), color-stop(76%, #7aad2e), color-stop(76%, #619e1c), color-stop(76%, #66b22c), color-stop(76%, #57a81f), color-stop(76%, #519e10), color-stop(76%, #5da416), color-stop(77%, #4e8d08), color-stop(77%, #619e1f), color-stop(77%, #59921d), color-stop(77%, #86bc4a), color-stop(77%, #a7dc66), color-stop(77%, #8dbf44), color-stop(77%, #a8da57), color-stop(77%, #6ca219), color-stop(78%, #3e7e00), color-stop(78%, #4b9407), color-stop(78%, #439205), color-stop(78%, #499c10), color-stop(78%, #42930a), color-stop(78%, #3f9007), color-stop(78%, #499912), color-stop(78%, #4b9d17), color-stop(78%, #318400), color-stop(79%, #378a06), color-stop(79%, #4e9f1e), color-stop(79%, #3e8d0d), color-stop(79%, #5da528), color-stop(79%, #7fc348), color-stop(79%, #45850a), color-stop(79%, #5f9e1c), color-stop(79%, #8ccc40), color-stop(80%, #7bbc24), color-stop(80%, #6bab16), color-stop(80%, #7cbd2f), color-stop(80%, #76b832), color-stop(80%, #8bce4d), color-stop(80%, #81c647), color-stop(80%, #63aa28), color-stop(80%, #529a14), color-stop(81%, #70b830), color-stop(81%, #579f17), color-stop(81%, #539c19), color-stop(81%, #55a727), color-stop(81%, #59ae2d), color-stop(81%, #4fa220), color-stop(81%, #41930d), color-stop(82%, #398700), color-stop(82%, #509913), color-stop(82%, #559d15), color-stop(82%, #3c8400), color-stop(82%, #549a15), color-stop(82%, #519713), color-stop(82%, #408707), color-stop(82%, #469013), color-stop(82%, #519c25), color-stop(83%, #388511), color-stop(83%, #59a737), color-stop(83%, #1a7202), color-stop(83%, #348b18), color-stop(83%, #2b7600), color-stop(83%, #1e6300), color-stop(83%, #317609), color-stop(84%, #1e6500), color-stop(84%, #26730d), color-stop(84%, #246f06), color-stop(84%, #347b05), color-stop(84%, #3d8203), color-stop(84%, #3f8701), color-stop(84%, #5ba720), color-stop(84%, #2b7e00), color-stop(84%, #348a0d), color-stop(85%, #499f24), color-stop(85%, #106900), color-stop(85%, #267d12), color-stop(85%, #31841a), color-stop(85%, #29780f), color-stop(86%, #1a6700), color-stop(86%, #237103), color-stop(86%, #207000), color-stop(86%, #33840e), color-stop(86%, #287704), color-stop(86%, #0b5700), color-stop(86%, #206400), color-stop(86%, #2b6b0b), color-stop(86%, #316b14), color-stop(87%, #337217), color-stop(87%, #55a439), color-stop(87%, #1b7104), color-stop(87%, #065800), color-stop(87%, #0d5e01), color-stop(87%, #095904), color-stop(87%, #0f6014), color-stop(88%, #06560d), color-stop(88%, #004e02), color-stop(88%, #015603), color-stop(88%, #045602), color-stop(88%, #024f00), color-stop(88%, #0c5003), color-stop(89%, #0b4400), color-stop(89%, #79b26e), color-stop(89%, #54984d), color-stop(89%, #004800), color-stop(89%, #105a05), color-stop(89%, #0e5200), color-stop(89%, #1e5900), color-stop(89%, #1c5200), color-stop(90%, #4b7b15), color-stop(90%, #66972c), color-stop(90%, #599122), color-stop(90%, #296800), color-stop(90%, #236300), color-stop(90%, #2b6600), color-stop(90%, #5a952b), color-stop(90%, #2d6f01), color-stop(91%, #33770a), color-stop(91%, #2d710e), color-stop(91%, #0b5100), color-stop(91%, #2d7416), color-stop(91%, #317a21), color-stop(91%, #014a00), color-stop(91%, #044e03), color-stop(91%, #004900), color-stop(92%, #0a590a), color-stop(92%, #035300), color-stop(92%, #186811), color-stop(92%, #095904), color-stop(92%, #004e00), color-stop(92%, #0f6100), color-stop(92%, #2e801a), color-stop(92%, #30831b), color-stop(92%, #0e5f00), color-stop(93%, #0b5700), color-stop(93%, #347e29), color-stop(93%, #3b8234), color-stop(93%, #074b00), color-stop(93%, #165909), color-stop(93%, #0f5400), color-stop(93%, #327815), color-stop(93%, #287004), color-stop(94%, #226800), color-stop(94%, #347a0a), color-stop(94%, #70b34a), color-stop(94%, #71b150), color-stop(94%, #2b670d), color-stop(94%, #3a761e), color-stop(94%, #195900), color-stop(94%, #4c8a27), color-stop(94%, #3f7d10), color-stop(95%, #327100), color-stop(95%, #65a12f), color-stop(95%, #3a7507), color-stop(95%, #63a038), color-stop(95%, #6cad49), color-stop(95%, #46892a), color-stop(95%, #0b5200), color-stop(95%, #2e7819), color-stop(96%, #297417), color-stop(96%, #075300), color-stop(96%, #0a5502), color-stop(96%, #0c5609), color-stop(96%, #045008), color-stop(96%, #004e06), color-stop(96%, #005008), color-stop(96%, #005100), color-stop(97%, #13630a), color-stop(97%, #055100), color-stop(97%, #1a6508), color-stop(97%, #135c02), color-stop(97%, #074d00), color-stop(97%, #034900), color-stop(97%, #105303), color-stop(97%, #145708), color-stop(98%, #0e5104), color-stop(98%, #317528), color-stop(98%, #2e6e24), color-stop(98%, #376e2a), color-stop(98%, #22560e), color-stop(98%, #336818), color-stop(98%, #4e8430), color-stop(98%, #417624), color-stop(99%, #528735), color-stop(99%, #619542), color-stop(99%, #437418), color-stop(99%, #5f8e30), color-stop(99%, #87b35a), color-stop(99%, #7fa655), color-stop(99%, #4a6e24), color-stop(100%, #3c5e14), color-stop(100%, #547429), color-stop(100%, #607e36), color-stop(100%, #324c0d), to(#1c3500));
+	background: linear-gradient(to bottom, #dad8ed 0%, #d5d4e6 0%, #c9d1e4 1%, #c7d4e7 1%, #d5d7e4 2%, #e6e1e7 2%, #e9e2e9 2%, #e3dee5 3%, #dbd9e6 3%, #d9dbea 3%, #d4d9ed 4%, #d1d7ed 4%, #c3d2e9 4%, #c1d1ea 4%, #bfd3ec 4%, #c9d4e8 5%, #cfd7ec 5%, #d0d6ec 5%, #c3d5e9 6%, #c0d2ea 6%, #c5d5ef 7%, #c4d4ed 8%, #c7d8ec 8%, #c6d7e9 11%, #c8d8ef 12%, #c8d7ea 13%, #ccd9ec 13%, #cdd8ea 14%, #d2daed 16%, #d5ddf0 16%, #d3dbee 17%, #d4dcef 18%, #d1d9ec 18%, #d1d9ec 18%, #d3dbee 19%, #d7e3f1 19%, #d9e3ef 20%, #dde5f2 20%, #e2e5f4 21%, #dee4f2 21%, #dbe3f0 21%, #e1e7f3 22%, #dfe5f1 22%, #e4e8f3 23%, #e1e5f1 24%, #dde3f1 24%, #e0e6f4 25%, #e0e6f4 26%, #dfe6f0 27%, #dfe5f3 29%, #dde3f1 29%, #dee4f2 29%, #dce2ee 29%, #dce3ed 30%, #dae1eb 30%, #dde3f1 30%, #e1e4e9 32%, #e3e3eb 32%, #e3e4e9 32%, #e8e7ec 33%, #e6e7ec 33%, #e0e3ea 34%, #dbe3ee 34%, #e3e4e9 35%, #e5e6eb 35%, #d4ddee 36%, #c8d4ea 36%, #bdd1e9 37%, #b8d2e9 37%, #b5cfe6 38%, #b4d0e5 40%, #b6d2e7 41%, #b4cce4 41%, #b3cce2 43%, #b6cddd 43%, #b7cede 44%, #b5ccda 45%, #b8cdde 45%, #b6cad3 48%, #bccbd2 49%, #bec7cc 50%, #c1c9cc 50%, #cfcdce 50%, #d4c7bf 51%, #d8c6bc 51%, #d9c8c0 51%, #d0c8c5 51%, #cbc7c6 51%, #c6c7cc 51%, #c3c9bf 51%, #d0e274 52%, #d8e86c 52%, #d4e269 52%, #d8e369 52%, #cada56 53%, #cede59 53%, #cbdd57 53%, #d1de5a 53%, #d7e762 53%, #b9d54c 53%, #bbda50 53%, #b5d148 54%, #bcd24b 54%, #c9df58 54%, #d0e860 54%, #c2de55 54%, #adcf44 54%, #a8cd41 54%, #b0d247 54%, #b3d648 55%, #aed441 55%, #add340 55%, #a6c939 55%, #abcb44 55%, #c0dc65 55%, #d2ea8a 55%, #ddf2ad 55%, #e0f4b5 55%, #dbf3a9 56%, #def5a3 56%, #d8ef97 56%, #d3e784 56%, #d6e774 56%, #d6dc56 56%, #d9df57 56%, #d5e05d 57%, #cbdb57 57%, #c6db52 57%, #b7d245 57%, #9fc230 57%, #96c42e 57%, #89c531 57%, #6fb725 57%, #4c9d10 57%, #389006 58%, #2d8904 58%, #308b08 58%, #2d8300 58%, #398b03 58%, #51980e 58%, #70a517 58%, #85b223 59%, #89b929 59%, #8dbf2c 59%, #89bd2a 59%, #7db31f 59%, #76ac18 59%, #7eb21f 59%, #96c737 59%, #86b124 60%, #9ac339 60%, #acd048 60%, #b1d24d 60%, #aecf4c 60%, #9dc040 60%, #a6c94b 60%, #99b93a 61%, #9ebd3c 61%, #bfdd5b 61%, #cdeb67 61%, #c2db5b 61%, #afc848 61%, #b9d451 61%, #c6e15e 62%, #bad852 62%, #bbda51 62%, #b5d64b 62%, #96b72c 62%, #86a81e 62%, #7fa31b 62%, #88b029 62%, #aad64f 63%, #c4f069 63%, #a2cc46 63%, #99c53e 63%, #a1cf48 63%, #8bbe35 63%, #7db327 63%, #8fc438 63%, #93c236 64%, #8eb42b 64%, #a8c43c 64%, #bad14b 64%, #aec841 64%, #c3de59 64%, #a5bf40 64%, #b0c951 64%, #cfe775 65%, #d4ec7c 65%, #cce774 65%, #c1dc67 65%, #acca4e 65%, #92b331 65%, #a7cf4a 65%, #b5e35c 65%, #8fc33b 65%, #5f9911 66%, #4e8d0a 66%, #62a41e 66%, #6eaf1f 66%, #76b21f 66%, #94c43c 66%, #9ec944 66%, #9fcd47 66%, #91c43b 67%, #8abf2f 67%, #8bc12f 67%, #99ca3b 67%, #8bba2e 67%, #83b32c 67%, #689a15 67%, #90c340 67%, #8ebc38 67%, #6e920c 68%, #93b731 68%, #93c13d 68%, #9cd04a 68%, #68a317 68%, #4c8d00 68%, #62aa1a 68%, #5ea614 68%, #6cae18 69%, #99d138 69%, #8cb91e 69%, #a1c934 69%, #b6e058 69%, #699519 69%, #87b845 69%, #b1e171 69%, #c0e971 69%, #a9d05d 70%, #b4dd7f 70%, #ccf29f 70%, #ddfaaa 70%, #c2e07e 70%, #b8e25a 70%, #92c029 70%, #93bf2e 70%, #9cc739 71%, #9aca3a 71%, #92c739 71%, #3f7d00 71%, #86c540 71%, #96cf4a 71%, #6fa825 71%, #4d8c09 71%, #51950e 71%, #5aa113 72%, #4f9302 72%, #6eab1f 72%, #6daa1f 72%, #4f9207 72%, #468f02 72%, #68af25 72%, #7bb431 73%, #79ac2b 73%, #74a829 73%, #82bb3a 73%, #97db54 73%, #5fa51e 73%, #50940d 73%, #7dbb34 73%, #7cb228 73%, #7db128 74%, #6ea81e 74%, #87c540 74%, #8cce52 74%, #6baf36 74%, #5da126 74%, #488a0c 74%, #4c8e0a 74%, #619f1a 75%, #468200 75%, #77b127 75%, #62a00f 75%, #82c02f 75%, #63a213 75%, #5a980f 75%, #3f7d00 75%, #4d840c 76%, #8dbb3e 76%, #a8d556 76%, #7aad2e 76%, #619e1c 76%, #66b22c 76%, #57a81f 76%, #519e10 76%, #5da416 76%, #4e8d08 77%, #619e1f 77%, #59921d 77%, #86bc4a 77%, #a7dc66 77%, #8dbf44 77%, #a8da57 77%, #6ca219 77%, #3e7e00 78%, #4b9407 78%, #439205 78%, #499c10 78%, #42930a 78%, #3f9007 78%, #499912 78%, #4b9d17 78%, #318400 78%, #378a06 79%, #4e9f1e 79%, #3e8d0d 79%, #5da528 79%, #7fc348 79%, #45850a 79%, #5f9e1c 79%, #8ccc40 79%, #7bbc24 80%, #6bab16 80%, #7cbd2f 80%, #76b832 80%, #8bce4d 80%, #81c647 80%, #63aa28 80%, #529a14 80%, #70b830 81%, #579f17 81%, #539c19 81%, #55a727 81%, #59ae2d 81%, #4fa220 81%, #41930d 81%, #398700 82%, #509913 82%, #559d15 82%, #3c8400 82%, #549a15 82%, #519713 82%, #408707 82%, #469013 82%, #519c25 82%, #388511 83%, #59a737 83%, #1a7202 83%, #348b18 83%, #2b7600 83%, #1e6300 83%, #317609 83%, #1e6500 84%, #26730d 84%, #246f06 84%, #347b05 84%, #3d8203 84%, #3f8701 84%, #5ba720 84%, #2b7e00 84%, #348a0d 84%, #499f24 85%, #106900 85%, #267d12 85%, #31841a 85%, #29780f 85%, #1a6700 86%, #237103 86%, #207000 86%, #33840e 86%, #287704 86%, #0b5700 86%, #206400 86%, #2b6b0b 86%, #316b14 86%, #337217 87%, #55a439 87%, #1b7104 87%, #065800 87%, #0d5e01 87%, #095904 87%, #0f6014 87%, #06560d 88%, #004e02 88%, #015603 88%, #045602 88%, #024f00 88%, #0c5003 88%, #0b4400 89%, #79b26e 89%, #54984d 89%, #004800 89%, #105a05 89%, #0e5200 89%, #1e5900 89%, #1c5200 89%, #4b7b15 90%, #66972c 90%, #599122 90%, #296800 90%, #236300 90%, #2b6600 90%, #5a952b 90%, #2d6f01 90%, #33770a 91%, #2d710e 91%, #0b5100 91%, #2d7416 91%, #317a21 91%, #014a00 91%, #044e03 91%, #004900 91%, #0a590a 92%, #035300 92%, #186811 92%, #095904 92%, #004e00 92%, #0f6100 92%, #2e801a 92%, #30831b 92%, #0e5f00 92%, #0b5700 93%, #347e29 93%, #3b8234 93%, #074b00 93%, #165909 93%, #0f5400 93%, #327815 93%, #287004 93%, #226800 94%, #347a0a 94%, #70b34a 94%, #71b150 94%, #2b670d 94%, #3a761e 94%, #195900 94%, #4c8a27 94%, #3f7d10 94%, #327100 95%, #65a12f 95%, #3a7507 95%, #63a038 95%, #6cad49 95%, #46892a 95%, #0b5200 95%, #2e7819 95%, #297417 96%, #075300 96%, #0a5502 96%, #0c5609 96%, #045008 96%, #004e06 96%, #005008 96%, #005100 96%, #13630a 97%, #055100 97%, #1a6508 97%, #135c02 97%, #074d00 97%, #034900 97%, #105303 97%, #145708 97%, #0e5104 98%, #317528 98%, #2e6e24 98%, #376e2a 98%, #22560e 98%, #336818 98%, #4e8430 98%, #417624 98%, #528735 99%, #619542 99%, #437418 99%, #5f8e30 99%, #87b35a 99%, #7fa655 99%, #4a6e24 99%, #3c5e14 100%, #547429 100%, #607e36 100%, #324c0d 100%, #1c3500 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dad8ed', endColorstr='#1c3500',GradientType=0 );
+	margin-top: -10px;
 }
 
 #second-container {
-	justify-align: center;
-	vertical-align: middle;
-	width: 50%;
+	width: 100%;
 }
 
-.vcenter {
-	width: 100%;
-	height: 10vh;
-	display: inline-block;
-	vertical-align: middle;
+#second-text {
+	text-align: center;
+	padding: 50px 0;
+}
+
+#bird {
+	text-align: center;
 }
 
 #carouselExampleFade {
-	max-height: 300px;
-	max-width: 480px;
-	-webkit-box-shadow: 10px 10px 150px -7px rgba(0, 0, 0, .75);
-	        box-shadow: 10px 10px 150px -7px rgba(0, 0, 0, .75);
+	max-width: 550px;
+	margin: auto;
 }
 
 .second-img {
-	-o-object-fit: content;
-	   object-fit: content;
+	border-radius: 5px;
+	height: 100vh;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	max-height: 300px;
 }
 
-.slider .your-class {
-	width: 500px;
-	height: 500px;
+.carousel-item,
+.carousel-item .active {
+	max-height: 300px;
+}
+
+#container-butterfly {
+	background: url(https://html5book.ru/wp-content/uploads/2015/07/grass.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 122px 0 0;
+}
+
+#butterfly {
+	position: relative;
+	max-width: 550px;
+	min-height: 400px;
+	-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(.5, .5, .5);
+	        transform: rotate3d(0, 1, 0, 0deg) scale3d(.5, .5, .5);
+	-webkit-transform-origin: 100% 0;
+	        transform-origin: 100% 0;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-animation: butterfly 5s linear infinite;
+	        animation: butterfly 5s linear infinite;
+}
+
+#leftwing {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 312px;
+	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+	background-repeat: no-repeat;
+	-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	        transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	-webkit-transform-origin: inherit;
+	        transform-origin: inherit;
+	-webkit-animation: leftwing .2s linear infinite;
+	        animation: leftwing .2s linear infinite;
+}
+
+#rightwing {
+	position: absolute;
+	left: 175px;
+	top: 0;
+	width: 200px;
+	height: 312px;
+	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+	background-repeat: no-repeat;
+	-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	        transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	-webkit-transform-origin: inherit;
+	        transform-origin: inherit;
+	-webkit-animation: rightwing .2s linear infinite;
+	        animation: rightwing .2s linear infinite;
+}
+
+@-webkit-keyframes butterfly {
+	from {
+		-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	25% {
+		-webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	50% {
+		-webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	75% {
+		-webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	to {
+		-webkit-transform: rotate3d(0, 1, 0, -360deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+}
+
+@keyframes butterfly {
+	from {
+		-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+		        transform: rotate3d(0, 1, 0, 0deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	25% {
+		-webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+		        transform: rotate3d(0, 1, 0, -90deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	50% {
+		-webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+		        transform: rotate3d(0, 1, 0, -180deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	75% {
+		-webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+		        transform: rotate3d(0, 1, 0, -270deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+	to {
+		-webkit-transform: rotate3d(0, 1, 0, -360deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+		        transform: rotate3d(0, 1, 0, -360deg) scale3d(.5, .5, .5) translate3d(-150px, 300px, 0);
+	}
+}
+
+@-webkit-keyframes rightwing {
+	from {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+}
+
+@keyframes rightwing {
+	from {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+		        transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+		        transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+		        transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+}
+
+@-webkit-keyframes leftwing {
+	from {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+}
+
+@keyframes leftwing {
+	from {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+		        transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+		        transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+		        transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+}
+
+.slider {
+	min-height: 100vh;
+}
+
+#ourTeam {
+	width: 100%;
+	margin: 0;
+}
+
+.col-md-2 {
+	padding: 5px;
+}
+
+.rounded {
+	width: 100%;
+}
+
+.flip-2-ver-right-fwd:active {
+	display: none;
+}
+
+.flip-2-ver-right-fwd {
+	-webkit-animation: flip-2-ver-right-fwd .5s cubic-bezier(.455, .03, .515, .955) both;
+	        animation: flip-2-ver-right-fwd .5s cubic-bezier(.455, .03, .515, .955) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation flip-2-ver-right-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-2-ver-right-fwd {
+	0% {
+		-webkit-transform: translateX(0) translateZ(0) rotateY(0);
+		        transform: translateX(0) translateZ(0) rotateY(0);
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;
+	}
+	100% {
+		-webkit-transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+		        transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
+}
+
+@keyframes flip-2-ver-right-fwd {
+	0% {
+		-webkit-transform: translateX(0) translateZ(0) rotateY(0);
+		        transform: translateX(0) translateZ(0) rotateY(0);
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;
+	}
+	100% {
+		-webkit-transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+		        transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
 }
 
 .footer {

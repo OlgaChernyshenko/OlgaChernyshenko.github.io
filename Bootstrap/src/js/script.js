@@ -60,6 +60,7 @@
 
 })();
 
+//PADDING-HACK
 function paddingHack(items){
 	const gridWidth = $(items).parent().width();
 
@@ -101,7 +102,8 @@ const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
 mansoryGridPadHack.init();
 
 var navigation = {
-    // Variables
+
+    // VARYABLES
     $nav: document.querySelector('.nav'),
     $navTrigger: document.querySelector('.nav__trigger'),
     $navContent: document.querySelector('.nav__content'),
@@ -161,3 +163,4 @@ var navigation = {
 }
 
 navigation.init();
+

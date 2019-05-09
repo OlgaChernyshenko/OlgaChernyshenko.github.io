@@ -1,27 +1,172 @@
 .second {
-	min-height: 60vh;
-	background-color: $light-grey;
+	background: #dad8ed;
+	background: -moz-linear-gradient(top, #dad8ed 0%, #d5d4e6 0%, #c9d1e4 1%, #c7d4e7 1%, #d5d7e4 2%, #e6e1e7 2%, #e9e2e9 2%, #e3dee5 3%, #dbd9e6 3%, #d9dbea 3%, #d4d9ed 4%, #d1d7ed 4%, #c3d2e9 4%, #c1d1ea 4%, #bfd3ec 4%, #c9d4e8 5%, #cfd7ec 5%, #d0d6ec 5%, #c3d5e9 6%, #c0d2ea 6%, #c5d5ef 7%, #c4d4ed 8%, #c7d8ec 8%, #c6d7e9 11%, #c8d8ef 12%, #c8d7ea 13%, #ccd9ec 13%, #cdd8ea 14%, #d2daed 16%, #d5ddf0 16%, #d3dbee 17%, #d4dcef 18%, #d1d9ec 18%, #d1d9ec 18%, #d3dbee 19%, #d7e3f1 19%, #d9e3ef 20%, #dde5f2 20%, #e2e5f4 21%, #dee4f2 21%, #dbe3f0 21%, #e1e7f3 22%, #dfe5f1 22%, #e4e8f3 23%, #e1e5f1 24%, #dde3f1 24%, #e0e6f4 25%, #e0e6f4 26%, #dfe6f0 27%, #dfe5f3 29%, #dde3f1 29%, #dee4f2 29%, #dce2ee 29%, #dce3ed 30%, #dae1eb 30%, #dde3f1 30%, #e1e4e9 32%, #e3e3eb 32%, #e3e4e9 32%, #e8e7ec 33%, #e6e7ec 33%, #e0e3ea 34%, #dbe3ee 34%, #e3e4e9 35%, #e5e6eb 35%, #d4ddee 36%, #c8d4ea 36%, #bdd1e9 37%, #b8d2e9 37%, #b5cfe6 38%, #b4d0e5 40%, #b6d2e7 41%, #b4cce4 41%, #b3cce2 43%, #b6cddd 43%, #b7cede 44%, #b5ccda 45%, #b8cdde 45%, #b6cad3 48%, #bccbd2 49%, #bec7cc 50%, #c1c9cc 50%, #cfcdce 50%, #d4c7bf 51%, #d8c6bc 51%, #d9c8c0 51%, #d0c8c5 51%, #cbc7c6 51%, #c6c7cc 51%, #c3c9bf 51%, #d0e274 52%, #d8e86c 52%, #d4e269 52%, #d8e369 52%, #cada56 53%, #cede59 53%, #cbdd57 53%, #d1de5a 53%, #d7e762 53%, #b9d54c 53%, #bbda50 53%, #b5d148 54%, #bcd24b 54%, #c9df58 54%, #d0e860 54%, #c2de55 54%, #adcf44 54%, #a8cd41 54%, #b0d247 54%, #b3d648 55%, #aed441 55%, #add340 55%, #a6c939 55%, #abcb44 55%, #c0dc65 55%, #d2ea8a 55%, #ddf2ad 55%, #e0f4b5 55%, #dbf3a9 56%, #def5a3 56%, #d8ef97 56%, #d3e784 56%, #d6e774 56%, #d6dc56 56%, #d9df57 56%, #d5e05d 57%, #cbdb57 57%, #c6db52 57%, #b7d245 57%, #9fc230 57%, #96c42e 57%, #89c531 57%, #6fb725 57%, #4c9d10 57%, #389006 58%, #2d8904 58%, #308b08 58%, #2d8300 58%, #398b03 58%, #51980e 58%, #70a517 58%, #85b223 59%, #89b929 59%, #8dbf2c 59%, #89bd2a 59%, #7db31f 59%, #76ac18 59%, #7eb21f 59%, #96c737 59%, #86b124 60%, #9ac339 60%, #acd048 60%, #b1d24d 60%, #aecf4c 60%, #9dc040 60%, #a6c94b 60%, #99b93a 61%, #9ebd3c 61%, #bfdd5b 61%, #cdeb67 61%, #c2db5b 61%, #afc848 61%, #b9d451 61%, #c6e15e 62%, #bad852 62%, #bbda51 62%, #b5d64b 62%, #96b72c 62%, #86a81e 62%, #7fa31b 62%, #88b029 62%, #aad64f 63%, #c4f069 63%, #a2cc46 63%, #99c53e 63%, #a1cf48 63%, #8bbe35 63%, #7db327 63%, #8fc438 63%, #93c236 64%, #8eb42b 64%, #a8c43c 64%, #bad14b 64%, #aec841 64%, #c3de59 64%, #a5bf40 64%, #b0c951 64%, #cfe775 65%, #d4ec7c 65%, #cce774 65%, #c1dc67 65%, #acca4e 65%, #92b331 65%, #a7cf4a 65%, #b5e35c 65%, #8fc33b 65%, #5f9911 66%, #4e8d0a 66%, #62a41e 66%, #6eaf1f 66%, #76b21f 66%, #94c43c 66%, #9ec944 66%, #9fcd47 66%, #91c43b 67%, #8abf2f 67%, #8bc12f 67%, #99ca3b 67%, #8bba2e 67%, #83b32c 67%, #689a15 67%, #90c340 67%, #8ebc38 67%, #6e920c 68%, #93b731 68%, #93c13d 68%, #9cd04a 68%, #68a317 68%, #4c8d00 68%, #62aa1a 68%, #5ea614 68%, #6cae18 69%, #99d138 69%, #8cb91e 69%, #a1c934 69%, #b6e058 69%, #699519 69%, #87b845 69%, #b1e171 69%, #c0e971 69%, #a9d05d 70%, #b4dd7f 70%, #ccf29f 70%, #ddfaaa 70%, #c2e07e 70%, #b8e25a 70%, #92c029 70%, #93bf2e 70%, #9cc739 71%, #9aca3a 71%, #92c739 71%, #3f7d00 71%, #86c540 71%, #96cf4a 71%, #6fa825 71%, #4d8c09 71%, #51950e 71%, #5aa113 72%, #4f9302 72%, #6eab1f 72%, #6daa1f 72%, #4f9207 72%, #468f02 72%, #68af25 72%, #7bb431 73%, #79ac2b 73%, #74a829 73%, #82bb3a 73%, #97db54 73%, #5fa51e 73%, #50940d 73%, #7dbb34 73%, #7cb228 73%, #7db128 74%, #6ea81e 74%, #87c540 74%, #8cce52 74%, #6baf36 74%, #5da126 74%, #488a0c 74%, #4c8e0a 74%, #619f1a 75%, #468200 75%, #77b127 75%, #62a00f 75%, #82c02f 75%, #63a213 75%, #5a980f 75%, #3f7d00 75%, #4d840c 76%, #8dbb3e 76%, #a8d556 76%, #7aad2e 76%, #619e1c 76%, #66b22c 76%, #57a81f 76%, #519e10 76%, #5da416 76%, #4e8d08 77%, #619e1f 77%, #59921d 77%, #86bc4a 77%, #a7dc66 77%, #8dbf44 77%, #a8da57 77%, #6ca219 77%, #3e7e00 78%, #4b9407 78%, #439205 78%, #499c10 78%, #42930a 78%, #3f9007 78%, #499912 78%, #4b9d17 78%, #318400 78%, #378a06 79%, #4e9f1e 79%, #3e8d0d 79%, #5da528 79%, #7fc348 79%, #45850a 79%, #5f9e1c 79%, #8ccc40 79%, #7bbc24 80%, #6bab16 80%, #7cbd2f 80%, #76b832 80%, #8bce4d 80%, #81c647 80%, #63aa28 80%, #529a14 80%, #70b830 81%, #579f17 81%, #539c19 81%, #55a727 81%, #59ae2d 81%, #4fa220 81%, #41930d 81%, #398700 82%, #509913 82%, #559d15 82%, #3c8400 82%, #549a15 82%, #519713 82%, #408707 82%, #469013 82%, #519c25 82%, #388511 83%, #59a737 83%, #1a7202 83%, #348b18 83%, #2b7600 83%, #1e6300 83%, #317609 83%, #1e6500 84%, #26730d 84%, #246f06 84%, #347b05 84%, #3d8203 84%, #3f8701 84%, #5ba720 84%, #2b7e00 84%, #348a0d 84%, #499f24 85%, #106900 85%, #267d12 85%, #31841a 85%, #29780f 85%, #1a6700 86%, #237103 86%, #207000 86%, #33840e 86%, #287704 86%, #0b5700 86%, #206400 86%, #2b6b0b 86%, #316b14 86%, #337217 87%, #55a439 87%, #1b7104 87%, #065800 87%, #0d5e01 87%, #095904 87%, #0f6014 87%, #06560d 88%, #004e02 88%, #015603 88%, #045602 88%, #024f00 88%, #0c5003 88%, #0b4400 89%, #79b26e 89%, #54984d 89%, #004800 89%, #105a05 89%, #0e5200 89%, #1e5900 89%, #1c5200 89%, #4b7b15 90%, #66972c 90%, #599122 90%, #296800 90%, #236300 90%, #2b6600 90%, #5a952b 90%, #2d6f01 90%, #33770a 91%, #2d710e 91%, #0b5100 91%, #2d7416 91%, #317a21 91%, #014a00 91%, #044e03 91%, #004900 91%, #0a590a 92%, #035300 92%, #186811 92%, #095904 92%, #004e00 92%, #0f6100 92%, #2e801a 92%, #30831b 92%, #0e5f00 92%, #0b5700 93%, #347e29 93%, #3b8234 93%, #074b00 93%, #165909 93%, #0f5400 93%, #327815 93%, #287004 93%, #226800 94%, #347a0a 94%, #70b34a 94%, #71b150 94%, #2b670d 94%, #3a761e 94%, #195900 94%, #4c8a27 94%, #3f7d10 94%, #327100 95%, #65a12f 95%, #3a7507 95%, #63a038 95%, #6cad49 95%, #46892a 95%, #0b5200 95%, #2e7819 95%, #297417 96%, #075300 96%, #0a5502 96%, #0c5609 96%, #045008 96%, #004e06 96%, #005008 96%, #005100 96%, #13630a 97%, #055100 97%, #1a6508 97%, #135c02 97%, #074d00 97%, #034900 97%, #105303 97%, #145708 97%, #0e5104 98%, #317528 98%, #2e6e24 98%, #376e2a 98%, #22560e 98%, #336818 98%, #4e8430 98%, #417624 98%, #528735 99%, #619542 99%, #437418 99%, #5f8e30 99%, #87b35a 99%, #7fa655 99%, #4a6e24 99%, #3c5e14 100%, #547429 100%, #607e36 100%, #324c0d 100%, #1c3500 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #dad8ed 0%,#d5d4e6 0%,#c9d1e4 1%,#c7d4e7 1%,#d5d7e4 2%,#e6e1e7 2%,#e9e2e9 2%,#e3dee5 3%,#dbd9e6 3%,#d9dbea 3%,#d4d9ed 4%,#d1d7ed 4%,#c3d2e9 4%,#c1d1ea 4%,#bfd3ec 4%,#c9d4e8 5%,#cfd7ec 5%,#d0d6ec 5%,#c3d5e9 6%,#c0d2ea 6%,#c5d5ef 7%,#c4d4ed 8%,#c7d8ec 8%,#c6d7e9 11%,#c8d8ef 12%,#c8d7ea 13%,#ccd9ec 13%,#cdd8ea 14%,#d2daed 16%,#d5ddf0 16%,#d3dbee 17%,#d4dcef 18%,#d1d9ec 18%,#d1d9ec 18%,#d3dbee 19%,#d7e3f1 19%,#d9e3ef 20%,#dde5f2 20%,#e2e5f4 21%,#dee4f2 21%,#dbe3f0 21%,#e1e7f3 22%,#dfe5f1 22%,#e4e8f3 23%,#e1e5f1 24%,#dde3f1 24%,#e0e6f4 25%,#e0e6f4 26%,#dfe6f0 27%,#dfe5f3 29%,#dde3f1 29%,#dee4f2 29%,#dce2ee 29%,#dce3ed 30%,#dae1eb 30%,#dde3f1 30%,#e1e4e9 32%,#e3e3eb 32%,#e3e4e9 32%,#e8e7ec 33%,#e6e7ec 33%,#e0e3ea 34%,#dbe3ee 34%,#e3e4e9 35%,#e5e6eb 35%,#d4ddee 36%,#c8d4ea 36%,#bdd1e9 37%,#b8d2e9 37%,#b5cfe6 38%,#b4d0e5 40%,#b6d2e7 41%,#b4cce4 41%,#b3cce2 43%,#b6cddd 43%,#b7cede 44%,#b5ccda 45%,#b8cdde 45%,#b6cad3 48%,#bccbd2 49%,#bec7cc 50%,#c1c9cc 50%,#cfcdce 50%,#d4c7bf 51%,#d8c6bc 51%,#d9c8c0 51%,#d0c8c5 51%,#cbc7c6 51%,#c6c7cc 51%,#c3c9bf 51%,#d0e274 52%,#d8e86c 52%,#d4e269 52%,#d8e369 52%,#cada56 53%,#cede59 53%,#cbdd57 53%,#d1de5a 53%,#d7e762 53%,#b9d54c 53%,#bbda50 53%,#b5d148 54%,#bcd24b 54%,#c9df58 54%,#d0e860 54%,#c2de55 54%,#adcf44 54%,#a8cd41 54%,#b0d247 54%,#b3d648 55%,#aed441 55%,#add340 55%,#a6c939 55%,#abcb44 55%,#c0dc65 55%,#d2ea8a 55%,#ddf2ad 55%,#e0f4b5 55%,#dbf3a9 56%,#def5a3 56%,#d8ef97 56%,#d3e784 56%,#d6e774 56%,#d6dc56 56%,#d9df57 56%,#d5e05d 57%,#cbdb57 57%,#c6db52 57%,#b7d245 57%,#9fc230 57%,#96c42e 57%,#89c531 57%,#6fb725 57%,#4c9d10 57%,#389006 58%,#2d8904 58%,#308b08 58%,#2d8300 58%,#398b03 58%,#51980e 58%,#70a517 58%,#85b223 59%,#89b929 59%,#8dbf2c 59%,#89bd2a 59%,#7db31f 59%,#76ac18 59%,#7eb21f 59%,#96c737 59%,#86b124 60%,#9ac339 60%,#acd048 60%,#b1d24d 60%,#aecf4c 60%,#9dc040 60%,#a6c94b 60%,#99b93a 61%,#9ebd3c 61%,#bfdd5b 61%,#cdeb67 61%,#c2db5b 61%,#afc848 61%,#b9d451 61%,#c6e15e 62%,#bad852 62%,#bbda51 62%,#b5d64b 62%,#96b72c 62%,#86a81e 62%,#7fa31b 62%,#88b029 62%,#aad64f 63%,#c4f069 63%,#a2cc46 63%,#99c53e 63%,#a1cf48 63%,#8bbe35 63%,#7db327 63%,#8fc438 63%,#93c236 64%,#8eb42b 64%,#a8c43c 64%,#bad14b 64%,#aec841 64%,#c3de59 64%,#a5bf40 64%,#b0c951 64%,#cfe775 65%,#d4ec7c 65%,#cce774 65%,#c1dc67 65%,#acca4e 65%,#92b331 65%,#a7cf4a 65%,#b5e35c 65%,#8fc33b 65%,#5f9911 66%,#4e8d0a 66%,#62a41e 66%,#6eaf1f 66%,#76b21f 66%,#94c43c 66%,#9ec944 66%,#9fcd47 66%,#91c43b 67%,#8abf2f 67%,#8bc12f 67%,#99ca3b 67%,#8bba2e 67%,#83b32c 67%,#689a15 67%,#90c340 67%,#8ebc38 67%,#6e920c 68%,#93b731 68%,#93c13d 68%,#9cd04a 68%,#68a317 68%,#4c8d00 68%,#62aa1a 68%,#5ea614 68%,#6cae18 69%,#99d138 69%,#8cb91e 69%,#a1c934 69%,#b6e058 69%,#699519 69%,#87b845 69%,#b1e171 69%,#c0e971 69%,#a9d05d 70%,#b4dd7f 70%,#ccf29f 70%,#ddfaaa 70%,#c2e07e 70%,#b8e25a 70%,#92c029 70%,#93bf2e 70%,#9cc739 71%,#9aca3a 71%,#92c739 71%,#3f7d00 71%,#86c540 71%,#96cf4a 71%,#6fa825 71%,#4d8c09 71%,#51950e 71%,#5aa113 72%,#4f9302 72%,#6eab1f 72%,#6daa1f 72%,#4f9207 72%,#468f02 72%,#68af25 72%,#7bb431 73%,#79ac2b 73%,#74a829 73%,#82bb3a 73%,#97db54 73%,#5fa51e 73%,#50940d 73%,#7dbb34 73%,#7cb228 73%,#7db128 74%,#6ea81e 74%,#87c540 74%,#8cce52 74%,#6baf36 74%,#5da126 74%,#488a0c 74%,#4c8e0a 74%,#619f1a 75%,#468200 75%,#77b127 75%,#62a00f 75%,#82c02f 75%,#63a213 75%,#5a980f 75%,#3f7d00 75%,#4d840c 76%,#8dbb3e 76%,#a8d556 76%,#7aad2e 76%,#619e1c 76%,#66b22c 76%,#57a81f 76%,#519e10 76%,#5da416 76%,#4e8d08 77%,#619e1f 77%,#59921d 77%,#86bc4a 77%,#a7dc66 77%,#8dbf44 77%,#a8da57 77%,#6ca219 77%,#3e7e00 78%,#4b9407 78%,#439205 78%,#499c10 78%,#42930a 78%,#3f9007 78%,#499912 78%,#4b9d17 78%,#318400 78%,#378a06 79%,#4e9f1e 79%,#3e8d0d 79%,#5da528 79%,#7fc348 79%,#45850a 79%,#5f9e1c 79%,#8ccc40 79%,#7bbc24 80%,#6bab16 80%,#7cbd2f 80%,#76b832 80%,#8bce4d 80%,#81c647 80%,#63aa28 80%,#529a14 80%,#70b830 81%,#579f17 81%,#539c19 81%,#55a727 81%,#59ae2d 81%,#4fa220 81%,#41930d 81%,#398700 82%,#509913 82%,#559d15 82%,#3c8400 82%,#549a15 82%,#519713 82%,#408707 82%,#469013 82%,#519c25 82%,#388511 83%,#59a737 83%,#1a7202 83%,#348b18 83%,#2b7600 83%,#1e6300 83%,#317609 83%,#1e6500 84%,#26730d 84%,#246f06 84%,#347b05 84%,#3d8203 84%,#3f8701 84%,#5ba720 84%,#2b7e00 84%,#348a0d 84%,#499f24 85%,#106900 85%,#267d12 85%,#31841a 85%,#29780f 85%,#1a6700 86%,#237103 86%,#207000 86%,#33840e 86%,#287704 86%,#0b5700 86%,#206400 86%,#2b6b0b 86%,#316b14 86%,#337217 87%,#55a439 87%,#1b7104 87%,#065800 87%,#0d5e01 87%,#095904 87%,#0f6014 87%,#06560d 88%,#004e02 88%,#015603 88%,#045602 88%,#024f00 88%,#0c5003 88%,#0b4400 89%,#79b26e 89%,#54984d 89%,#004800 89%,#105a05 89%,#0e5200 89%,#1e5900 89%,#1c5200 89%,#4b7b15 90%,#66972c 90%,#599122 90%,#296800 90%,#236300 90%,#2b6600 90%,#5a952b 90%,#2d6f01 90%,#33770a 91%,#2d710e 91%,#0b5100 91%,#2d7416 91%,#317a21 91%,#014a00 91%,#044e03 91%,#004900 91%,#0a590a 92%,#035300 92%,#186811 92%,#095904 92%,#004e00 92%,#0f6100 92%,#2e801a 92%,#30831b 92%,#0e5f00 92%,#0b5700 93%,#347e29 93%,#3b8234 93%,#074b00 93%,#165909 93%,#0f5400 93%,#327815 93%,#287004 93%,#226800 94%,#347a0a 94%,#70b34a 94%,#71b150 94%,#2b670d 94%,#3a761e 94%,#195900 94%,#4c8a27 94%,#3f7d10 94%,#327100 95%,#65a12f 95%,#3a7507 95%,#63a038 95%,#6cad49 95%,#46892a 95%,#0b5200 95%,#2e7819 95%,#297417 96%,#075300 96%,#0a5502 96%,#0c5609 96%,#045008 96%,#004e06 96%,#005008 96%,#005100 96%,#13630a 97%,#055100 97%,#1a6508 97%,#135c02 97%,#074d00 97%,#034900 97%,#105303 97%,#145708 97%,#0e5104 98%,#317528 98%,#2e6e24 98%,#376e2a 98%,#22560e 98%,#336818 98%,#4e8430 98%,#417624 98%,#528735 99%,#619542 99%,#437418 99%,#5f8e30 99%,#87b35a 99%,#7fa655 99%,#4a6e24 99%,#3c5e14 100%,#547429 100%,#607e36 100%,#324c0d 100%,#1c3500 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #dad8ed 0%,#d5d4e6 0%,#c9d1e4 1%,#c7d4e7 1%,#d5d7e4 2%,#e6e1e7 2%,#e9e2e9 2%,#e3dee5 3%,#dbd9e6 3%,#d9dbea 3%,#d4d9ed 4%,#d1d7ed 4%,#c3d2e9 4%,#c1d1ea 4%,#bfd3ec 4%,#c9d4e8 5%,#cfd7ec 5%,#d0d6ec 5%,#c3d5e9 6%,#c0d2ea 6%,#c5d5ef 7%,#c4d4ed 8%,#c7d8ec 8%,#c6d7e9 11%,#c8d8ef 12%,#c8d7ea 13%,#ccd9ec 13%,#cdd8ea 14%,#d2daed 16%,#d5ddf0 16%,#d3dbee 17%,#d4dcef 18%,#d1d9ec 18%,#d1d9ec 18%,#d3dbee 19%,#d7e3f1 19%,#d9e3ef 20%,#dde5f2 20%,#e2e5f4 21%,#dee4f2 21%,#dbe3f0 21%,#e1e7f3 22%,#dfe5f1 22%,#e4e8f3 23%,#e1e5f1 24%,#dde3f1 24%,#e0e6f4 25%,#e0e6f4 26%,#dfe6f0 27%,#dfe5f3 29%,#dde3f1 29%,#dee4f2 29%,#dce2ee 29%,#dce3ed 30%,#dae1eb 30%,#dde3f1 30%,#e1e4e9 32%,#e3e3eb 32%,#e3e4e9 32%,#e8e7ec 33%,#e6e7ec 33%,#e0e3ea 34%,#dbe3ee 34%,#e3e4e9 35%,#e5e6eb 35%,#d4ddee 36%,#c8d4ea 36%,#bdd1e9 37%,#b8d2e9 37%,#b5cfe6 38%,#b4d0e5 40%,#b6d2e7 41%,#b4cce4 41%,#b3cce2 43%,#b6cddd 43%,#b7cede 44%,#b5ccda 45%,#b8cdde 45%,#b6cad3 48%,#bccbd2 49%,#bec7cc 50%,#c1c9cc 50%,#cfcdce 50%,#d4c7bf 51%,#d8c6bc 51%,#d9c8c0 51%,#d0c8c5 51%,#cbc7c6 51%,#c6c7cc 51%,#c3c9bf 51%,#d0e274 52%,#d8e86c 52%,#d4e269 52%,#d8e369 52%,#cada56 53%,#cede59 53%,#cbdd57 53%,#d1de5a 53%,#d7e762 53%,#b9d54c 53%,#bbda50 53%,#b5d148 54%,#bcd24b 54%,#c9df58 54%,#d0e860 54%,#c2de55 54%,#adcf44 54%,#a8cd41 54%,#b0d247 54%,#b3d648 55%,#aed441 55%,#add340 55%,#a6c939 55%,#abcb44 55%,#c0dc65 55%,#d2ea8a 55%,#ddf2ad 55%,#e0f4b5 55%,#dbf3a9 56%,#def5a3 56%,#d8ef97 56%,#d3e784 56%,#d6e774 56%,#d6dc56 56%,#d9df57 56%,#d5e05d 57%,#cbdb57 57%,#c6db52 57%,#b7d245 57%,#9fc230 57%,#96c42e 57%,#89c531 57%,#6fb725 57%,#4c9d10 57%,#389006 58%,#2d8904 58%,#308b08 58%,#2d8300 58%,#398b03 58%,#51980e 58%,#70a517 58%,#85b223 59%,#89b929 59%,#8dbf2c 59%,#89bd2a 59%,#7db31f 59%,#76ac18 59%,#7eb21f 59%,#96c737 59%,#86b124 60%,#9ac339 60%,#acd048 60%,#b1d24d 60%,#aecf4c 60%,#9dc040 60%,#a6c94b 60%,#99b93a 61%,#9ebd3c 61%,#bfdd5b 61%,#cdeb67 61%,#c2db5b 61%,#afc848 61%,#b9d451 61%,#c6e15e 62%,#bad852 62%,#bbda51 62%,#b5d64b 62%,#96b72c 62%,#86a81e 62%,#7fa31b 62%,#88b029 62%,#aad64f 63%,#c4f069 63%,#a2cc46 63%,#99c53e 63%,#a1cf48 63%,#8bbe35 63%,#7db327 63%,#8fc438 63%,#93c236 64%,#8eb42b 64%,#a8c43c 64%,#bad14b 64%,#aec841 64%,#c3de59 64%,#a5bf40 64%,#b0c951 64%,#cfe775 65%,#d4ec7c 65%,#cce774 65%,#c1dc67 65%,#acca4e 65%,#92b331 65%,#a7cf4a 65%,#b5e35c 65%,#8fc33b 65%,#5f9911 66%,#4e8d0a 66%,#62a41e 66%,#6eaf1f 66%,#76b21f 66%,#94c43c 66%,#9ec944 66%,#9fcd47 66%,#91c43b 67%,#8abf2f 67%,#8bc12f 67%,#99ca3b 67%,#8bba2e 67%,#83b32c 67%,#689a15 67%,#90c340 67%,#8ebc38 67%,#6e920c 68%,#93b731 68%,#93c13d 68%,#9cd04a 68%,#68a317 68%,#4c8d00 68%,#62aa1a 68%,#5ea614 68%,#6cae18 69%,#99d138 69%,#8cb91e 69%,#a1c934 69%,#b6e058 69%,#699519 69%,#87b845 69%,#b1e171 69%,#c0e971 69%,#a9d05d 70%,#b4dd7f 70%,#ccf29f 70%,#ddfaaa 70%,#c2e07e 70%,#b8e25a 70%,#92c029 70%,#93bf2e 70%,#9cc739 71%,#9aca3a 71%,#92c739 71%,#3f7d00 71%,#86c540 71%,#96cf4a 71%,#6fa825 71%,#4d8c09 71%,#51950e 71%,#5aa113 72%,#4f9302 72%,#6eab1f 72%,#6daa1f 72%,#4f9207 72%,#468f02 72%,#68af25 72%,#7bb431 73%,#79ac2b 73%,#74a829 73%,#82bb3a 73%,#97db54 73%,#5fa51e 73%,#50940d 73%,#7dbb34 73%,#7cb228 73%,#7db128 74%,#6ea81e 74%,#87c540 74%,#8cce52 74%,#6baf36 74%,#5da126 74%,#488a0c 74%,#4c8e0a 74%,#619f1a 75%,#468200 75%,#77b127 75%,#62a00f 75%,#82c02f 75%,#63a213 75%,#5a980f 75%,#3f7d00 75%,#4d840c 76%,#8dbb3e 76%,#a8d556 76%,#7aad2e 76%,#619e1c 76%,#66b22c 76%,#57a81f 76%,#519e10 76%,#5da416 76%,#4e8d08 77%,#619e1f 77%,#59921d 77%,#86bc4a 77%,#a7dc66 77%,#8dbf44 77%,#a8da57 77%,#6ca219 77%,#3e7e00 78%,#4b9407 78%,#439205 78%,#499c10 78%,#42930a 78%,#3f9007 78%,#499912 78%,#4b9d17 78%,#318400 78%,#378a06 79%,#4e9f1e 79%,#3e8d0d 79%,#5da528 79%,#7fc348 79%,#45850a 79%,#5f9e1c 79%,#8ccc40 79%,#7bbc24 80%,#6bab16 80%,#7cbd2f 80%,#76b832 80%,#8bce4d 80%,#81c647 80%,#63aa28 80%,#529a14 80%,#70b830 81%,#579f17 81%,#539c19 81%,#55a727 81%,#59ae2d 81%,#4fa220 81%,#41930d 81%,#398700 82%,#509913 82%,#559d15 82%,#3c8400 82%,#549a15 82%,#519713 82%,#408707 82%,#469013 82%,#519c25 82%,#388511 83%,#59a737 83%,#1a7202 83%,#348b18 83%,#2b7600 83%,#1e6300 83%,#317609 83%,#1e6500 84%,#26730d 84%,#246f06 84%,#347b05 84%,#3d8203 84%,#3f8701 84%,#5ba720 84%,#2b7e00 84%,#348a0d 84%,#499f24 85%,#106900 85%,#267d12 85%,#31841a 85%,#29780f 85%,#1a6700 86%,#237103 86%,#207000 86%,#33840e 86%,#287704 86%,#0b5700 86%,#206400 86%,#2b6b0b 86%,#316b14 86%,#337217 87%,#55a439 87%,#1b7104 87%,#065800 87%,#0d5e01 87%,#095904 87%,#0f6014 87%,#06560d 88%,#004e02 88%,#015603 88%,#045602 88%,#024f00 88%,#0c5003 88%,#0b4400 89%,#79b26e 89%,#54984d 89%,#004800 89%,#105a05 89%,#0e5200 89%,#1e5900 89%,#1c5200 89%,#4b7b15 90%,#66972c 90%,#599122 90%,#296800 90%,#236300 90%,#2b6600 90%,#5a952b 90%,#2d6f01 90%,#33770a 91%,#2d710e 91%,#0b5100 91%,#2d7416 91%,#317a21 91%,#014a00 91%,#044e03 91%,#004900 91%,#0a590a 92%,#035300 92%,#186811 92%,#095904 92%,#004e00 92%,#0f6100 92%,#2e801a 92%,#30831b 92%,#0e5f00 92%,#0b5700 93%,#347e29 93%,#3b8234 93%,#074b00 93%,#165909 93%,#0f5400 93%,#327815 93%,#287004 93%,#226800 94%,#347a0a 94%,#70b34a 94%,#71b150 94%,#2b670d 94%,#3a761e 94%,#195900 94%,#4c8a27 94%,#3f7d10 94%,#327100 95%,#65a12f 95%,#3a7507 95%,#63a038 95%,#6cad49 95%,#46892a 95%,#0b5200 95%,#2e7819 95%,#297417 96%,#075300 96%,#0a5502 96%,#0c5609 96%,#045008 96%,#004e06 96%,#005008 96%,#005100 96%,#13630a 97%,#055100 97%,#1a6508 97%,#135c02 97%,#074d00 97%,#034900 97%,#105303 97%,#145708 97%,#0e5104 98%,#317528 98%,#2e6e24 98%,#376e2a 98%,#22560e 98%,#336818 98%,#4e8430 98%,#417624 98%,#528735 99%,#619542 99%,#437418 99%,#5f8e30 99%,#87b35a 99%,#7fa655 99%,#4a6e24 99%,#3c5e14 100%,#547429 100%,#607e36 100%,#324c0d 100%,#1c3500 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dad8ed', endColorstr='#1c3500',GradientType=0 );
+	margin-top:-10px;
 }
 #second-container{
-	justify-align:center;
-	vertical-align: middle;
-	width: 50%;
-
-}
-
-.vcenter {
 	width: 100%;
-	height: 10vh;
-	display: inline-block;
-	vertical-align: middle;
 }
+
+//TEXT
+#second-text {
+	text-align: center;
+	padding: 50px 0;
+}
+//BIRD
+#bird {
+	text-align: center;
+}
+
 #carouselExampleFade {
-	max-height: 300px;
-	max-width: 480px;
-	-webkit-box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 150px -7px rgba(0,0,0,0.75);
+	max-width: 550px;
+	margin: auto;
 }
 .second-img {
-	object-fit: content;
+	border-radius: 5px;
+	height: 100vh;
+	object-fit: cover;
+	max-height: 300px;
+}
+.carousel-item,
+.carousel-item .active {
+	max-height: 300px;
+}
+//BUTTERFLY
+#container-butterfly {
+	background: url(https://html5book.ru/wp-content/uploads/2015/07/grass.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin:122px 0 0;
+}
+
+#butterfly {
+	position: relative;
+	max-width: 550px;
+	min-height: 400px;
+	-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+	-ms-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+	transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+	-webkit-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-animation: butterfly 5s linear infinite;
+	animation: butterfly 5s linear infinite;
+}
+#leftwing {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 312px;
+	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+	background-repeat: no-repeat;
+	-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	-ms-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	-webkit-transform-origin: inherit;
+	-ms-transform-origin: inherit;
+	transform-origin: inherit;
+	-webkit-animation: leftwing 0.2s linear infinite;
+	animation: leftwing 0.2s linear infinite;
+}
+#rightwing {
+	position: absolute;
+	left: 175px;
+	top: 0px;
+	width: 200px;
+	height: 312px;
+	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+	background-repeat: no-repeat;
+	-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	-ms-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	-webkit-transform-origin: inherit;
+	-ms-transform-origin: inherit;
+	transform-origin: inherit;
+	-webkit-animation: rightwing 0.2s linear infinite;
+	animation: rightwing 0.2s linear infinite;
+}
+@-webkit-keyframes butterfly {
+	from {
+		-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	25% {
+		-webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	50% {
+		-webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	75% {
+		-webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	to {
+		-webkit-transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+}
+@keyframes butterfly {
+	from {
+		transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	25% {
+		transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	50% {
+		transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	75% {
+		transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+	to {
+		transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	}
+}
+@-webkit-keyframes rightwing {
+	from {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+}
+@keyframes rightwing {
+	from {
+		transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+	50% {
+		transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+	}
+	to {
+		transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+	}
+}
+@-webkit-keyframes leftwing {
+	from {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+	}
+	to {
+		-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+}
+@keyframes leftwing {
+	from {
+		transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+	}
+	to {
+		transform: rotateX(90deg) rotate3d(0, 1, 0, 00deg);
+	}
 }
