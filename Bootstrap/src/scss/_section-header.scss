@@ -1,34 +1,7 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: $main-font;
-    background-color: $middle;
-    min-height: 100%;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: $main-font;
-    margin: 0;
-}
-
-a {
-    color: $black;
-    text-decoration: none;
-}
-
-
-// -----
-
-
 .content {
     position: absolute;
     top: 10%;
-    left: 2rem;
+    left: 4rem;
     width: 70%;
     transform: translateY(-50%);
 

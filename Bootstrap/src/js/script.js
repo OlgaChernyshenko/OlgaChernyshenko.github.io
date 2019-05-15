@@ -1,64 +1,47 @@
 'use strict';
 
-// STANDARD
-;(function(){
-	const topline = document.querySelector('.top-line');
+//MAP
+// $(window) load (function(){
 
-	function toTopBtnFn(){
-		const toTopBtn = document.createElement('span');
+// 	});
+function initMap() {
 
-		const addBtn = () => {
-			toTopBtn.classList.add('to-top');
-			document.body.appendChild(toTopBtn);
-			const toTopPosition = window.innerHeight;
+	var mapCenter = {lat: 49.050705, lng: 33.365622};
+	var map = new google.maps.Map(
+		document.getElementById('map'), {zoom: 14,
+			center: mapCenter,
+			mapTypeId: 'satellite',
+			disableDefaultUI: true
+		});
 
-			toTopBtn.addEventListener('click', () => {
-				window.scrollTo({
-					top: 0,
-					behavior: "smooth"
-				});
-			})
-		}
-
-		const removeBtn = () => {
-			toTopBtn.remove();
-		}
-
-		return {
-			addBtn: addBtn,
-			removeBtn: removeBtn
-		}
-	}
-
-	const btnToTop = toTopBtnFn();
-
-	document.addEventListener('scroll', () => {
-		if(window.pageYOffset < topline.clientHeight) {
-			topline.classList.remove('fixed');
-		} else {
-			topline.classList.add('fixed');
-		}
-
-	// if(window.pageYOffset >= window.innerHeight) {
-	// 	btnToTop.addBtn();
-	// } else {
-	// 	btnToTop.removeBtn();
-	// }
-
-	window.pageYOffset >= window.innerHeight ? btnToTop.addBtn() : btnToTop.removeBtn();
-});
-
-
-	$('.dynamic-grid').masonry({
-		percentPosition: true,
-		gutter: 20,
-		horizontalOrder: true,
-		fitWidth: true
+	var marker = new google.maps.Marker({
+		position: mapCenter,
+		map: map,
+		title: 'Hello',
+		icon: "img/icon.png"
 	});
 
+	var marker2 = new google.maps.Marker({
+		position: {lat: 49.06, lng: 33.37},
+		map: map,
+		title: 'Hello2',
+		icon: "img/icon.png"
+	});
+
+	var infoWindowText = $('.ba-info-text').html();
+	$infowindow.open ($map.$marker);
+
+	var infowindow = new google.maps.InfoWindow({
+		content: infoWindowText
+	});
+
+	marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});
+
+}
 
 
-})();
 
 //PADDING-HACK
 function paddingHack(items){
@@ -103,7 +86,7 @@ mansoryGridPadHack.init();
 
 var navigation = {
 
-    // VARYABLES
+ // HEADERNAVIGATION
     $nav: document.querySelector('.nav'),
     $navTrigger: document.querySelector('.nav__trigger'),
     $navContent: document.querySelector('.nav__content'),
@@ -111,30 +94,30 @@ var navigation = {
     transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
 
     init() {
-        var self = this;
+    	var self = this;
 
         // Handle the transitions
         self.$navTrigger.addEventListener('click', function() {
-            if (!self.$navTrigger.classList.contains('is-active')) {
+        	if (!self.$navTrigger.classList.contains('is-active')) {
                 // .nav--trigger active
                 self.$navTrigger.classList.add('is-active');
 
                 // .nav active
                 if (!self.$nav.classList.contains('is-active')) {
-                    self.$nav.classList.add('is-active');
-                    self.$nav.addEventListener('transitionend', function(e) {
-                        if (e.propertyName == 'width' && self.$navTrigger.classList.contains('is-active')) {
+                	self.$nav.classList.add('is-active');
+                	self.$nav.addEventListener('transitionend', function(e) {
+                		if (e.propertyName == 'width' && self.$navTrigger.classList.contains('is-active')) {
                             // .nav__content active
                             self.$navContent.classList.add('is-active');
                         }
                     });
                 } else {
-                    self.$navContent.classList.add('is-active');
+                	self.$navContent.classList.add('is-active');
                 }
 
                 // no-csstransitions fallback
                 if (document.documentElement.classList.contains('no-csstransitions')) {
-                    self.$navContent.classList.add('is-active');
+                	self.$navContent.classList.add('is-active');
                 }
             } else {
                 // .nav--trigger inactive
@@ -142,20 +125,20 @@ var navigation = {
 
                 // .nav__content inactive
                 if (self.$navContent.classList.contains('is-active')) {
-                    self.$navContent.classList.remove('is-active');
-                    self.$navContent.addEventListener('transitionend', function(e) {
-                        if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
+                	self.$navContent.classList.remove('is-active');
+                	self.$navContent.addEventListener('transitionend', function(e) {
+                		if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
                             // .nav inactive
                             self.$nav.classList.remove('is-active');
                         }
                     });
                 } else {
-                    self.$nav.classList.remove('is-active');
+                	self.$nav.classList.remove('is-active');
                 }
 
                 // no-csstransitions fallback
                 if (document.documentElement.classList.contains('no-csstransitions')) {
-                    self.$nav.classList.remove('is-active');
+                	self.$nav.classList.remove('is-active');
                 }
             }
         });

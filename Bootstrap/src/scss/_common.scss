@@ -1,17 +1,36 @@
-html, body {
-	min-height: 100vh;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
+html {
+    font-family: $main-font;
+    background-color: $middle;
+    min-height: 100%;
+}
 body {
 	font-family: $main-font;
 	font-size: $base-size;
 	color: $dark-text;
 }
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: $main-font;
+    margin: 0;
+}
+
+
 section {
 	min-height: 100vh;
 	width: 100%;
-	max-width: 1140px;
-	margin: auto;
+	min-width: 1200px;
+	margin:0 auto;
+}
+header {
+    min-height: 100vh;
 }
 a {
 	color: $dark-text;
