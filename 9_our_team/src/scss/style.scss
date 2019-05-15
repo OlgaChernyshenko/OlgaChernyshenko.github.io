@@ -63,7 +63,7 @@ body {
 		display: block;
 		margin-bottom: 20px;
 		position: relative;
-		
+
 		&::before {
 			content: "";
 			border-bottom: 1px solid #fc0;
@@ -80,7 +80,7 @@ body {
 			position: absolute;
 			top: 50%;
 			left: 70px;
-			
+
 		}
 
 	}
@@ -96,7 +96,7 @@ body {
 	position: relative;
 	margin-bottom: 20px;
 
-}	
+}
 
 .container__right {
 	border-left: 1px solid #fc0;
@@ -121,7 +121,7 @@ body {
 
 
 .image__box
-{ 
+{
 	min-height: 300px;
 	max-width: 300px;
 	width: 100%;
@@ -136,12 +136,12 @@ body {
 		height: 40%;
 		position: absolute;
 		top:-5%;
-		left:-5%;	
+		left:-5%;
 		border-top: 1px solid #fc0;
 		border-left: 1px solid #fc0;
-		
+
 	}
-	
+
 	&::after {
 		content:'';
 		display: block;
@@ -151,8 +151,8 @@ body {
 		border-top: 1px solid #fc0;
 		border-right: 1px solid #fc0;
 		top:-5%;
-		left:65%;	
-		
+		left:65%;
+
 	}
 
 
@@ -164,7 +164,7 @@ body {
 		max-width: 300px;
 		object-fit: contain;
 		overflow: hidden;
-		object-fit: none;
+		object-fit: cover;
 		object-position: 50% 0;
 		position: relative;
 
