@@ -1,23 +1,3 @@
-Skip to content
-Why GitHub? 
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search
-
-Sign in
-Sign up
-2 0 1 davaynamore/gulp-assembler
- Code  Issues 0  Pull requests 0  Projects 0  Insights
-Join GitHub today
-GitHub is home to over 36 million developers working together to host and review code, manage projects, and build software together.
-
-gulp-assembler/gulpfile.js
-@sergeych-hyuna sergeych-hyuna validation fixed
-9900ea9 a day ago
-253 lines (228 sloc)  6.37 KB
-    
 'use strict';
 
 const prefix = '---';
@@ -271,15 +251,3 @@ gulp.task(task.startBuild, gulp.series(task.check, task.clean, task.production))
 gulp.task(task.startDev, gulp.series(task.check, task.clean, task.development));
 
 gulp.task(task.default, gulp.parallel(task.startDev));
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
