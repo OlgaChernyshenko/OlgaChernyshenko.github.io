@@ -5,13 +5,13 @@ let targetPath = process.argv.filter(el => el.indexOf(prefix) !== -1)[0];
 
 if(!targetPath) {
 	return console.error(
-		`
-		\n#################################################################################
-		\nSet the target directory!
-		\nYou should type:
-		\ngulp ${prefix}yourProjectDirectoryName
-		\n#################################################################################
-		`
+`
+\n#################################################################################
+\nSet the target directory!
+\nYou should type:
+\ngulp ${prefix}yourProjectDirectoryName
+\n#################################################################################
+`
 		);
 } else {
 	targetPath = targetPath.split('').slice(prefix.length).join("");
@@ -43,17 +43,15 @@ const task = {
 	connect: 'connect',
 	clean: 'clean',
 	development: 'dev',
-	production: 'production',
 	default: 'default',
 	validator: 'valid',
 	check: 'check',
-	startDev: 'startDev',
-	startBuild: 'build'
+	startDev: 'startDev'
 }
 
 const path = {
 	src: {
-		html: `${targetPath}/src/index.html`,
+		html: `${targetPath}/src/*.html`,
 		js: `${targetPath}/src/js/script.js`,
 		scss: `${targetPath}/src/scss/**/[^_]*.+(scss|sass)`,
 		img: [`${targetPath}/src/img/**/*.*`, `!${targetPath}/src/img/**/*.ini`],
@@ -73,20 +71,19 @@ const path = {
 	watch: {
 		html: [`${targetPath}/src/*.html`, `${targetPath}/src/partials/**/*.*`],
 		js: `${targetPath}/src/js/*.js`,
-		scss: `${targetPath}/src/scss/*.+(scss|sass)`,
+		scss: `${targetPath}/src/scss/**/*.+(scss|sass)`,
 		img: `${targetPath}/src/img/**/*.*`,
 		fonts: `${targetPath}/src/fonts/**/*.*`,
 		libs: `${targetPath}/src/libs/**/*.*`,
 		fav: `${targetPath}/src/fav/**/*.*`
 	},
 	serverRoot: `${targetPath}/app`,
-	template: 'template/**/*.*',
-	validation: `${targetPath}/app/index.html`,
+	template: 'template/**/*.*'
 }
 
 gulp.task(task.dev.css, () => {
 	return setTimeout(() => {
-		return gulp.src(path.src.scss, { allowEmpty: true })
+		return gulp.src(path.src.scss, { sourcemaps: true, allowEmpty: true })
 		.pipe($.sourcemaps.init())
 		.pipe($.sass().on('error', $.notify.onError("SASS-Error: <%= error.message %>")))
 		.pipe($.autoprefixer({
@@ -95,72 +92,36 @@ gulp.task(task.dev.css, () => {
 		}))
 		.pipe($.csscomb())
 		.pipe($.sourcemaps.write())
-		.pipe(gulp.dest(path.app.css))
+		.pipe(gulp.dest(path.app.css), { sourcemaps: true })
 		.pipe(browserSync.stream());
 	}, 500);
-});
-
-gulp.task(task.build.css, () => {
-	return gulp.src(path.src.scss, { allowEmpty: true })
-	.pipe($.sass().on('error', $.notify.onError("SASS-Error: <%= error.message %>")))
-	.pipe($.autoprefixer({
-		browsers: ['last 2 versions'],
-		cascade: false
-	}))
-	.pipe($.csscomb())
-	.pipe($.cssnano())
-	.pipe(gulp.dest(path.app.css));
 });
 
 gulp.task(task.dev.html, () => {
 	return gulp.src(path.src.html, { allowEmpty: true })
-	.pipe($.rigger())
-	.pipe(gulp.dest(path.app.html));
-});
-
-gulp.task(task.build.html, () => {
-	return gulp.src(path.src.html, { allowEmpty: true })
-	.pipe($.rigger())
-	.pipe($.htmlmin({ collapseWhitespace: true }))
-	.pipe(gulp.dest(path.app.html));
+	.pipe($.rigger().on('error', $.notify.onError("Rigger-Error: <%= error.message %>")))
+	.pipe(gulp.dest(path.app.html))
+	.pipe(browserSync.stream());
 });
 
 gulp.task(task.validator, () => {
-	return setTimeout(() => {
-		return gulp.src(path.validation, { allowEmpty: true })
-		.pipe(htmlv({format: 'html'}).on('error', $.notify.onError("Connection-Error: <%= error.message %>")))
-		.pipe($.rename({
-			basename: "w3c"
-		}))
-		.pipe(gulp.dest(path.app.html))
-		.pipe(browserSync.stream());
-	}, 500);
+	return gulp.src(path.src.html, { allowEmpty: true })
+	.pipe(htmlv({format: 'html'}).on('error', $.notify.onError("Connection-Error: <%= error.message %>")))
+	.pipe($.rename({
+		basename: "w3c"
+	}))
+	.pipe(gulp.dest(path.app.html));
 });
 
 gulp.task(task.dev.js, () => {
 	return gulp.src(path.src.js, { allowEmpty: true })
-	.pipe($.rigger())
-	.pipe(gulp.dest(path.app.js))
-	.pipe(browserSync.stream());
-});
-
-gulp.task(task.build.js, () => {
-	return gulp.src(path.src.js, { allowEmpty: true })
-	.pipe($.rigger())
-	.pipe($.uglify().on('error', $.notify.onError("JS-Error: <%= error.message %>")))
+	.pipe($.rigger().on('error', $.notify.onError("Rigger-Error: <%= error.message %>")))
 	.pipe(gulp.dest(path.app.js))
 	.pipe(browserSync.stream());
 });
 
 gulp.task(task.dev.img, () => {
 	return gulp.src(path.src.img, { allowEmpty: true })
-	.pipe(gulp.dest(path.app.img))
-	.pipe(browserSync.stream());
-});
-
-gulp.task(task.build.img, () => {
-	return gulp.src(path.src.img, { allowEmpty: true })
-	.pipe($.imagemin())
 	.pipe(gulp.dest(path.app.img))
 	.pipe(browserSync.stream());
 });
@@ -225,29 +186,16 @@ gulp.task(
 		task.connect
 		));
 
-gulp.task(
-	task.production,
-	gulp.parallel(
-		task.build.html,
-		task.build.css,
-		task.build.js,
-		task.build.img,
-		task.build.libs,
-		task.build.fav,
-		task.build.fonts
-		));
-
 gulp.task(task.check, () => {
-	return new Promise(function(resolve) {
-		if(!fs.existsSync(targetPath)) {
-			gulp.src(path.template, { allowEmpty: true })
-			.pipe(gulp.dest(`${targetPath}/`));
+return new Promise(function(resolve) {
+    if(!fs.existsSync(targetPath)) {
+    	gulp.src(path.template, { allowEmpty: true })
+				.pipe(gulp.dest(`${targetPath}/`));
 		}
 		setTimeout(resolve, 2000);
-	});
+  });
 });
 
-gulp.task(task.startBuild, gulp.series(task.check, task.clean, task.production));
 gulp.task(task.startDev, gulp.series(task.check, task.clean, task.development));
 
 gulp.task(task.default, gulp.parallel(task.startDev));
