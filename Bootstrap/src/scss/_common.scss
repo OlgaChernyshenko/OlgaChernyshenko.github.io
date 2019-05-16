@@ -1,4 +1,3 @@
-
 *,
 *:before,
 *:after {
@@ -22,15 +21,21 @@ h4, h5, h6 {
     margin: 0;
 }
 
-
+header {
+    min-height: 100vh;
+}
 section {
 	min-height: 100vh;
 	width: 100%;
 	min-width: 1200px;
 	margin:0 auto;
 }
-header {
-    min-height: 100vh;
+.half-first {
+	min-height: 50vh;
+	width: 100%;
+}
+.container{
+	width: 1200px;
 }
 a {
 	color: $dark-text;
