@@ -50,16 +50,19 @@
 	}
 }
 
-@mixin section-button($color: $white, $bg-color: $corp-green) {
+@mixin section-button($color: $white, $bg-color: $middle) {
 	color: $color;
 	background-color: $bg-color;
-	padding: 15px 0;
+	padding: 5px 0;
+	border-radius: 3px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
 	border: none;
 	@include transition;
 	@content;
+	position: relative;
+
 
 	&:hover {
 		@if($bg-color == $white) {
@@ -67,6 +70,9 @@
 			} @else {
 				background-color: lighten($bg-color, 10%);
 			}
+			&::before,&::after {border-color: $light-grey;}
+			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
 		}
 	}
 

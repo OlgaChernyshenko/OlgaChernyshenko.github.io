@@ -2,41 +2,56 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    margin:0;
 }
-
 html {
-    font-family: $main-font;
     background-color: $middle;
     min-height: 100%;
 }
 body {
-	font-family: $main-font;
+	font-family: $main-font, $secondary-font;
 	font-size: $base-size;
 	color: $dark-text;
 }
-
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: $main-font;
-    margin: 0;
+h1, h2, h3 {
+	font-family: $main-font;
+	color:$white;
 }
-
+h4, h5, h6 {
+    font-family: $secondary-font;
+    color:$dark-text;
+}
 header {
     min-height: 100vh;
+}
+.footer {
+	background: $middle;
 }
 section {
 	min-height: 100vh;
 	width: 100%;
-	min-width: 1200px;
+	min-width: 1140px;
 	margin:0 auto;
+	background: $middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.half-first {
+.half-first,
+.half-slider,
+.half-batterfly,
+.half-map {
+	border-top:5px solid $white;
+	border-bottom:5px solid $white;
+	padding: 7% 0;
 	min-height: 50vh;
 	width: 100%;
+	background-color: $light-grey;
 }
 .container{
 	width: 1200px;
 }
+
 a {
 	color: $dark-text;
 	text-decoration: none;
@@ -47,4 +62,28 @@ a {
 		color: $light-grey;
 	}
 }
+p {
+	text-align: justify;
+	font-family: $secondary-font;
+}
+.fab {
+	font-size: 3rem;
+}
+//padding-hack
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	// padding-top: $padding;
 
+	& > img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

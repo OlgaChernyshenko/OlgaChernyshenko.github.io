@@ -5,22 +5,6 @@
     width: 70%;
     transform: translateY(-50%);
 
-    h1,
-    h4 {
-        color: $dark-text;
-    }
-
-    h1 {
-        font-size: 8vmin;
-    }
-
-    h4 {
-        font-size: 3.6vmin;
-    }
-
-    a {
-        color: $light-grey;
-    }
 }
 
 .nav {
@@ -29,11 +13,11 @@
     right: 0;
     bottom: 0;
     width: $nav-width;
-    background-color: $middle;
-    opacity: 0.9;
     transition: 1s $ease-in-out-cubic;
     will-change: width;
     z-index: 99;
+    background: $middle;
+    opacity: 0.9;
 
     &.is-active {
         width: 100%;
@@ -52,15 +36,17 @@
     // transform-origin: 100% 50%;
     z-index: 10;
 
+
     .bar, .bars {
         position: relative;
+
 
         &,
         &:before,
         &:after {
             width: $bar-length;
             height: $bar-thickness;
-            background-color: $light-grey;
+            background-color: $white;
             border-radius: $bar-thickness;
             transition: 0.2s ease-in-out;
         }
@@ -126,7 +112,7 @@
                 transition: {
                     property: transform, opacity, color;
                     duration: 0.55s, 0.55s, 0.3s;
-                    timing-function: $ease-in-out-cubic, ease-in-out, ease-in-out;            
+                    timing-function: $ease-in-out-cubic, ease-in-out, ease-in-out;
                 }
             }
         }
@@ -136,7 +122,11 @@
                 @for $num from 1 through 9 {
                     &:nth-of-type(#{$num}) {
                         a {
+                            color: $white;
                             transition-delay: $nav-item-delay * ($num - 1), $nav-item-delay * ($num - 1), 0s;
+                            &:hover {
+                                color: $elow;
+                            }
                         }
                     }
                 }
@@ -171,7 +161,7 @@
         will-change: transform, opacity;
 
         &:hover {
-            color: #ffe304;
+            color:$elow;
 
         }
     }
@@ -182,6 +172,6 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: #ffe304;
+        color: $elow;
     }
 }

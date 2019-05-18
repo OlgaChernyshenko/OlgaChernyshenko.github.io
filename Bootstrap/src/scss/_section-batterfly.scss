@@ -1,44 +1,8 @@
-#second-container {
-	background: url("") no-repeat;
-		background-size: 100%;
-}
-//TEXT
-#second-text {
-	text-align: center;
-	padding: 40px 0;
-}
-//BIRD
-#bird {
-	text-align: center;
-}
-
-#carouselExampleFade {
-	max-width: 550px;
-	margin: auto;
-}
-.second-img {
-	border-radius: 5px;
-	object-fit: cover;
-	max-height: 300px;
-
-}
-.carousel-item,
-.carousel-item .active {
-	max-height: 300px;
-}
 //BUTTERFLY
-#container-butterfly {
-	background: url(https://html5book.ru/wp-content/uploads/2015/07/grass.png) 50%;
-	background-size: 80%;
-	background-repeat: no-repeat;
-	display: none;
-	@media (min-width: 576px) { display: block; margin: 0; padding: 0; };
-}
-
 #butterfly {
 	position: relative;
-	max-width: 550px;
-	min-height: 400px;
+	max-width: 200px;
+	min-height: 312px;
 	-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
 	-ms-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
 	transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
@@ -56,7 +20,7 @@
 	left: 0px;
 	top: 0px;
 	width: 200px;
-	height: 312px;
+	height: 400px;
 	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
 	background-repeat: no-repeat;
 	-webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
@@ -73,7 +37,7 @@
 	left: 175px;
 	top: 0px;
 	width: 200px;
-	height: 312px;
+	height: 400px;
 	background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
 	background-repeat: no-repeat;
 	-webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
@@ -86,15 +50,15 @@
 	animation: rightwing 0.2s linear infinite;
 }
 @-webkit-keyframes butterfly {
-	from {
-		-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
-	25% {
-		-webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
-	50% {
-		-webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
+	// from {
+	// 	-webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
+	// 25% {
+	// 	-webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
+	// 50% {
+	// 	-webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
 	75% {
 		-webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
 	}
@@ -103,15 +67,15 @@
 	}
 }
 @keyframes butterfly {
-	from {
-		transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
-	25% {
-		transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
-	50% {
-		transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
-	}
+	// from {
+	// 	transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
+	// 25% {
+	// 	transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
+	// 50% {
+	// 	transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+	// }
 	75% {
 		transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
 	}

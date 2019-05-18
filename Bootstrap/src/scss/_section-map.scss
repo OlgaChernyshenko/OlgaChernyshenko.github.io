@@ -1,11 +1,8 @@
 .section-map {
-	background-color: $corp-green;
 	min-height: 100vh;
-	width: 100%;
-	min-width: 1200px;
-	margin:0 auto;
 
 	#ba-map {
+		width: 100%;
 
 		#map {
 			min-height: 500px;

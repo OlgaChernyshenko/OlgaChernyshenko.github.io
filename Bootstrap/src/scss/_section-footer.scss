@@ -1,5 +1,5 @@
 .footer {
-	background: $corp-green;
+
 	.container {
 		max-width: 450px;
 		padding: 30px 0;
@@ -15,7 +15,10 @@
 		&__item {
 			display: inline-block;
 		}
-		&__link {
+		&__link { color:$footer-text;
+			&:hover {
+				color: $elow;
+			}
 		}
 	}
 	.social-menu {
@@ -27,7 +30,6 @@
 		}
 		.fab {
 			color: $white;
-
 			&:hover {
 				text-decoration: none;
 				color: $light-grey;

@@ -1,0 +1,45 @@
+.half-batterfly {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.first-h2 {
+	margin-bottom: 5px;
+	text-align: center;
+	color:$corp-green;
+}
+.first-col1,
+.first-col2,
+.first-col3,
+{
+	height: 100%;
+	max-height: 430px;
+	padding: 10px;
+	margin: 10px;
+	@media (min-width: 575.98px) and (min-width: 768px){ padding: 10px; margin:15px; }
+	background-color: $white;
+	opacity: 0.8;
+	position: relative;
+	border-radius: 3px;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+	.first-span {
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		border-radius: 50%;
+		background: $light-grey;
+		margin:10px auto;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.fab {
+
+	}
+
+}
+
+

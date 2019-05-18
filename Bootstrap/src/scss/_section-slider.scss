@@ -1,26 +1,29 @@
-.slider {
-	background: url("../img/air.jpg") no-repeat;
-	background-size: 100%;
-}
-
 //GRID
-
+.slider {
+	padding: 5% 0;
+}
 //IMAGES
 .img {
 	width: 100%;
 	object-fit: cover;
+	border-radius: 25%;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
 }
 
 //TRANSFORM
-
 .four{
-	border:1px solid red;
-	display: inline-block;
+	border:1px solid $white;
+	background-color: $light-grey;
+	border-radius: 25%;
+	display: block;
 	width: 100%;
+	margin: 10px;
 	-o-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+
 
 	&:hover {
 		-o-transform: scaleX(-1);
@@ -28,9 +31,11 @@
 		-moz-transform: scaleX(-1);
 		-webkit-transform: scaleX(-1);
 		transform: scaleX(-1);
-		.img{opacity: 0.2;}
+		box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+		.img{opacity: 0.1;}
 		.trans-text {
-			color: red;
+			color: $white;
 		}
 
 	}
