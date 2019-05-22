@@ -1,12 +1,20 @@
+.first {
+	background-size: cover;
+	background-image: url("../img/head-1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+}
+
 #carusel {
-	text-align: center;
+text-align: center;
 }
 
 #carouselExampleFade {
 	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 	width: 100%;
 }
-.second-img {
+.carousel-item-img {
 	object-fit: cover;
 	min-height: 350px;
 

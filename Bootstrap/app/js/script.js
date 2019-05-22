@@ -1,84 +1,41 @@
 ;(function(){
 'use strict';
 
-//MAP
-// $(window) load (function(){
-
-// 	});
-function initMap() {
-
-	var mapCenter = {lat: 49.050705, lng: 33.365622};
-	var map = new google.maps.Map(
-		document.getElementById('map'), {zoom: 14,
-			center: mapCenter,
-			mapTypeId: 'roadmap',
-			disableDefaultUI: true
-		});
-
-	var marker = new google.maps.Marker({
-		position: mapCenter,
-		map: map,
-		title: 'Hello',
-		icon: "img/icon.png"
-	});
-
-	var marker2 = new google.maps.Marker({
-		position: {lat: 49.06, lng: 33.37},
-		map: map,
-		title: 'Hello2',
-		icon: "img/icon.png"
-	});
-
-	var infoWindowText = $('.ba-info-text').html();
-	$infowindow.open ($map.$marker);
-
-	var infowindow = new google.maps.InfoWindow({
-		content: infoWindowText
-	});
-
-	marker.addListener('click', function() {
-		infowindow.open(map, marker);
-	});
-
-}
-
-
-
 //PADDING-HACK
-function paddingHack(items){
-	const gridWidth = $(items).parent().width();
+;function paddingHack(items){
+    const gridWidth = $(items).parent().width();
 
-	console.log(gridWidth);
+    console.log(gridWidth);
 
-	function setPadding(){
-		$(items).each(function() {
-			const img = $(this).find('img');
+    function setPadding(){
+        $(items).each(function() {
+            const img = $(this).find('img');
 
-			console.log(img[0].naturalHeight, gridWidth, img[0].naturalHeight / gridWidth * 100);
+            console.log(img[0].naturalHeight, gridWidth, img[0].naturalHeight / gridWidth * 100);
 
 
-			if(!img[0]) return;
-			$(this).css({
-				// position: 'relative',
-				width: '100%',
-				paddingTop: `${Math.floor(parseFloat(img[0].naturalHeight / gridWidth * 100))}%`
-			});
-			$(img).css({
-				'position': 'absolute',
-				'top': '0',
-				'right': '0',
-				'bottom': '0',
-				'left': '0',
-				'width': '100%',
-				'height': '100%',
-				'object-fit': 'cover'
-			});
-		});
-	}
+            if(!img[0]) return;
+            $(this).css({
+                // position: 'relative',
+                width: '100%',
+                paddingTop: `${Math.floor(parseFloat(img[0].naturalHeight / gridWidth * 100))}%`
+            });
+            $(img).css({
+                'position': 'absolute',
+                'top': '0',
+                'right': '0',
+                'bottom': '0',
+                'left': '0',
+                'width': '100%',
+                'height': '100%',
+                'object-fit': 'cover'
+            });
+        });
+    }
 
-	return {
-		init: setPadding
-	}
+    return {
+        init: setPadding
+    }
 }
 
 const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
@@ -86,6 +43,7 @@ const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
 mansoryGridPadHack.init();
 
 var navigation = {
+
 
  // HEADERNAVIGATION
     $nav: document.querySelector('.nav'),
@@ -150,7 +108,7 @@ navigation.init();
 
 //ACCORDION
   $( function() {
-    $( "#accordion" ).accordion();
+    $( "#accordeon" ).accordion();
   } );
 
 //AREA
@@ -158,11 +116,53 @@ $( function() {
     $( "#tabs" ).tabs();
   } );
 
-//MENU
+//MENSORY
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+//MAP
+function initMap() {
 
+    var mapCenter = {lat: 49.050705, lng: 33.365622};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 14,
+            center: mapCenter,
+            mapTypeId: 'roadmap',
+            disableDefaultUI: true
+        });
 
+    var marker = new google.maps.Marker({
+        position: mapCenter,
+        map: map,
+        title: 'Hello',
+        icon: "img/icon.png"
+    });
 
+    var marker2 = new google.maps.Marker({
+        position: {lat: 49.06, lng: 33.37},
+        map: map,
+        title: 'Hello2',
+        icon: "img/icon.png"
+    });
 
+    var infoWindowText = $('.ba-info-text').html();
+    $infowindow.open ($map.$marker);
 
+    var infowindow = new google.maps.InfoWindow({
+        content: infoWindowText
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+
+};
 
 })();

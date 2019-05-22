@@ -1,0 +1,68 @@
+.cascade {
+	.container{
+		justify-content: center;
+		align-items: center;
+	}
+	.row {flex-direction: row;}
+
+	.section-button {
+		@include section-button;
+	}
+	.fab {
+		font-size: 1rem;
+	}
+	.ispan {
+		display: inline-block;
+		position: absolute;
+		width: 10%;
+		border-right: 1px solid $white;
+		left: 0;
+	}
+	p {
+		margin: 0;
+	}
+
+}
+.area {
+	border: 1px solid $middle;
+	padding: 5px;
+}
+.section-button {
+	margin: 5px;
+	@include section-button;
+	&:hover {
+		color:$elow;
+	}
+
+}
+.block-btn {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	p {
+		text-align: center;
+	}
+	a {
+		color: $white;
+
+		&:hover{
+			color:$elow;
+		}
+	}
+}
+#box-tab-1,#box-tab-2,#box-tab-3,#box-tab-4
+{
+	background-color: $middle; border:1px solid $middle;
+	a {
+		&:hover {
+			color:$elow;
+		}
+		&:active {
+			color:$white;
+		}	
+	}
+}
+#tabs {
+	background-color: white;
+}

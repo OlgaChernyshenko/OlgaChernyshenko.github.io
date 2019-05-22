@@ -1,16 +1,18 @@
 @import "variables";
 @import "mixins";
 @import "common";
-@import "section-header";
-@import "section-first";
-@import "half-first";
-@import "section-slider";
-@import "half-slider";
-@import "section-batterfly";
-@import "half-batterfly";
-@import "section-map";
-@import "half-map";
-@import "section-footer";
+
+@import "header";
+@import "first";
+@import "slider";
+
+@import "accordeon";
+@import "batterfly";
+@import "seo-text";
+
+@import "map";
+@import "cascade";
+@import "footer";
 
 
 

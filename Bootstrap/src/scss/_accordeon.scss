@@ -1,0 +1,31 @@
+.accordeon {
+
+	.row {flex-direction: row;}
+	.container{
+		justify-content: center;
+		align-items: center;
+
+
+		.accordeon-title {
+			text-align: left;
+			background: $middle;
+			border-color:$white;
+			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+			&:active{
+				background:$white;
+				color:$elow;
+			}
+		}
+	}
+
+	.wrapp {
+
+		border-radius: 5%;
+		box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	&:hover{
+background-image: url("../img/kofe.jpg");
+background-position: no-repeat;
+background-size: 100%;
+	}}
+}

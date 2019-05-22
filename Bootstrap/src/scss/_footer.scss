@@ -15,7 +15,7 @@
 		&__item {
 			display: inline-block;
 		}
-		&__link { color:$footer-text;
+		&__link { color:$white;
 			&:hover {
 				color: $elow;
 			}
@@ -23,6 +23,7 @@
 	}
 	.social-menu {
 		padding: 0;
+		margin: 0;
 		display: flex;
 		justify-content: space-around;
 		&__item {
