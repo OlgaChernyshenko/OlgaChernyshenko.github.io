@@ -1,14 +1,13 @@
-.section-map {
-	min-height: 100vh;
+.map {
+	min-height: 50vh;
 
 	#ba-map {
 		width: 100%;
 
 		#map {
 			min-height: 500px;
+			width: 100%;
 		}
-		.ba-info-text {
-			min-width: 100px;
-		}
+
 	}
 }

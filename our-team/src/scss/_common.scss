@@ -1,0 +1,136 @@
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	background-color: $white;
+	font-family: $base-font;
+	font-size: $base-size;
+	color: $grey;
+	line-height: 1.7;
+}
+
+.our-team {
+	padding: 50px 0;
+
+	&__title,
+	&__subtitle {
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title {
+		color: $gold;
+		font-size: $resp-huge-size;
+		font-family: $title-font;
+		font-weight: 900;
+		margin: 0;
+		margin-bottom: 20px;
+
+		@media all and (min-width: 576px) {
+			font-size: $huge-size;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__subtitle {
+		font-size: $middle-size;
+		margin-bottom: 10px;
+	}
+}
+
+.gold-line {
+	display: block;
+	position: relative;
+	@include square(15px);
+	background: url("#{$img-path}/bonfire_icon.png") no-repeat center;
+	background-size: cover;
+
+	@media all and (max-width: 575px){
+		display: none;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		border: 1px solid $gold;
+		border-bottom: none;
+		position: absolute;
+		width: 210px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	$position: -5px;
+	&::before {
+		left: $position;
+		transform: translateX(-100%);
+	}
+
+	&::after {
+		right: $position;
+		transform: translateX(100%);
+	}
+}
+
+.gold-vertical {
+	border-right: 1px solid $gold;
+}
+
+.social__menu {
+	list-style: none;
+	display: flex;
+	width: 100%;
+	max-width: 140px;
+	padding: 0;
+	justify-content: space-between;
+
+	&-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include square(30px);
+		color: $light-grey;
+		border: 2px solid currentColor;
+		border-radius: 50%;
+		transition: all .2s ease;
+
+		&:hover {
+			text-decoration: none;
+			color: $gold;
+			border-color: $gold;
+		}
+	}
+}
+
+.three-lines {
+	$width: 20;
+	$border: #{$width / 5}px solid $gold;
+	display: block;
+	width: #{$width}px;
+	border-top: $border;
+	position: relative;
+	margin-bottom: 20px;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: #{$width / 2}px;
+		border-top: $border;
+		position: absolute;
+		top: -#{$width / 5}px;
+
+	}
+
+	&::before {
+		left: -#{$width / 5}px;
+		transform: translateX(-100%);
+	}
+
+	&::after {
+		right: -#{$width / 5}px;
+		transform: translateX(100%);
+	}
+}

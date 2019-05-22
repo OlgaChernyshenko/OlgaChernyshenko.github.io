@@ -1,5 +1,7 @@
-#first {@media (min-width: 576px) {background-size: 100%;}
+.first {
+	background-size: cover;
 	background-image: url("../img/head-1.jpg");
 	background-repeat: no-repeat;
-	padding: 20% 0 5%;
+	min-height: 100vh;
+	width: 100%;
 }

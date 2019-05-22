@@ -26,6 +26,7 @@
 		<!-- JQUERY --->
 		  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	  <link rel="stylesheet" href="/resources/demos/style.css">
+	  <!-- MASONRY --->
 	
 	
 	
@@ -34,9 +35,10 @@
 </head>
 
 <body>
-	<heder class="section-header" id="header">
+	<header>
+	    <div class="section-header" id="header">
 	    <div class="nav">
-	        <a href="#" class="nav__trigger">
+	        <a href="#" class="nav__trigger" id="nav__trigger">
 	            <div class="bar"></div>
 	            <div class="bars"></div>
 	        </a>
@@ -44,10 +46,10 @@
 	        <div class="nav__content">
 	            <nav class="nav__list">
 	                <ul>
-	                    <li class="nav__item"><a href="#first">Home</a></li>
-	                    <li class="nav__item"><a href="#second-container">Our partners</a></li>
-	                    <li class="nav__item"><a href="#">Team</a></li>
-	                    <li class="nav__item"><a href="#ba-map">ba-map</a></li>
+	                    <li class="nav__item"><a class="menu__list-link" href="#first">Home</a></li>
+	                    <li class="nav__item"><a class="menu__list-link" href="#second-container">Our partners</a></li>
+	                    <li class="nav__item"><a class="menu__list-link" href="#">Team</a></li>
+	                    <li class="nav__item"><a class="menu__list-link" href="#ba-map">ba-map</a></li>
 	                </ul>
 	            </nav>
 	        </div>
@@ -56,21 +58,20 @@
 	        <h1>portfolio</h1>
 	        <h2>by: <a href="https://www.facebook.com/olga.chernyshenko.3" target="_blank">Olga Chernyshenko</a></h2>
 	    </div>
-	</heder>
-	<section class="section-first" id="first">
-		<div class="container">
-		</div>
+	</div>
+	</header>
+	<section class="first" id="first">
 	</section>
 	<div class="half-first">
 		<div class="container">
 			<div class="row">
-				<div class="col text-center">
+				<div class="col text-center mb-4">
 					<h2>самое современное оборудование</h2>
 				</div>
 			</div>
 	
 			<div class="row">
-				<div class="col-12 text-center" id="carusel">
+				<div class="col" id="carusel">
 					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
@@ -114,38 +115,63 @@
 			</div>
 	
 			<div class="row" id="ourTeam">
-				<div class="col-sm-6 col-md-4 mb-2">
-					<div class="four"><h3 class="trans-text">Визаж<br>Валерия</h3>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3>Визаж<br>Валерия</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
+	
 						<img class="img" src="img/5.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 mb-2">
-					<div class="four"><h3 class="trans-text"> Мастер<br>Евгений</h3>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3> Мастер<br>Евгений</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
 						<img class="img" src="img/3.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 mb-2">
-					<div class="four"><h3 class="trans-text">Психолог<br>Елизавета</h3>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3>Психолог<br>Елизавета</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
 						<img class="img" src="img/6.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="four"><h3 class="trans-text">Мастер<br>Станислав</h3>
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3>Мастер<br>Станислав</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
 						<img class="img" src="img/4.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="four"><h3 class="trans-text">Массажистка<br>Илонна</h3>
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3>Массажистка<br>Илонна</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
 						<img class="img" src="img/2.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="four"><h3 class="trans-text">Косметолог<br>Наталья</h3>
+					<div class="wrapp">
+						<div class="our-team-text">
+							<h3>Косметолог<br>Наталья</h3>
+							<a title="Viber" href="viber://add?number=120345678910" class="button">Viber моб</a>
+						</div>
 						<img class="img" src="img/1.jpg" class="d-block w-100" alt="...">
 						<kbd>scaleX(-1)</kbd>
 					</div>
@@ -167,18 +193,17 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<div class="wrap">
-				<img class="img-half-slider" href="#" src="../img/lavanda.jpg">
+					<div class="wrapp">
+				<img class="img" href="#" src="img/van.jpg">
 			</div>
 				</div>
 				<div class="col">
 					<div id="accordion">
 						<h3 class="accordion-title">Section 1</h3>
 						<div>
-							<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-								amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-								odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate delectus asperiores saepe quasi, mollitia magni est accusamus quia. Placeat natus eligendi dicta recusandae. Delectus error aliquente accusamus recusandae. Eum corporis voluptate excepturi ipsam deserunt quas, vel, beatae, sunt nesciunt recusandVivamus nisi metus, molestie vel, gravida in, condimentum sit
+							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+							dio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
 							</p>
 						</div>
 						<h3 class="accordion-title">Section 2</h3>
@@ -231,6 +256,9 @@
 				</div>
 			</div>
 			<div class="row">
+	<!---MASONRY--->
+	
+	<!---MASONRY--->
 			<div class="col"></div>
 		</div>
 		</div>
@@ -268,10 +296,6 @@
 	<section class="section-map">
 	<div class="container" id="ba-map">
 	<div id="map">
-		<div class="ba-info-text">
-			<h3>Lorem</h3>
-			<p>Lorem</p>
-		</div>
 	</div>
 	</div>
 	<script type="text/javascrypt">
@@ -413,9 +437,11 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	
 	<!--MAP -->
-	<script async src="https://maps.googleapis.com/maps/api/js?language=ua&key=&callback=initMap"></script>
-	
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+	    async defer></script>
 	<!-- AIzaSyBoxlHneFsKzhTtXsWp3fyuLf7KUW9_Puw -->
+	<!-- MASONRY --->
+	<script src="/path/to/masonry.pkgd.min.js"></script>
 	
 	<!-- STANDARD -->
 	<script src="js/script.js"></script>

@@ -1,3 +1,4 @@
+;(function(){
 'use strict';
 
 //MAP
@@ -156,3 +157,12 @@ navigation.init();
 $( function() {
     $( "#tabs" ).tabs();
   } );
+
+//MENU
+
+
+
+
+
+
+})();
