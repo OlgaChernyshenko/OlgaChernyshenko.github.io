@@ -128,41 +128,41 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 //MAP
-function initMap() {
+// function initMap() {
 
-    var mapCenter = {lat: 49.050705, lng: 33.365622};
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 14,
-            center: mapCenter,
-            mapTypeId: 'roadmap',
-            disableDefaultUI: true
-        });
+//     var mapCenter = {lat: 49.050705, lng: 33.365622};
+//     var map = new google.maps.Map(
+//         document.getElementById('map'), {zoom: 14,
+//             center: mapCenter,
+//             mapTypeId: 'roadmap',
+//             disableDefaultUI: true
+//         });
 
-    var marker = new google.maps.Marker({
-        position: mapCenter,
-        map: map,
-        title: 'Hello',
-        icon: "img/icon.png"
-    });
+//     var marker = new google.maps.Marker({
+//         position: mapCenter,
+//         map: map,
+//         title: 'Hello',
+//         icon: "img/icon.png"
+//     });
 
-    var marker2 = new google.maps.Marker({
-        position: {lat: 49.06, lng: 33.37},
-        map: map,
-        title: 'Hello2',
-        icon: "img/icon.png"
-    });
+//     var marker2 = new google.maps.Marker({
+//         position: {lat: 49.06, lng: 33.37},
+//         map: map,
+//         title: 'Hello2',
+//         icon: "img/icon.png"
+//     });
 
-    var infoWindowText = $('.ba-info-text').html();
-    $infowindow.open ($map.$marker);
+//     var infoWindowText = $('.ba-info-text').html();
+//     $infowindow.open ($map.$marker);
 
-    var infowindow = new google.maps.InfoWindow({
-        content: infoWindowText
-    });
+//     var infowindow = new google.maps.InfoWindow({
+//         content: infoWindowText
+//     });
 
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
-    });
+//     marker.addListener('click', function() {
+//         infowindow.open(map, marker);
+//     });
 
-};
+// };
 
 })();

@@ -1,4 +1,5 @@
-.map {display: flex;
+.map {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
@@ -25,15 +26,24 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		width: 4rem;
-		height: 14rem;
+		width: 6rem;
+		height: 18rem;
 		position: absolute;
 		bottom:10%;
-		right: 20%;
+		right: 10%;
+
+		.wrap{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 5rem;
+			height: 5rem;
+		}
+		.fab, .fas {font-size: 3rem;}
 
 		a {
-			width: 4rem;
-			height: 4rem;
+			width: 5rem;
+			height: 5rem;
 			background: $white;
 			color: $elow;
 			border-radius: 50%;
@@ -42,10 +52,16 @@
 			align-items: center;
 			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 
-			&:hover {
-				color:$elow;
-				box-shadow: none;
+
+			&:hover{
+				.fab, .fas
+				{color:$light-grey;
+					font-size: 2.5rem;}
+					zoom:0.9;
+					width: 4.5rem;
+					height: 4.5rem;
+
+				}
 			}
 		}
 	}
-}

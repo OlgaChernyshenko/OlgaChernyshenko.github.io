@@ -6,7 +6,8 @@
     h1, h2{
         color:$elow;
         padding: 0;
-        }
+        &::after {display: none;}
+    }
 }
 
 .nav {

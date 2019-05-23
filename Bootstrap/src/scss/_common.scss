@@ -11,6 +11,9 @@ body {
 	color: $dark-text;
 	background: $corp-green;
 }
+section {
+	margin-bottom: 25px;
+}
 
 .container {
 	width: 100%;
@@ -31,11 +34,27 @@ h1, h2, h3 {
 	text-transform:capitalize;
 	text-align: center;
 }
+h2 {
+	font-family: $main-font;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: "^";
+		top:-20%;
+		left: 20%;
+		font-size: 5rem;
+		display: block;
+		color:$elow;
+		transform:translateY(70%);
+		transform: scaleY(-1);
+	}
+}
+
 h4, h5, h6 {
-    font-family: $secondary-font;
-    color:$dark-text;
-    font-size: $small-size;
-    text-align: justify;
+	font-family: $secondary-font;
+	color:$dark-text;
+	font-size: $small-size;
+	text-align: justify;
 }
 a {
 	color: $dark-text;

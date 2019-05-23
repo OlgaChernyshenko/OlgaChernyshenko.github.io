@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Poppins:200&display=swap");
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: red;
+	font-family: "Poppins", sans-serif, "Luckiest Guy", cursive;
+	border: 5px solid red;
+	color: white;
+}
+
+.portfolio {
+	width: 100%;
+}
+.portfolio .container {
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+}
+.portfolio li,
+.portfolio a,
+.portfolio p {
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	list-style: none;
+}
+.portfolio ul {
+	list-style: none;
+}
+.portfolio .nav__list {
+	width: 50px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNEZBQVk7QUFDWjtFQUNDLDhCQUFzQjtFQUF0QixzQkFBc0IsRUFBQTs7QUFFdkI7RUFDQyxTQUFTO0VBQ1QsVUFBVTtFQUNWLFlBQVksRUFBQTs7QUFFYjtFQUNDLGVBQWU7RUFDZiwyREFBMkQ7RUFDM0QscUJBQW9CO0VBQ3BCLFlBQVksRUFBQTs7QUFFYjtFQUVDLFdBQVcsRUFBQTtFQUZaO0lBSUMsV0FBVztJQUNYLGlCQUFpQjtJQUNqQixZQUFZLEVBQUE7RUFOYjtJQVNFLGtDQUFrQztJQUNsQyxlQUFlO0lBQ2YscUJBQW9CO0lBQ3BCLGdCQUFnQixFQUFBO0VBWmxCO0lBZ0JFLGdCQUFnQixFQUFBO0VBaEJsQjtJQW1CRSxXQUFXLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1MdWNraWVzdCtHdXl8UG9wcGluczoyMDAmZGlzcGxheT1zd2FwJyk7XHJcbip7XHJcblx0Ym94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG5odG1sLCBib2R5IHtcclxuXHRtYXJnaW46IDA7XHJcblx0cGFkZGluZzogMDtcclxuXHRoZWlnaHQ6IDEwMCU7XHJcbn1cclxuYm9keSB7XHJcblx0YmFja2dyb3VuZDogcmVkO1xyXG5cdGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWYsICdMdWNraWVzdCBHdXknLCBjdXJzaXZlO1xyXG5cdGJvcmRlcjo1cHggc29saWQgcmVkO1xyXG5cdGNvbG9yOiB3aGl0ZTtcclxufVxyXG4ucG9ydGZvbGlvIHtcclxuXHJcblx0d2lkdGg6IDEwMCU7XHJcbi5jb250YWluZXIge1xyXG5cdHdpZHRoOiAxMDAlO1xyXG5cdG1heC13aWR0aDogMTE0MHB4O1xyXG5cdG1hcmdpbjogYXV0bztcclxufVxyXG5cdGxpLCBhLCBwIHtcclxuXHRcdGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWY7XHJcblx0XHRmb250LXNpemU6IDFyZW07XHJcblx0XHR0ZXh0LWRlY29yYXRpb246bm9uZTtcclxuXHRcdGxpc3Qtc3R5bGU6IG5vbmU7XHJcblx0fVxyXG5cclxuXHR1bCB7XHJcblx0XHRsaXN0LXN0eWxlOiBub25lO1xyXG5cdH1cclxuXHQubmF2X19saXN0e1xyXG5cdFx0d2lkdGg6IDUwcHg7XHJcblx0fVxyXG59Il19 */

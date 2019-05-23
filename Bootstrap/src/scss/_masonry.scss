@@ -1,0 +1,40 @@
+//MASONRY
+.masonry-batterfly
+{
+  min-height: 100vh;
+}
+
+  /* ---- grid ---- */
+
+  .grid {
+    background: $corp-green;
+    img {
+     width: 100%;
+     padding: 5px;
+   }
+ }
+
+ /* clear fix */
+ .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item
+{
+  float: left;
+}
+
+.grid-item img
+{
+  display: block;
+  max-width: 100%;
+}

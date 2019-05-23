@@ -53,14 +53,21 @@
 }
 #box-tab-1,#box-tab-2,#box-tab-3,#box-tab-4
 {
-	background-color: $middle; border:1px solid $middle;
+	background-color: $middle;
+	border:1px solid $middle;
+	border-radius: 3px 3px 0 0;
+
 	a {
 		&:hover {
+			border-radius: 3px 3px 0 0;
+			background-color: $white;
 			color:$elow;
 		}
 		&:active {
-			color:$white;
-		}	
+			border-radius: 3px 3px 0 0;
+			color:$elow;
+
+		}
 	}
 }
 #tabs {
