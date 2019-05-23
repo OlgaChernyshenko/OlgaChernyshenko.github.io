@@ -36,18 +36,6 @@ h1, h2, h3 {
 }
 h2 {
 	font-family: $main-font;
-	position: relative;
-	&::after {
-		position: absolute;
-		content: "^";
-		top:-20%;
-		left: 20%;
-		font-size: 5rem;
-		display: block;
-		color:$elow;
-		transform:translateY(70%);
-		transform: scaleY(-1);
-	}
 }
 
 h4, h5, h6 {

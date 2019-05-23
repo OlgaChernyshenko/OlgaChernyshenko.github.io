@@ -1,10 +1,8 @@
 //IMAGES
-.img {
+.img-slider {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 5%;
-	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-
 }
 
 //TRANSFORM
@@ -40,7 +38,7 @@
 			background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
 		}
 
-		img{opacity: 0.1;}
+		.img-slider{opacity: 0.1;}
 		h3 {
 			color: $white;
 			text-align: center;

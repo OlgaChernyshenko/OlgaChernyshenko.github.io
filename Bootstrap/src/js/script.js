@@ -1,6 +1,5 @@
 ;(function(){
 'use strict';
-
 //PADDING-HACK
 ;function paddingHack(items){
     const gridWidth = $(items).parent().width();
@@ -127,9 +126,12 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
-//MAP
-// function initMap() {
 
+
+//MAP
+
+        // function initMap() {
+//     var map;
 //     var mapCenter = {lat: 49.050705, lng: 33.365622};
 //     var map = new google.maps.Map(
 //         document.getElementById('map'), {zoom: 14,
