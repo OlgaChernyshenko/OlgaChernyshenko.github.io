@@ -1,7 +1,8 @@
 ;(function(){
-'use strict';
+    'use strict';
+
 //PADDING-HACK
-;function paddingHack(items){
+function paddingHack(items){
     const gridWidth = $(items).parent().width();
 
     console.log(gridWidth);
@@ -37,22 +38,22 @@
     }
 }
 
-const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
+const mansoryGridPadHack = paddingHack('.img-wrapp');
 
 mansoryGridPadHack.init();
 
 var navigation = {
 
 
- // HEADERNAVIGATION
-    $nav: document.querySelector('.nav'),
-    $navTrigger: document.querySelector('.nav__trigger'),
-    $navContent: document.querySelector('.nav__content'),
-    $navList: document.querySelector('.nav__list'),
-    transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+ // HEADER NAVIGATION
+ $nav: document.querySelector('.nav'),
+ $navTrigger: document.querySelector('.nav__trigger'),
+ $navContent: document.querySelector('.nav__content'),
+ $navList: document.querySelector('.nav__list'),
+ transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
 
-    init() {
-    	var self = this;
+ init() {
+   var self = this;
 
         // Handle the transitions
         self.$navTrigger.addEventListener('click', function() {
@@ -91,13 +92,9 @@ var navigation = {
                         }
                     });
                 } else {
-                	self.$nav.classList.remove('is-active');
+                	self.$nav.List.remove('is-active');
                 }
 
-                // no-csstransitions fallback
-                if (document.documentElement.classList.contains('no-csstransitions')) {
-                	self.$nav.classList.remove('is-active');
-                }
             }
         });
     }
@@ -106,14 +103,14 @@ var navigation = {
 navigation.init();
 
 //ACCORDION
-  $( function() {
+$( function() {
     $( "#accordeon" ).accordion();
-  } );
+} );
 
 //AREA
 $( function() {
     $( "#tabs" ).tabs();
-  } );
+} );
 
 //MENSORY
 // init Masonry
@@ -123,48 +120,69 @@ var $grid = $('.grid').masonry({
   columnWidth: '.grid-sizer'
 });
 // layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry();
+// });
 
+})();
 
 //MAP
 
-        // function initMap() {
-//     var map;
-//     var mapCenter = {lat: 49.050705, lng: 33.365622};
-//     var map = new google.maps.Map(
-//         document.getElementById('map'), {zoom: 14,
-//             center: mapCenter,
-//             mapTypeId: 'roadmap',
-//             disableDefaultUI: true
-//         });
+        function initMap() {
+    var map;
+    var mapCenter = {lat: 49.069036, lng: 33.402966};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 14,
+            center: mapCenter,
+            mapTypeId: 'roadmap',
+            disableDefaultUI: true
+        });
 
-//     var marker = new google.maps.Marker({
-//         position: mapCenter,
-//         map: map,
-//         title: 'Hello',
-//         icon: "img/icon.png"
-//     });
+    var marker = new google.maps.Marker({
+        position: mapCenter,
+        map: map,
+        title: 'Hello',
+        icon: "img/icon.png"
+    });
 
-//     var marker2 = new google.maps.Marker({
-//         position: {lat: 49.06, lng: 33.37},
-//         map: map,
-//         title: 'Hello2',
-//         icon: "img/icon.png"
-//     });
+};
 
-//     var infoWindowText = $('.ba-info-text').html();
-//     $infowindow.open ($map.$marker);
+// счетчик
 
-//     var infowindow = new google.maps.InfoWindow({
-//         content: infoWindowText
-//     });
+        // const data = {
+        //     tourists: 93,
+        //     tickets: 9589,
+        //     clients: 11567,
+        //     comments: 534
+        // };
 
-//     marker.addListener('click', function() {
-//         infowindow.open(map, marker);
-//     });
+        // const tourists = document.querySelector('.tourists');
+        // const tickets = document.querySelector('.tickets');
+        // const clients = document.querySelector('.clients');
+        // const comments = document.querySelector('.comments');
 
-// };
 
-})();
+        // function fakeCounter(targetNode) {
+        //     let count = Math.ceil(data[targetNode.className] / 1000);
+        //     if(count >= 10) {
+        //         count *= 2;
+        //     } else if(count >= 20) {
+        //         count *= 3;
+        //     }
+        //     let i = 1;
+        //     let interval = setTimeout(function counter(){
+        //         targetNode.innerText = i;
+        //         i = i + count;
+        //         if(i > data[targetNode.className]) {
+        //             targetNode.innerText = data[targetNode.className];
+        //             clearInterval(interval);
+        //             return;
+        //         }
+        //         interval = setTimeout(counter, 1);
+        //     }, 1);
+        // }
+
+        // fakeCounter(tourists);
+        // fakeCounter(tickets);
+        // fakeCounter(clients);
+        // fakeCounter(comments);

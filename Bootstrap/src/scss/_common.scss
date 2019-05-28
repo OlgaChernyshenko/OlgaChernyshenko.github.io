@@ -11,9 +11,6 @@ body {
 	color: $dark-text;
 	background: $corp-green;
 }
-section {
-	margin-bottom: 25px;
-}
 
 .container {
 	width: 100%;
@@ -33,6 +30,7 @@ h1, h2, h3 {
 	padding: 2rem 0;
 	text-transform:capitalize;
 	text-align: center;
+	@media (max-width: 769px) { padding: 10px 0; font-size: 1.5rem; line-height: 0.8;}
 }
 h2 {
 	font-family: $main-font;
@@ -61,6 +59,17 @@ p {
 .fab {
 	font-size: 3rem;
 }
+span {
+	font-size: 3rem;
+	color:$elow;
+}
+// &-description {
+// 	@media all and (max-width: 576px){
+// 		text-align: justify;
+// 	}
+// }
+
+
 // //padding-hack
 // .wrap {
 // 	position: relative;

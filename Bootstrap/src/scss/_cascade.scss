@@ -8,16 +8,7 @@
 	.section-button {
 		@include section-button;
 	}
-	.fab {
-		font-size: 1rem;
-	}
-	.ispan {
-		display: inline-block;
-		position: absolute;
-		width: 10%;
-		border-right: 1px solid $white;
-		left: 0;
-	}
+
 	p {
 		margin: 0;
 	}
@@ -28,11 +19,11 @@
 	padding: 5px;
 }
 .section-button {
-	margin: 5px;
 	@include section-button;
 	&:hover {
 		color:$elow;
 	}
+	@media (max-width: 426px) { margin-top:10px;}
 
 }
 .block-btn {
@@ -40,6 +31,18 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+
+	.ispan {
+		position: absolute;
+		width: 10%;
+		left: 3px;
+		top: -20px;
+		.fas {
+			font-size: 1.5rem;
+
+		}
+	}
+
 	p {
 		text-align: center;
 	}

@@ -24,18 +24,11 @@
 
     &.is-active {
         width: 100%;
-        .bar,.bars{
-            display: none;
-        }
-        .div-2 {
-
-            width: $bar-length;
-            height: 1.5rem;
-            background-color: $elow;
-            border-radius: $bar-thickness;
-            transition: 0.2s ease-in-out;
-
-        }
+    }
+    &.nav__trigger {
+        .is-active {
+        width: 20%;
+    }
     }
 }
 

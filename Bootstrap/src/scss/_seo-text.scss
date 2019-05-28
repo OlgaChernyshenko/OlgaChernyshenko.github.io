@@ -13,10 +13,12 @@
 		text-align: center;
 		color:$light-grey;
 	}
-	.first-col1,
-	.first-col2,
-	.first-col3,
-	{
+
+
+	.first-col-1,
+	.first-col-2,
+	.first-col-3{
+		@media(max-width: 769px) {margin: 5px;}
 		padding: 10px;
 		margin: 0;
 		background-color: $white;
@@ -38,12 +40,12 @@
 			justify-content: center;
 			align-items: center;
 		}
-		.fab {
-
-		}
 
 	}
 
-
+	.first-col1,
+	.first-col2 {
+		@media (max-width: 768px) {margin: 10px 0;}
+	}
 
 }

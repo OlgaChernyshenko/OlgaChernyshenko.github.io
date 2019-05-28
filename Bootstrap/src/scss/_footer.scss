@@ -1,7 +1,7 @@
 .footer {
 
 	.container {
-		max-width: 450px;
+		max-width: 600px;
 		padding: 30px 0;
 	}
 	.footer-nav {
@@ -26,11 +26,23 @@
 		margin: 0;
 		display: flex;
 		justify-content: space-around;
-		&__item {
-			display: inline-block;
+			&__item {
+			display: block;
+			@media(max-width: 426px) {width: 3rem; height: 3rem;}
+			width: 4.5rem;
+			height: 4.5rem;
+			background: $white;
+			color: $elow;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+			transition: all .2s ease;
+
 		}
-		.fab {
-			color: $white;
+		.fab {@media(max-width: 426px) {font-size: 1.5rem;}
+			color: $elow;
 			&:hover {
 				text-decoration: none;
 				color: $light-grey;
@@ -40,7 +52,6 @@
 	.footer-copyrights {
 		color:$white;
 		text-align: center;
-		padding: $small-size;
-		margin-bottom: 0;
+		padding: 1rem;
 	}
 }
