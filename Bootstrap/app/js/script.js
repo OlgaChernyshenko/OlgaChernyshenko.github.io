@@ -114,16 +114,13 @@ $( function() {
 
 //MENSORY
 // init Masonry
-var $grid = $('.grid').masonry({
+$('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-});
-// layout Masonry after each image loads
-// $grid.imagesLoaded().progress( function() {
-//   $grid.masonry();
-// });
-
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
 })();
 
 //MAP

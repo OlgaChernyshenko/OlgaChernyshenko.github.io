@@ -31,6 +31,7 @@ h1, h2, h3 {
 	text-transform:capitalize;
 	text-align: center;
 	@media (max-width: 769px) { padding: 10px 0; font-size: 1.5rem; line-height: 0.8;}
+	@media (max-width: 426px){ padding: 5px 0; font-size: 1rem; line-height: 0.8;}
 }
 h2 {
 	font-family: $main-font;
