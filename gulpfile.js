@@ -53,8 +53,8 @@ const task = {
 
 const path = {
 	src: {
-		html: `${targetPath}/src/index.html`,
-		js: `${targetPath}/src/js/script.js`,
+		html: `${targetPath}/src/*.html`,
+		js: `${targetPath}/src/js/*.js`,
 		scss: `${targetPath}/src/scss/**/[^_]*.+(scss|sass)`,
 		img: [`${targetPath}/src/img/**/*.*`, `!${targetPath}/src/img/**/*.ini`],
 		fonts: [`${targetPath}/src/fonts/**/*.*`,`!${targetPath}/src/fonts/**/*.ini`],
