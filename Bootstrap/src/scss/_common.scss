@@ -63,6 +63,8 @@ p {
 span {
 	font-size: 3rem;
 	color:$elow;
+	@media (max-width: 769px) {font-size: 2rem;}
+	@media (max-width: 426px){ font-size: 1.5rem;}
 }
 // &-description {
 // 	@media all and (max-width: 576px){
