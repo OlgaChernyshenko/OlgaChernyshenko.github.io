@@ -10,7 +10,9 @@
     }
 }
 
-.nav {
+.nav {@media (min-width: 320px) and (max-width: 426px) {
+    display: none;
+}
     position: fixed;
     top: 0;
     right: 0;
@@ -20,7 +22,7 @@
     will-change: width;
     z-index: 99;
     background: $middle;
-    opacity: 0.9;
+    opacity: 0.8;
 
     &.is-active {
         width: 100%;
