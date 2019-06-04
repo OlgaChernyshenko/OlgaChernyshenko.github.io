@@ -1,4 +1,5 @@
 .footer {
+	background-color: #aadaff;
 
 	.container {
 		max-width: 600px;
@@ -26,32 +27,36 @@
 		margin: 0;
 		display: flex;
 		justify-content: space-around;
-			&__item {
+		&__item {
+			list-style: none;
+		}
+		&__link {
 			display: block;
-			@media(max-width: 426px) {width: 2.5rem; height: 2.5rem;}
-			width: 4.5rem;
-			height: 4.5rem;
-			background: $white;
+			@media(max-width: 426px) {width: 2rem; height: 2rem;}
+			width: 4rem;
+			height: 4rem;
 			color: $elow;
 			border-radius: 50%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+			border:0.5px solid $white;
 			transition: all .2s ease;
-
-		}
-		.fab {@media(max-width: 426px) {font-size: 1.5rem;}
-			color: $elow;
-			&:hover {
-				text-decoration: none;
-				color: $light-grey;
+			&:hover {border-color: $light-grey;
+				.fab {color: $light-grey;
+				}
 			}
 		}
+		.fab {@media(max-width: 426px) {font-size: 1rem;}
+		font-size: 2rem;
+		color: $white;
+		transition: all .2s ease;
 	}
-	.footer-copyrights {
-		color:$white;
-		text-align: center;
-		padding: 1rem;
-	}
+}
+.footer-copyrights {@media(max-width: 426px) {font-size: 0.5rem;}
+color:$white;
+text-align: center;
+padding: 10px 0 0 0;
+margin-bottom: 0;
+}
 }

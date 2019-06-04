@@ -12,6 +12,7 @@
 }
 .section-button {
 	@include section-button;
+	text-align: left;
 	&:hover {
 		color:$elow;
 	}
@@ -30,6 +31,7 @@
 		display: inline-block;
 		border-right: 1px solid $elow;
 		padding:10px;
+		text-align: left;
 
 		.fas {
 			font-size: 1.5rem;
@@ -38,8 +40,10 @@
 	}
 
 	p {
-		text-align: left;
+		text-align: center;
 		margin:0;
+		padding: 10px 60px;
+		display: inline-block;
 
 	}
 	a {cursor: pointer;
@@ -59,12 +63,10 @@
 
 	a {
 		&:hover {
-			border-radius: 3px 3px 0 0;
 			background-color: $white;
 			color:$elow;
 		}
 		&:active {
-			border-radius: 3px 3px 0 0;
 			color:$elow;
 
 		}

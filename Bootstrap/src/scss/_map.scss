@@ -1,8 +1,11 @@
 .map {
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	background-color: #aadaff;
+	z-index: -1;
 
 	#ba-map {
 		height: 450px;
@@ -10,6 +13,7 @@
 		z-index: -1;
 	}
 	#map {
+		border:5px solid #aadaff;
 		height: 450px;
 		width: 100%;
 	}

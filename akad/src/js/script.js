@@ -60,42 +60,42 @@
 
 })();
 
-// function paddingHack(items){
-// 	const gridWidth = $(items).parent().width();
+function paddingHack(items){
+	const gridWidth = $(items).parent().width();
 
-// 	console.log(gridWidth);
+	console.log(gridWidth);
 
-// 	function setPadding(){
-// 		$(items).each(function() {
-// 			const img = $(this).find('img');
+	function setPadding(){
+		$(items).each(function() {
+			const img = $(this).find('img');
 
-// 			console.log(img[0].naturalHeight, gridWidth, img[0].naturalHeight / gridWidth * 100);
+			console.log(img[0].naturalHeight, gridWidth, img[0].naturalHeight / gridWidth * 100);
 
 
-// 			if(!img[0]) return;
-// 			$(this).css({
-// 				// position: 'relative',
-// 				width: '100%',
-// 				paddingTop: `${Math.floor(parseFloat(img[0].naturalHeight / gridWidth * 100))}%`
-// 			});
-// 			$(img).css({
-// 				'position': 'absolute',
-// 				'top': '0',
-// 				'right': '0',
-// 				'bottom': '0',
-// 				'left': '0',
-// 				'width': '100%',
-// 				'height': '100%',
-// 				'object-fit': 'cover'
-// 			});
-// 		});
-// 	}
+			if(!img[0]) return;
+			$(this).css({
+				// position: 'relative',
+				width: '100%',
+				paddingTop: `${Math.floor(parseFloat(img[0].naturalHeight / gridWidth * 100))}%`
+			});
+			$(img).css({
+				'position': 'absolute',
+				'top': '0',
+				'right': '0',
+				'bottom': '0',
+				'left': '0',
+				'width': '100%',
+				'height': '100%',
+				'object-fit': 'cover'
+			});
+		});
+	}
 
-// 	return {
-// 		init: setPadding
-// 	}
-// }
+	return {
+		init: setPadding
+	}
+}
 
-// const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
+const mansoryGridPadHack = paddingHack('.dynamic-grid__item');
 
-// mansoryGridPadHack.init();
+mansoryGridPadHack.init();

@@ -12,17 +12,11 @@ body {
 	background: $corp-green;
 }
 
-.container {
-	width: 100%;
-	max-width: 1140px;
-	margin: auto;
-}
 
 .row {
 	display: flex;
 }
-
-h1, h2, h3 {
+h2, h3 {
 	font-family: $main-font;
 	color:$white;
 	font-size: $logo-size;
@@ -30,11 +24,12 @@ h1, h2, h3 {
 	padding: 2rem 0;
 	text-transform:capitalize;
 	text-align: center;
-	@media (max-width: 769px) { padding: 10px 0; font-size: 1.5rem; line-height: 0.8;}
-	@media (max-width: 426px){ padding: 5px 0; font-size: 1rem; line-height: 0.8;}
+	@media (max-width: 426px) { padding: 5px 0; font-size: 1.2rem; line-height: 0.8;}
+	@media (min-width: 426px) and (max-width: 769px) { padding: 10px 0; font-size: 1.5rem; line-height: 0.8;}
 }
 h2 {
 	font-family: $main-font;
+	line-height: 1.2;
 }
 
 h4, h5, h6 {

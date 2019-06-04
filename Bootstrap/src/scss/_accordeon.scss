@@ -2,12 +2,6 @@
 {
 
 
-	.container{
-
-		justify-content: center;
-		align-items: center;
-
-
 		.accordeon-title {
 			text-align: left;
 			background: $middle;
@@ -18,10 +12,12 @@
 				background:$white;
 				color:$elow;
 			}
+			span {
+				font-size: 0;
+			}
 		}
-	}
 
-	.img-wrapp {@media (max-width: 426px) {display: none;}
+	.img-wrapp {
 
 		box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 
