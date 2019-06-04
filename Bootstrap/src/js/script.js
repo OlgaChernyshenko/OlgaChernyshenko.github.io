@@ -53,7 +53,6 @@ var navigation = {
  $links: document.querySelectorAll('.menu__list-link'),
  transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
  $makeInactive(self) {
-    var self = this;
     // .nav--trigger inactive
     self.$navTrigger.classList.remove('is-active');
 
