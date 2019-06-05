@@ -4,7 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	background-color: #aadaff;
+
 	z-index: -1;
 
 	#ba-map {
@@ -13,7 +13,7 @@
 		z-index: -1;
 	}
 	#map {
-		border:5px solid #aadaff;
+		border:20px solid $map;
 		height: 450px;
 		width: 100%;
 	}
@@ -21,7 +21,7 @@
 	.fas, .fab{
 
 		font-size: 2rem;
-		color:#710067;
+		color:$font-viber;
 	}
 
 	.contact {

@@ -50,52 +50,60 @@ var navigation = {
  $navTrigger: document.querySelector('.nav__trigger'),
  $navContent: document.querySelector('.nav__content'),
  $navList: document.querySelector('.nav__list'),
+ $links: document.querySelectorAll('.menu__list-link'),
  transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+ $makeInactive(self) {
+    // .nav--trigger inactive
+    self.$navTrigger.classList.remove('is-active');
+
+    // .nav__content inactive
+    if (self.$navContent.classList.contains('is-active')) {
+        self.$navContent.classList.remove('is-active');
+        self.$navContent.addEventListener('transitionend', function(e) {
+            if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
+                // .nav inactive
+                self.$nav.classList.remove('is-active');
+            }
+        });
+    } else {
+        self.$nav.List.remove('is-active');
+    }
+ },
 
  init() {
    var self = this;
 
         // Handle the transitions
-        self.$navTrigger.addEventListener('click', function() {
-        	if (!self.$navTrigger.classList.contains('is-active')) {
+        self.$navTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!self.$navTrigger.classList.contains('is-active')) {
                 // .nav--trigger active
                 self.$navTrigger.classList.add('is-active');
 
                 // .nav active
                 if (!self.$nav.classList.contains('is-active')) {
-                	self.$nav.classList.add('is-active');
-                	self.$nav.addEventListener('transitionend', function(e) {
-                		if (e.propertyName == 'width' && self.$navTrigger.classList.contains('is-active')) {
+                    self.$nav.classList.add('is-active');
+                    self.$nav.addEventListener('transitionend', function(e) {
+                        if (e.propertyName == 'width' && self.$navTrigger.classList.contains('is-active')) {
                             // .nav__content active
                             self.$navContent.classList.add('is-active');
                         }
                     });
                 } else {
-                	self.$navContent.classList.add('is-active');
+                    self.$navContent.classList.add('is-active');
                 }
 
                 // no-csstransitions fallback
                 if (document.documentElement.classList.contains('no-csstransitions')) {
-                	self.$navContent.classList.add('is-active');
+                    self.$navContent.classList.add('is-active');
                 }
             } else {
-                // .nav--trigger inactive
-                self.$navTrigger.classList.remove('is-active');
-
-                // .nav__content inactive
-                if (self.$navContent.classList.contains('is-active')) {
-                	self.$navContent.classList.remove('is-active');
-                	self.$navContent.addEventListener('transitionend', function(e) {
-                		if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
-                            // .nav inactive
-                            self.$nav.classList.remove('is-active');
-                        }
-                    });
-                } else {
-                	self.$nav.List.remove('is-active');
-                }
-
+                self.$makeInactive(self);
             }
+        });
+
+        Array.from(self.$links).forEach(link => {
+            link.addEventListener('click', () => self.$makeInactive(self));
         });
     }
 }
