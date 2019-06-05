@@ -138,7 +138,7 @@ $('.grid').masonry({
     var marker = new google.maps.Marker({
         position: mapCenter,
         map: map,
-        title: 'Hello',
+        title: 'ул. Троицкая, 31',
         icon: "img/icon.png"
     });
 
