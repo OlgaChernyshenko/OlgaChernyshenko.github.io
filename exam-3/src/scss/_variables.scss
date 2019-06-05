@@ -1,0 +1,29 @@
+$main-font: 'ProximaNova', cursive;
+$secondary-font: 'Raleway', sans-serif;
+
+$dark-text: #26221f;
+
+
+$white: #ffffff;
+$black:#3a3635;
+
+$body-border: 2rem;
+
+$base-size: 14px;
+$small-size: px_to_rem(12px);
+$middle-size: $base-size;
+$logo-size: px_to_rem(18px);
+$form-title: px_to_rem(24px);
+$section-title: px_to_rem(30px);
+$main-title: px_to_rem(36px);
+$main-title-home: 2.7rem;
+
+$img-path: "../img";
+
+$bar-length: 28px;
+$bar-thickness: 4px;
+$nav-item-delay: 0.05s;
+$nav-width: 3.75rem;
+
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$cubic-transition: 0.55s $ease-in-out-cubic;
