@@ -1,0 +1,49 @@
+//ProximaNovaBold
+$h1-font:'ProximaNova', sans-serif;
+
+//ProximaNovaSemiBold
+$h2-font: 'ProximaNova', sans-serif;
+
+//PTsansRegularBoldItalic
+$secondary-font: 'PT Sans', cursive;
+
+//grey
+$dark-text: #665f60;
+
+$light-text:#9f9acf;
+
+$white: #ffffff;
+
+$black:#3a3635;
+
+//font-size
+$h1-size: 50px;
+
+$h2-size:px_to_rem(28px);
+
+$h3-size: px_to_rem(17px);
+
+$small-size: px_to_rem(10px);
+
+$btn-size: px_to_rem(11px);
+
+//Background
+$back: #ebebeb;
+
+//medleBackground
+$back-2:#dbdbdb;
+
+//3-Background
+$back-3:#9f9acf;
+
+//hover-light
+$hov:#FFE5BA;
+
+//hover-dark
+$hov-d:#42368E;
+
+
+$img-path: "../img";
+
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$cubic-transition: 0.55s $ease-in-out-cubic;
