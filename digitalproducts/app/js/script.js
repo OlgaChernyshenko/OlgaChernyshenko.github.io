@@ -1,5 +1,7 @@
 ;(function(){
     'use strict';
+//CARUSEL
+$('.carousel').carousel();
 
 //PADDING-HACK
 function paddingHack(items){

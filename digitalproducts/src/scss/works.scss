@@ -1,0 +1,34 @@
+.section-works {
+	background-color: #9f9acf;
+	min-height: 100vh;
+	h2 {padding: 50px 0;
+		text-transform: capitalize;
+	}
+	.carousel-inner {
+		display: inline-block;
+	}
+	.carousel-control-prev {
+		left: -150px;
+	}
+	.carousel-control-next {
+		right: -150px;
+	}
+
+	.carousel-indicators li {
+		display: block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border:3px solid #dbdbdb;
+		background-color: transparent;
+		&.active {
+			background-color: #dbdbdb;
+		}
+	}
+	.carousel-indicators {
+		bottom: -75px;
+	}
+	.btn {
+		margin-top: 100px;
+	}
+}

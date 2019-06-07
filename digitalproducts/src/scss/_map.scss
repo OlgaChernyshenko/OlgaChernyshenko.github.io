@@ -4,17 +4,65 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-
 	z-index: -1;
+	height: 100vh;
+	position: relative;
 
-	#ba-map {
-		height: 450px;
-		position:relative;
-		z-index: -1;
-	}
-	#map {
-		height: 450px;
+	.wrap-map {
+		position: absolute;
 		width: 100%;
-	}
+		height: 100%;
+		top:0;
+		right: 0;
+		bottom:0;
+		left:0;
+		background-color: #9f9acf;
+		opacity:0.5;}
 
-}
+		#ba-map {
+			height: 100%;
+			position:relative;
+			z-index: -1;
+		}
+		#map {
+			height: 100%;
+			width: 100%;
+		}
+		form{
+
+			label {
+				display: block;
+				font: 1rem 'Fira Sans', sans-serif;
+			}
+
+			input,
+			label {
+				margin: .4rem 0;
+			}
+
+			.note {
+				font-size: .8em;
+			}
+
+
+
+			label,
+			textarea {
+				font-size: .8rem;
+				letter-spacing: 1px;
+			}
+			textarea {
+				padding: 10px;
+				line-height: 1.5;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				box-shadow: 1px 1px 1px #999;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+		}
+	}
