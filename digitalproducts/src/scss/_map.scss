@@ -28,7 +28,29 @@
 			height: 100%;
 			width: 100%;
 		}
+		#map-form {
+			opacity: 0.4;
+			z-index: 10;
+			width: 50%;
+			margin: auto;
+		}
+		.top {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 15px;
+		}
+		#name1, #name2 {
+			width: 49%;
+			display: inline-block;
+
+		}
+		#name1 {
+			padding-right: 3%
+		}
 		form{
+			padding: 0;
+
 
 			label {
 				display: block;
@@ -37,7 +59,9 @@
 
 			input,
 			label {
-				margin: .4rem 0;
+				padding: 10px;
+				margin: 0;
+				border-radius: 5px;
 			}
 
 			.note {
@@ -50,8 +74,12 @@
 			textarea {
 				font-size: .8rem;
 				letter-spacing: 1px;
+
 			}
 			textarea {
+				width: 100%;
+				min-height: 250px;
+				margin:0;
 				padding: 10px;
 				line-height: 1.5;
 				border-radius: 5px;
@@ -65,4 +93,8 @@
 			}
 
 		}
+
+		// .btn-map {
+			
+		// }
 	}
