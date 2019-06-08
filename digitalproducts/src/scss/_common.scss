@@ -50,6 +50,7 @@ h1{
 h2 {font-size:$h2-size;
 	font-family: $h2-font;
 	color:$white;
+	font-weight: 600;
 	margin: 0;
 	text-transform:uppercase;
 	text-align: center;
@@ -60,6 +61,12 @@ h3 {color:$white;
 	font-size:$h3-size;
 	font-family: $h2-font;
 	text-transform:uppercase;
+}
+.h3-h {color:$white;
+	font-size:$h3-size;
+	font-family: $h2-font;
+	text-transform:uppercase;
+	padding-bottom: 50px;
 }
 
 h4, h5, h6, p {
@@ -87,18 +94,27 @@ span {
 	@media (max-width: 769px) {font-size: 2rem;}
 	@media (max-width: 426px){ font-size: 1.5rem;}
 }
-	.btn {
-		display: block;
-		padding: 15px 50px;
-		margin: auto;
-		width: 197px;
-		border: 1px solid #665f60;
-		border-radius: 0;
-		font-style: italic;
-		text-transform: capitalize;
+.btn {
+	display: block;
+	padding: 15px 50px;
+	margin: auto;
+	width: 197px;
+	border: 1px solid #665f60;
+	border-radius: 0;
+	font-style: italic;
+	text-transform: capitalize;
+	z-index: 15;
 
-	}
+}
 
+.icon{
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
 // //padding-hack
 // .wrap {
 // 	position: relative;

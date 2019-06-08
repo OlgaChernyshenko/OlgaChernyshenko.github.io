@@ -1,43 +1,46 @@
 .section-works {
 	background-color: #9f9acf;
-	min-height: 100vh;
-	h2 {padding: 30px 0;
+	padding: 50px;
+
+	h2 {padding: 10px 0;
 		text-transform: capitalize;
 	}
 	.carousel-inner {
 		display: inline-block;
 	}
 	.carousel-control-prev {@media(max-width: 769px) {display:none;}
-		left: -150px;
-	}
-	.carousel-control-next {@media(max-width: 769px) {display:none;}
-		right: -150px;
-	}
+	left: -150px;
+}
+.carousel-control-next {@media(max-width: 769px) {display:none;}
+right: -150px;
+}
 
-	.carousel-indicators li {
-		display: block;
-		width: 15px;
-		height: 15px;
-		border-radius: 50%;
-		border:3px solid #dbdbdb;
-		background-color: transparent;
-		&.active {
-			background-color: #dbdbdb;
-		}
-		&:hover {
-			background-color: #FFE5BA;
-			opacity: 0.5;
-			}
+.carousel-indicators li {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border:3px solid #dbdbdb;
+	background-color: transparent;
+	&.active {
+		background-color: #42368E;
 	}
-	.carousel-indicators {
-		bottom: -75px;
+	&:hover {
+		background-color:#dbdbdb ;
+		opacity: 0.5;
 	}
-	.btn {
-		margin-top: 100px;
-		&:hover {
-			background-color: #FFE5BA;
-			opacity: 0.5;
-			border-color:transparent;
-		}
+}
+.carousel-indicators {
+	bottom: -75px;
+}
+.row {margin-bottom: 100px;}
+.btn {
+
+
+	&:hover {
+		background-color: #42368E;
+		opacity: 0.5;
+		border-color:transparent;
 	}
+}
 }

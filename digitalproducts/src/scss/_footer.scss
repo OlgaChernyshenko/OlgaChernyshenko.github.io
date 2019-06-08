@@ -29,14 +29,14 @@
 		justify-content: center;
 		align-items: center;
 		&:hover {
-			background-color: #dbdbdb;
+			background-color: $hov-d;
 		}
 
 	}
 	.fab {
 		display: inline-block;
 		font-size: 1.3rem;
-		color:#9f9acf;
+		color: $back-3;
 
 	}
 

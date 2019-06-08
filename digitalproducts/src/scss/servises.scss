@@ -1,5 +1,5 @@
 .section-servises {
-.col-12, .col-md-4 {padding: 0;}
+	.col-12, .col-md-4 {padding: 0;}
 	.servises-1,
 	.servises-2,
 	.servises-3,
@@ -8,20 +8,16 @@
 	.servises-6{
 		width: 100%;
 		min-height: 400px;
-		padding: 0;
+		padding: 10px 0;
 		margin: 0;
 
 	}
+
 	h2, h3, p{
 		text-align: center;
 		vertical-align: middle;
 	}
-	h3 {
-		padding-top: 175px;
-	}
-	h2 {
-		padding-top: 210px;
-	}
+
 	p {
 		margin-bottom: 0;
 	}
@@ -38,7 +34,11 @@
 .servises-3,
 {
 	background:#9f9acf;
+p {
+	padding-top: 120px;
+}
 }
 .servises-6 {
-	background-image: url("../img/img-about.png")
+	background-image: url("../img/telefon.png");
+	background-position: 70% 100%;
 }
