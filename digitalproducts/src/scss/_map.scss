@@ -11,6 +11,7 @@
 	.icon {
 		z-index: 10;
 	}
+
 	.address, .phone{
 		z-index: 10;
 		display: block;
@@ -26,7 +27,7 @@
 		cursor: pointer;
 	}
 	.address{top:23%;}
-.phone{top:35%;}
+	.phone{top:35%;}
 	.wrap-map {
 		z-index: 1;
 		position: absolute;
@@ -48,20 +49,21 @@
 			height: 100%;
 			width: 100%;
 		}
-		#map-form {
+		#map-form {@media(max-width: 1024px) {width: 80%;}
 			opacity: 0.4;
 			z-index: 10;
 			width: 50%;
 			margin: auto;
 		}
-		.top {
+		.top {@media(min-width: 1024px) {flex-direction:row;}
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: space-between;
 			margin-bottom: 15px;
 		}
-		#name1, #name2 {
-			width: 49%;
+			#name1, #name2 {@media(min-width: 1024px) {width: 49%;}
+			width: 100%;
+			margin-top: 10px;
 			display: inline-block;
 
 		}
@@ -99,8 +101,7 @@
 				letter-spacing: 1px;
 
 			}
-			textarea {
-				color: #9f9acf;
+			textarea {color:red;
 				width: 100%;
 				min-height: 250px;
 				margin:0;
