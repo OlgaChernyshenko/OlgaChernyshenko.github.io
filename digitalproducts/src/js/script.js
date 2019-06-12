@@ -48,11 +48,26 @@ mansoryGridPadHack.init();
 
 })();
 
+$(document).ready(function(){
+
+    $(".search-toggle").click(function(){
+
+        $("#searchCollapse").slideToggle("slow");
+
+        $(this).toggleClass("active");
+
+        return false;
+
+    });
+
+});
+
+
 //MAP
 
         function initMap() {
     var map;
-    var mapCenter = {lat: 49.069036, lng: 33.402966};
+    var mapCenter = {lat: 49.0698990, lng: 33.4028900};
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 14,
             center: mapCenter,
@@ -63,8 +78,8 @@ mansoryGridPadHack.init();
     var marker = new google.maps.Marker({
         position: mapCenter,
         map: map,
-        title: 'ул. Троицкая, 31',
-        icon: "img/icon.png"
+        title: 'Ikan Piranha Atas 220 C',
+        icon: "img/logo-map.png"
     });
 
 };

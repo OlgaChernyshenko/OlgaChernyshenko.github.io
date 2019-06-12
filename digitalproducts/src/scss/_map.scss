@@ -1,3 +1,4 @@
+//MAP
 .map {
 
 	display: flex;
@@ -8,11 +9,115 @@
 	height: 100vh;
 	position: relative;
 	padding: 50px 0;
+
 	.icon {
 		z-index: 10;
+		padding: 0;
+		margin:0;
 	}
 
-	.address, .phone{
+
+
+	.wrap-map {
+		z-index: 10;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top:0;
+		right: 0;
+		bottom:0;
+		left:0;
+		background-color: #9f9acf;
+		opacity:0.5;
+	}
+
+	#ba-map {
+		height: 100vh;
+		position:relative;
+		z-index: -1;
+	}
+	#map {
+		height: 100%;
+		width: 100%;
+	}
+
+}
+// box-shadow: 1px 1px 1px #999;
+//border: 1px solid #ccc;
+
+
+//FORM
+.form-map {@media(max-width: 1024px) {width: 80%;}
+z-index: 15;
+width: 50%;
+max-height: 250px;
+margin: 0 auto;
+padding: 0;
+
+.top {@media(min-width: 1024px) {flex-direction:row; margin-bottom: 10px;}
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-bottom: 15px;
+
+}
+
+
+//LABELS
+label {
+
+	width: 49%;
+	min-height: 50px;
+	margin: 0;
+	border-radius: 5px;
+	border: solid 1px #9f9acf;
+
+}
+#story{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+//INPUTS
+input,textarea {
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: 14px;
+	color:$white;
+	padding: 5px  5px 5px 15px;
+	background: #9f9acf;
+	opacity: 0.2;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	border: none;
+}
+
+.btn-map {
+	color:$white;
+	border-radius: 2px;
+	display: block;
+	cursor: pointer;
+	padding: 15px 85px;
+	max-width: 290px;
+	margin: auto;
+	border: 1px solid $back-3;
+	text-transform: capitalize;
+	background-color: $back-3;
+	-webkit-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+
+}
+.btn-map:hover {
+	box-shadow: none;
+}
+}
+//LIFT
+
+.address, .phone{
 		z-index: 10;
 		display: block;
 		width: 90px;
@@ -26,115 +131,7 @@
 		border:1px solid white;
 		cursor: pointer;
 	}
-	.address{top:23%;}
-	.phone{top:35%;}
-	.wrap-map {
-		z-index: 1;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top:0;
-		right: 0;
-		bottom:0;
-		left:0;
-		background-color: #9f9acf;
-		opacity:0.5;}
 
-		#ba-map {
-			height: 100%;
-			position:relative;
-			z-index: -1;
-		}
-		#map {
-			height: 100%;
-			width: 100%;
-		}
-		#map-form {@media(max-width: 1024px) {width: 80%;}
-			opacity: 0.4;
-			z-index: 10;
-			width: 50%;
-			margin: auto;
-		}
-		.top {@media(min-width: 1024px) {flex-direction:row;}
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			margin-bottom: 15px;
-		}
-			#name1, #name2 {@media(min-width: 1024px) {width: 49%;}
-			width: 100%;
-			margin-top: 10px;
-			display: inline-block;
+.address{top:23%;}
+.phone{top:35%;}
 
-		}
-		#name1 {
-			padding-right: 3%
-		}
-		form{
-			padding: 0;
-
-
-			label {
-				display: block;
-				font: 1rem 'Fira Sans', sans-serif;
-			}
-
-			input,
-			label {
-				padding: 10px;
-				margin: 0;
-				border-radius: 5px;
-				font-family: $secondary-font;
-				font-style: italic;
-				font-size: 14px;
-			}
-
-			.note {
-				font-size: .8em;
-			}
-
-
-
-			label,
-			textarea {
-				font-size: .8rem;
-				letter-spacing: 1px;
-
-			}
-			textarea {color:red;
-				width: 100%;
-				min-height: 250px;
-				margin:0;
-				padding: 10px;
-				line-height: 1.5;
-				border-radius: 5px;
-				border: 1px solid #ccc;
-				box-shadow: 1px 1px 1px #999;
-				font-family: $secondary-font;
-				font-style: italic;
-				font-size: 14px;
-			}
-
-			label {
-				display: none;
-				margin-bottom: 10px;
-			}
-
-		}
-
-		.btn-map {z-index: 15;
-			display: block;
-			padding: 15px 85px;
-			max-width: 290px;
-			margin: auto;
-			color:$white;
-			border-radius: 2px;
-			border: 1px solid $back-3;
-			border-radius: 0;
-			text-transform: capitalize;
-			background-color: $back-3;
-			-webkit-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
-			-moz-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
-			box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
-		}
-	}
