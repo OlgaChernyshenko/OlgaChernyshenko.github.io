@@ -7,7 +7,7 @@ html, body {
   height: 100%;
 }
 
-body {  
+body {
   font-family:Lucida Sans Unicode, Lucida Grande, sans-serif ;
   margin: 0;
 
@@ -16,16 +16,16 @@ body {
   color: white;
 }
 
-.h1 {  
+.h1 {
  padding: 0;
  font-size: 2rem;
  margin-bottom: 20px;
-} 
+}
 
-.bottom {  
+.bottom {
   margin: 0;
   padding: 0;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 .ba-sities li p {
@@ -35,7 +35,7 @@ body {
 
 }
 
-.ba-sities span { 
+.ba-sities span {
   display: block;
   margin:0;
   padding: 0;
@@ -50,8 +50,8 @@ body {
 
 }
 
-.ba-sities { 
- 
+.ba-sities {
+
   display: block;
   width: 100%;
   border: 3px solid white;
@@ -62,15 +62,14 @@ body {
 }
 
 
-.ba-sities li {  
+.ba-sities li {
 
   display: inline-block;
   border:3px solid white;
 
- 
 }
 
-.ba-sities > li > a {   
+.ba-sities > li > a {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -82,10 +81,10 @@ body {
   font-size: 1.5rem;
 }
 
-.ba-sities:hover li > a { 
+.ba-sities:hover li > a {
   opacity: 0.5;
   transition: all .1s ease-in;
-} 
+}
 
 
 .ba-sities li> a:hover {
@@ -96,15 +95,15 @@ body {
 
 .lisbon a {
   background-color: #3399cc;
-  
+
 }
 
-.paris a { 
+.paris a {
 
   background-color:#33cccc;
 }
 
-.belgrad a { 
+.belgrad a {
 
   background-color:#996699;
 }
@@ -120,7 +119,7 @@ body {
 }
 
 .cair a{
- 
+
   background-color:#ffcc66;
 }
 
@@ -131,23 +130,22 @@ body {
 }
 
 .new-d a{
-  
+
   background-color:#669999;
 }
 
 .san a{
- 
+
   background-color:#cc6699;
 }
 
 .tokyo a{
-  
- 
+
   background-color:#339966;
 }
 
 .syd a{
- 
+
   background-color:#666699;
 }
 
@@ -159,14 +157,14 @@ body {
   width: 50%;
 }
 
-.paris { 
+.paris {
   width: 25%;
 
 }
 
-.belgrad { 
+.belgrad {
   width: 25%;
-  
+
 }
 
 .moscow{
@@ -176,12 +174,12 @@ body {
 
 .tel {
   width: 25%;
-  
+
 }
 
 .cair {
   width: 25%;
-  
+
 }
 
 .new-y {
@@ -192,12 +190,12 @@ body {
 
 .new-d {
   width: 25%;
-  
+
 }
 
 .san {
   width: 50%;
-  
+
 }
 
 .tokyo {
