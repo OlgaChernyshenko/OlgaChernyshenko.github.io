@@ -6,6 +6,7 @@
 		margin-bottom: 10px;
 	}
 }
+
 }
 .img-slider {
 	height: 100%;
@@ -25,7 +26,7 @@ a.button{
 	text-decoration: none;
 	text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
 	user-select: none;
-	padding: 0.8em 2em;
+	padding: 1.5em 5em;
 	outline: none;
 	border-radius: 5px / 100%;
 	background-image:
@@ -65,6 +66,7 @@ a.button{
 
 	&:active {
 		a.button {
+
 			position: absolute;
 			display: block;
 			color: $font-viber;
@@ -92,12 +94,20 @@ a.button{
 
 			opacity: 0.1;}
 
-			h3 {display: block;
+			h3 {@media (max-width: 769px)
+				{
+					font-size: 2rem;
+					line-height: 2rem
+				}
+				display: block;
 				position: absolute;
 				top: 10%;
 				color: $white;
 				text-align: center;
 				transform: scaleX(-1);
+				font-family: "Gloria Hallelujah", cursive, "Raleway", sans-serif;
+				font-size: 2.2rem;
+				line-height: 3rem;
 			}
 
 			a.button {

@@ -1,7 +1,5 @@
 .header {
-    @media (min-width: 320px) and (max-width: 426px) {
-        display: none;
-    }
+
 }
 .content {
     position: absolute;
@@ -15,7 +13,9 @@
     }
 }
 
-.nav {
+.nav {    @media (min-width: 320px) and (max-width: 376px) {
+        display: none;
+    }
     position: fixed;
     top: 0;
     right: 0;

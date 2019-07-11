@@ -1,5 +1,6 @@
 .footer {
 	background-color: $corp-green;
+	margin: 0;
 
 	.container {
 		max-width: 600px;
@@ -29,34 +30,49 @@
 		justify-content: space-around;
 		&__item {
 			list-style: none;
+			display: block;
+			width: 4.5rem;
+			height: 4.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		&__link {
 			display: block;
-			@media(max-width: 426px) {width: 2rem; height: 2rem;}
-			width: 4rem;
-			height: 4rem;
-			color: $elow;
+			@media(max-width: 426px) {width: 3rem; height: 3rem;}
+			width: 4.5rem;
+			height: 4.5rem;
 			border-radius: 50%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border:0.5px solid $white;
+			background: $white;
 			transition: all .2s ease;
-			&:hover {border-color: $light-grey;
-				.fab {color: $light-grey;
+			box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+			transition: all .2s ease;
+			&:hover{.fab, .fas
+				{
+					color:$light-grey;
+					font-size: 2rem;
 				}
+				zoom:0.9;
+				width: 4rem;
+				height: 4rem;
 			}
 		}
-		.fab {@media(max-width: 426px) {font-size: 1rem;}
-		font-size: 2rem;
-		color: $white;
-		transition: all .2s ease;
 	}
+
+
+	.fab {@media(max-width: 426px) {font-size: 1.8rem;}
+	font-size: 2rem;
+	color: $font-viber;
+	transition: all .2s ease;
+}
 }
 .footer-copyrights {@media(max-width: 426px) {font-size: 0.5rem;}
 color:$white;
 text-align: center;
 padding: 10px 0 0 0;
 margin-bottom: 0;
-}
 }

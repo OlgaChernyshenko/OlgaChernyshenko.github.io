@@ -14,6 +14,10 @@
 	margin-top: 5px;
 	@include section-button;
 	text-align: left;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
 	&:hover {
 		color:$elow;
 	}
@@ -24,18 +28,17 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 
 
 	.ispan {
-		font-size: 1.5rem;
-		display: inline-block;
-		border-right: 1px solid $elow;
-		padding:10px;
+
+		display: flex;
+		padding: 15px;
 		text-align: left;
 
 		.fas {
-			font-size: 1.5rem;
+			font-size: 2rem;
 
 		}
 	}
@@ -45,6 +48,7 @@
 		margin:0;
 		padding: 10px 60px;
 		display: inline-block;
+		font-family: "Gloria Hallelujah", cursive, "Raleway", sans-serif;
 
 	}
 	a {cursor: pointer;
@@ -75,4 +79,5 @@
 }
 #tabs {
 	background-color: white;
+	padding: 10px;
 }
