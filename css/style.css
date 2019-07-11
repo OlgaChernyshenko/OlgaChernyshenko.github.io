@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 *{
 	box-sizing: border-box;
+	margin:0;
 
 }
 html, body {
@@ -11,8 +12,7 @@ html, body {
 }
 body {
 	font-family: 'Poppins', sans-serif, 'Luckiest Guy', cursive;
-	background: #DCDCDC;
-
+	background-image: url("../img/0-fon.png");
 }
 
 
@@ -72,7 +72,7 @@ li, a, p {
 	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
-	box-shadow: inset 9px 9px 19px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	box-shadow: inset 9px 9px 19px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 1);
 	transition: all .2s ease;
 	font-size: 2rem;
 	color:white;
@@ -80,10 +80,11 @@ li, a, p {
 	font-weight: bold;
 }
 .btn:hover {
+	border:2px solid black;
 	opacity: 1;
 	color: transparent;
 	zoom:1.2;
-	box-shadow: inset 1px 1px 3px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	box-shadow: inset 1px 1px 3px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 1);
 }
 
 
@@ -92,8 +93,13 @@ li, a, p {
 	max-width: 1140px;
 	margin: auto;
 	border:5px solid #f80a8a;
+	text-align: center;
 }
-
+.footer {
+	background-image: url("../img/0-fon.png");
+	background-repeat: no-repeat;
+	background-size: 150%
+}
 
 .social-menu {
 	padding: 10px;
@@ -101,7 +107,8 @@ li, a, p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #f80a8a;
+	background: rgba(345, 10, 71, 0.8);
+	border:5px solid #dcdcdc;
 }
 .social-menu__item {
 	margin: 10px;
@@ -128,21 +135,23 @@ li, a, p {
 
 .fab:hover {
 	zoom:1.2;
+	color: #87CEEB;
 }
 
 .fas:hover {
 	zoom:1.2;
+	color:#87CEEB;
 }
 
 
 //GRID
-
+/*
 .grid {
 	width: 100%;
 	margin: auto;
 	margin-top: 10px;
 }
-
+*/
 /* clearfix */
 .grid:after {
 	content: '';
@@ -152,9 +161,11 @@ li, a, p {
 
 
 .grid-item{
+	border-radius: 5px;
+	background: rgba(345, 10, 71, 0.8);
 	width: 24%;
 	height: 100%;
-	min-height: 300px;
+	min-height: 280px;
 	display: inline-block;
 }
 .grid-item>.portfolio__link {
@@ -162,7 +173,10 @@ li, a, p {
 	display:block;
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	min-height: 280px;
+	z-index: 5;
+	opacity: 0.4;
+
 }
 
 a > .portfolio__img {
@@ -172,10 +186,19 @@ a > .portfolio__img {
 	bottom: 0;
 	left: 0;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 5px;
 	width: 100%;
-	max-height: 300px;
+	max-height: 280px;
 	object-fit: cover;
 	border: 0.5px solid white;
 	box-shadow: inset 1px 1px 3px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
+.grid-item>.portfolio__link:hover {
+	zoom:1.3;
+	z-index: 200;
+	padding: 0;
+	opacity: 1;
+	cursor: pointer;
+	transition: .1s ease-out;
+}
+
